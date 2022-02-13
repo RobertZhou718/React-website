@@ -17,12 +17,12 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/'  element={<Home/>} />
-          <Route path='AboutUs' element={<AboutUs/>} />
-          <Route path='Business' element={<Business/>} />
-          <Route path='ContactUs' element={<ContactUs/>} />
-          <Route path='Housing' element={<Housing/>} />
-          <Route path='Personal' element={<Personal/>} />
-          <Route path='TaxOnline' element={<TaxOnline/>} />
+          <Route path='AboutUs' element={<AboutUs/>} activeClassName='actived'/>
+          <Route path='Business' element={<Business/>} activeClassName='actived'/>
+          <Route path='ContactUs' element={<ContactUs/>} activeClassName='actived'/>
+          <Route path='Housing' element={<Housing/>} activeClassName='actived'/>
+          <Route path='Personal' element={<Personal/>} activeClassName='actived'/>
+          <Route path='TaxOnline' element={<TaxOnline/>} activeClassName='actived'/>
       </Routes>
       <Footer />
     </BrowserRouter>
