@@ -3,14 +3,14 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div>    
-      <section class="p-5 bg-white mt-5">
+    <div>
+<section class="p-5 bg-white mt-5">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <h1>About Us</h1> 
+          <h1>About Us</h1>
           <p class="mt-5 lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem assumenda reprehenderit debitis optio excepturi tenetur provident non repellat quis culpa odit similique, nulla in, sunt laborum accusantium unde corrupti. Quaerat?
-          Voluptatem enim veritatis ad perferendis expedita magni similique vero consectetur veniam dolor dignissimos non quos mollitia, impedit esse doloremque sequi a! Aliquid a veritatis adipisci corporis? Pariatur atque architecto dicta!</p>  
+          Voluptatem enim veritatis ad perferendis expedita magni similique vero consectetur veniam dolor dignissimos non quos mollitia, impedit esse doloremque sequi a! Aliquid a veritatis adipisci corporis? Pariatur atque architecto dicta!</p>
         </div>
         <div class="col-md">
           <img src="img/biglogo.png" alt="logo" class="img-fluid d-none d-md-block"/>
@@ -23,23 +23,23 @@ const AboutUs = () => {
       <div id="section1" class="text-light">
         <h1 class="text-center">COVID-19 Related Tax Assistance</h1>
         <h3 class="mt-5">Lorem ipsum dolor</h3>
-        <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam, 
+        <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam,
           eum maiores excepturi numquam illo ipsa ex accusamus?</p>
           <h3 class="mt-3">Lorem ipsum dolor</h3>
-          <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam, 
+          <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam,
             eum maiores excepturi numquam illo ipsa ex accusamus?</p>
             <h3 class="mt-3">Lorem ipsum dolor</h3>
-            <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam, 
+            <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam,
               eum maiores excepturi numquam illo ipsa ex accusamus?</p>
               <h3 class="mt-3">Lorem ipsum dolor</h3>
-              <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam, 
+              <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae non placeat, quam, ullam quod sit vitae magnam ipsam architecto incidunt recusandae quisquam,
                 eum maiores excepturi numquam illo ipsa ex accusamus?</p>
       </div>
-        
+
 
 
     </div>

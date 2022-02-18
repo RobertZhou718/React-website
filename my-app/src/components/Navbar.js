@@ -56,7 +56,10 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item drop_down bg-warning">
                             <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="TaxOnline">Tax online</NavLink></li>
-                        <li className="nav-item drop_down float-end">
+                        <li className="nav-item">
+                        <NavLink className={({ isActive }) => isActive ? "none" : "nav-link text-dark "} to="SignIn">SignIn</NavLink></li>
+
+                        <li className="nav-item text-dark drop_down float-end">
                             <span  role="button" aria-expanded="false">lang</span>
                             <ul className="dropdown-menu dropdown-menu-light drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><button className="dropdown-item text-center" id="English">EN</button></li>
