@@ -11,8 +11,13 @@ const Reservation = () => {
     return currentDate.getTime() < selectedDate.getTime()&&(time.getHours() > 8 && time.getHours()<20);
   };
   const changeTimeCLass = (time) => {
-    return (time.getHours()> 8 && time.getHours()<20)?"":"none";
+    return (time.getHours()> 8 && time.getHours()<20)?"":"d-none";
   };
+  const handleSubmit =()=> {
+    if(startDate){
+
+    }
+  }
 
   return (
     <section className=" p-5 ">

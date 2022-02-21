@@ -1,31 +1,22 @@
-const functions = require('firebase-functions');
-const app = require('express')();
-const auth = require('./util/auth');
+const functions = require("firebase-functions");
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
 
 const {
-    getReservation,
-    getTaxForm,
-    Uploadfiles,
-} = require('./APIs/TaxOnline')
+    signup,
+    login,
+  } = require('./apis/user');
 
-const {
-    loginUser,
-    signUpUser,
-    uploadProfilePhoto,
-    getUserDetail,
-    updateUserDetails
-} = require('./APIs/users')
-
-// Tax Online
-app.get('/TaxOnline:TaxOnlineid', auth, getReservation);
-app.post('/TaxOnline:TaxOnlineid',auth, getTaxForm);
-app.post('/TaxOnline:TaxOnlineid',auth, Uploadfiles);
-
-// Users
-app.post('/login', loginUser);
-app.post('/signup', signUpUser);
-app.post('/user/image', auth ,uploadProfilePhoto);
-app.post('/user', auth ,updateUserDetails);
-app.get('/user', auth, getUserDetail);
+// users routes
+app.post('/signup', signup);
+app.post('/login', login);
 
 exports.api = functions.https.onRequest(app);
+
+//
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+//   functions.logger.info("Hello logs!", {structuredData: true});
+//   response.send("Hello from Firebase!");
+// });

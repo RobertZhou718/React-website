@@ -1,8 +1,8 @@
 
 import React from 'react'
-
 const AboutUs = () => {
   return (
+
     <div>
 <section class="p-5 bg-white mt-5">
     <div class="container">

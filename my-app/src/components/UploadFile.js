@@ -53,7 +53,9 @@ const UploadFile = () => {
           <button className="btn btn-primary" type="file" id ="file">Submit form</button>
         </div>
       </form>
-  </section>  )
+  </section>
+
+  )
 }
 
 export default UploadFile
