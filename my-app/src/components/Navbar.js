@@ -1,6 +1,20 @@
 import { NavLink } from "react-router-dom";
+import { useState, useEffect} from "react";
 
-const Navbar = () => {
+
+const Navbar = ({user}) => {
+    const [loginDiv,setLoginDiv] = useState(null);
+    const [showLogin,hideLogin] = useState(false);
+    useEffect(() => {
+        if (user) {
+            setLoginDiv(user.displayName);
+            hideLogin(true);
+          } else {
+            setLoginDiv(null);
+            hideLogin(false);
+        }
+    }
+      ,[user]);
     return (
         <nav className="navbar navbar-expand-md bg-white navbar-light fixed-top">
             <div className="container">
@@ -57,7 +71,7 @@ const Navbar = () => {
                         <li className="nav-item drop_down bg-warning">
                             <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="TaxOnline">Tax online</NavLink></li>
                         <li className="nav-item">
-                        <NavLink className={({ isActive }) => isActive ? "d-none" : "nav-link text-dark "} to="SignIn">SignIn</NavLink></li>
+                        <NavLink className={({ isActive }) => isActive||showLogin ? "d-none" : "nav-link text-dark"} to="SignIn">SignIn</NavLink></li>
 
                         <li className="nav-item text-dark drop_down float-end">
                             <span  role="button" aria-expanded="false">lang</span>
@@ -67,6 +81,9 @@ const Navbar = () => {
                             </ul>
                         </li>
                     </ul>
+                    <li className="nav-item text-dark drop_down float-end">
+                        {loginDiv}
+                    </li>
                 </div>
             </div>
         </nav>

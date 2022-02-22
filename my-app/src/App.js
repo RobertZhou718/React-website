@@ -10,32 +10,31 @@ import TaxOnline from "./pages/TaxOnline";
 import {NoMatch} from "./pages/nomatch";
 import SignIn from "./pages/SignIn";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from "react";
-import { auth } from "./config.js";
+import { useState,useEffect  } from "react";
 import {
   onAuthStateChanged,
-  signOut,
 } from "firebase/auth";
+import { auth } from "./config.js";
 
 const App = () => {
   const [user,setUser]= useState(null);
-  const monitorAuthState = async () => {
+  useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         if (user.emailVerified) {
           setUser(user);
         } else {
+
           alert("please verify");
         }
       } else {
         setUser(null);
-      }
+        }
     });
-  };
-  monitorAuthState();
+  })
   return (
     <BrowserRouter>
-      <Navbar user={user}/>
+      <Navbar user={user} />
       <Routes>
         <Route path='/'  element={<Home/>} />
           <Route path='AboutUs' element={<AboutUs/>} activeClassName='actived'/>
