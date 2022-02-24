@@ -7,15 +7,16 @@ const Reservation = () => {
   const filterPassedTime = (time) => {
     const currentDate = new Date();
     const selectedDate = new Date(time);
-
     return currentDate.getTime() < selectedDate.getTime()&&(time.getHours() > 8 && time.getHours()<20);
   };
   const changeTimeCLass = (time) => {
-    return (time.getHours()> 8 && time.getHours()<20)?"":"d-none";
+    return (time.getHours()> 8 && time.getHours()<20)&&(time.getMinutes()=== 0)?"":"d-none";
   };
   const handleSubmit =()=> {
     if(startDate){
-
+      console.log( startDate.getMouth());
+      console.log( startDate.getDate());
+      console.log( startDate.getHours());
     }
   }
 
@@ -36,11 +37,13 @@ const Reservation = () => {
           timeClassName={changeTimeCLass}
           minDate={new Date()}
           filterTime={filterPassedTime}
-          dateFormat="yyyy/MM/dd H:mm"
+          dateFormat="yyyy/MM/dd HH:MM"
           inline
           />
         <div className="col-md-2">
-          <button className="btn btn-primary" id="reserve">Select</button>
+          <button className="btn btn-primary"  disabled={!startDate}
+          onClick={handleSubmit}
+>Select</button>
         </div>
       </div>
     </section>

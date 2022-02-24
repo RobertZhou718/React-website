@@ -1,6 +1,40 @@
 import React from 'react'
+import { useState } from "react";
+import InputForm from "./InputForm";
 
 const Taxform = () => {
+    const inputformHead = ["First name","Last name","Date of Birth","SIN#","Email","Phone","Mailing Address","City","Province","Zip","Marital Status","First time tax filling in CA?","Are you a Canadian Citizen","Existing client"]
+    const starValue = {"First name":"*"
+    ,"Last name":"*"
+    ,"Date of Birth":"*"
+    ,"SIN#":"*"
+    ,"Email":"*"
+    ,"Phone":"*"
+    ,"Mailing Address":"*"
+    ,"City":"*"
+    ,"Province":"*"
+    ,"Zip":"*"
+    ,"Marital Status":"*"
+    ,"First time tax filling in CA?":"*"
+    ,"Are you a Canadian Citizen":"*"
+    ,"Existing client":"*"};
+    const holder = {"First name":"Mark"
+    ,"Last name":"Tott"
+    ,"Date of Birth":"2000-01-01"
+    ,"SIN#":"9 digtals"
+    ,"Email":"example@example.com"
+    ,"Phone":"604-1234-4567"
+    ,"Mailing Address":"Street"
+    ,"City":"Toronto"
+    ,"Province":"Choose"
+    ,"Zip":"A0A 0A0"
+    ,"Marital Status":"Choose"
+    ,"First time tax filling in CA?":"Choose"
+    ,"Are you a Canadian Citizen":"Choose"
+    ,"Existing client":"Choose"}
+    const [inputs, setInputs] = useState({});
+    const handleChange = e => setInputs(prevState => ({ ...prevState, [e.target.name]: e.target.value }));
+
   return (
     <section>
     <div  className="form-horizontal">
@@ -18,33 +52,9 @@ const Taxform = () => {
             <form  className="form-horizontal" >
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-4 ">
-                            <label htmlFor="validationCustom01" className="form-label">First name<span className="text-danger" >*</span></label>
-                            <input type="text" className="form-control taxform" placeholder="Mark" required />
-                        </div>
-                        <div className="col-md-4 ">
-                            <label htmlFor="validationCustom02" className="form-label">Last name<span className="text-danger" >*</span></label>
-                            <input type="text" className="form-control taxform" placeholder="Otto" required />
-                        </div>
-                        <div className="col-md-4 ">
-                            <label htmlFor="validationCustomBirth" className="form-label">Date of Birth<span className="text-danger" >*</span></label>
-                            <div className="input-group has-validation">
-                                <input type="text" className="form-control taxform datepicker_input" id="datepicker1" placeholder="DD/MM/YYYY" aria-describedby="inputGroupPrepend" required />
-                            </div>
-                        </div>
-                        <div className="col-md-4 ">
-                            <label htmlFor="validationCustom01" className="form-label">SIN#<span className="text-danger" >*</span></label>
-                            <input type="text" className="form-control taxform" placeholder="9 digits" required />
-                        </div>
-                        <div className="col-md-4 ">
-                            <label htmlFor="validationCustom01" className="form-label">Email<span className="text-danger" >*</span></label>
-                            <input type="text" className="form-control taxform" placeholder="a@example.com" required />
-                        </div>
-                        <div className="col-md-4 ">
-                            <label htmlFor="validationCustom01" className="form-label">Phone<span className="text-danger" >*</span></label>
-                            <input type="text" className="form-control taxform" placeholder="11 digits" required />
+                    {inputformHead.map((head=><InputForm name={head} holder={holder[head]} value={inputs.head} setValue={handleChange} star={starValue[head]} required={true}/>))}
 
-                        </div>
+
                         <div className="col-md-12 position-relative ">
                             <label  className="form-label">Mailing Address<span className="text-danger" >*</span></label>
                             <input type="text" className="form-control taxform" placeholder="UnitNumber, StreetNumber and name" required />

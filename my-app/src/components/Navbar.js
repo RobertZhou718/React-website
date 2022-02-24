@@ -1,20 +1,26 @@
 import { NavLink } from "react-router-dom";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
+import { auth } from "../config";
+import { signOut } from "firebase/auth";
+
+export function logout() {
+    return signOut(auth);
+}
 
 
-const Navbar = ({user}) => {
-    const [loginDiv,setLoginDiv] = useState(null);
-    const [showLogin,hideLogin] = useState(false);
+const Navbar = ({ user }) => {
+    const [loginDiv, setLoginDiv] = useState(null);
+    const [showLogin, hideLogin] = useState(false);
     useEffect(() => {
         if (user) {
             setLoginDiv(user.displayName);
             hideLogin(true);
-          } else {
+        } else {
             setLoginDiv(null);
             hideLogin(false);
         }
     }
-      ,[user]);
+        , [user]);
     return (
         <nav className="navbar navbar-expand-md bg-white navbar-light fixed-top">
             <div className="container">
@@ -25,9 +31,9 @@ const Navbar = ({user}) => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item drop_down ">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="/">Home</NavLink></li>
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="/">Home</NavLink></li>
                         <li className="nav-item drop_down">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="Personal" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="Personal" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                                 Personal Tax
                             </NavLink>
                             <ul className="dropdown-menu drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -37,7 +43,7 @@ const Navbar = ({user}) => {
                             </ul>
                         </li>
                         <li className="nav-item  drop_down ">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="Business" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="Business" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                                 Business Tax
                             </NavLink>
                             <ul className="dropdown-menu drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -48,18 +54,18 @@ const Navbar = ({user}) => {
                             </ul>
                         </li>
                         <li className="nav-item drop_down ">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="Housing">Housing Related Tax</NavLink></li>
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="Housing">Housing Related Tax</NavLink></li>
                         <li className="nav-item drop_down">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="AboutUs" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="AboutUs" id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
                                 About Us
                             </NavLink>
                             <ul className="dropdown-menu  drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><NavLink  className="dropdown-item" to="#section1">COVID-19 Related Tax Assistance</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="#section1">COVID-19 Related Tax Assistance</NavLink></li>
 
                             </ul>
                         </li>
                         <li className="nav-item drop_down ">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="ContactUs" id="navbarDarkDropdownMenuLink" aria-expanded="false">
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="ContactUs" id="navbarDarkDropdownMenuLink" aria-expanded="false">
                                 Contact Us
                             </NavLink>
                             <ul className="dropdown-menu  drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -69,21 +75,29 @@ const Navbar = ({user}) => {
                             </ul>
                         </li>
                         <li className="nav-item drop_down bg-warning">
-                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"}   to="TaxOnline">Tax online</NavLink></li>
+                            <NavLink className={({ isActive }) => isActive ? "current_page nav-link text-dark drop_btn" : "nav-link text-dark drop_btn"} to="TaxOnline">Tax online</NavLink></li>
                         <li className="nav-item">
-                        <NavLink className={({ isActive }) => isActive||showLogin ? "d-none" : "nav-link text-dark"} to="SignIn">SignIn</NavLink></li>
+                            <NavLink className={({ isActive }) => isActive || showLogin ? "d-none" : "nav-link text-dark"} to="SignIn">SignIn</NavLink></li>
 
                         <li className="nav-item text-dark drop_down float-end">
-                            <span  role="button" aria-expanded="false">lang</span>
+                            <span role="button" aria-expanded="false">lang</span>
                             <ul className="dropdown-menu dropdown-menu-light drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><button className="dropdown-item text-center" id="English">EN</button></li>
                                 <li><button className="dropdown-item text-center" id="Chinese">中文</button></li>
                             </ul>
                         </li>
+                        <div className={showLogin?"mx-4":"d-none"}>
+                            <li className="nav-item text-dark drop_down float-end">
+                                <img src="./img/profile.png" alt="profile" width="65px" className="rounded-circle drop_btn" />
+                                <ul className="dropdown-menu dropdown-menu-light drop_down-content" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li className="text-center container">{loginDiv}</li>
+                                    <li><button className="dropdown-item text-center" onClick={logout}>Sign out</button></li>
+                                </ul>
+                            </li>
+                        </div>
                     </ul>
-                    <li className="nav-item text-dark drop_down float-end">
-                        {loginDiv}
-                    </li>
+
+
                 </div>
             </div>
         </nav>
