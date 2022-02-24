@@ -24,7 +24,7 @@ const Taxform = () => {
     ,"SIN#":"9 digtals"
     ,"Email":"example@example.com"
     ,"Phone":"604-1234-4567"
-    ,"Mailing Address":"Street"
+    ,"Mailing Address":"UnitNumber, StreetNumber and name"
     ,"City":"Toronto"
     ,"Province":"Choose"
     ,"Zip":"A0A 0A0"
