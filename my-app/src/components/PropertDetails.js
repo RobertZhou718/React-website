@@ -1,122 +1,80 @@
-import React from 'react'
+import { useState } from "react";
+import InputForm from "./InputForm";
+import objectToCSV from './objectToCSV';
 
 const PropertDetails = () => {
+  const { tbhead, formholder, formOptions,formObject } = getConfig();
+  const [inputs, setInputs] = useState(formObject);
+  const handleChange = e => setInputs(prevState => ({
+    ...prevState, [e.target.name
+    ]: e.target.value
+  }));
   return (
     <section>
-    <form action="#" className="form-horizontal" >
-      <div className="container">
-        <h2 className="large">
-          <b><strong>Property Details/(it only applies to Ontario address)</strong></b>
-        </h2>
-
-        <table className="table-striped table-hover" align="center">
-          <thead>
-            <tr>
-              <th>Mailing Address</th>
-              <th>Moving in</th>
-              <th>Rental paid/Property tax</th>
-              <th>Landlord name</th>
-              <th>Residence Type</th>
-            </tr>
+      <form action="#" className="form-horizontal" >
+        <div className="container">
+          <h2 className="large">
+            <b><strong>Property Details/(it only applies to Ontario address)</strong></b>
+          </h2>
+          <table className="table-striped table-hover" align="center">
+            <thead>
+              <tr>
+                {tbhead.map((a) => <th>{a}</th>)}
+              </tr>
             </thead>
-          <tbody>
+            <tbody>
               <tr>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Toronto"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="YYYY/MM/DD"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="5000"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Mark"/>
-                </td>
-                <td>
-                  <select defaultValue={"Choose..."} className="form-select" id="validationCustom04" required>
-                    <option disabled placeholder="">Choose...</option>
-                    <option>Student</option>
-                    <option>Rental</option>
-                    <option>Property Owner</option>
-                    <option>Living with family</option>
-                  </select>
-                </td>
+
+                    {tbhead.map((head =>      <td><InputForm
+                      key={head}
+                      name={head}
+                      holder={formholder[head]}
+                      value={inputs.head}
+                      setValue={handleChange}
+                      options={formOptions[head]}
+                    /></td>))}
+
               </tr>
-              <tr>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Toronto"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="YYYY/MM/DD"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="5000"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Mark"/>
-                </td>
-                <td>
-                  <select defaultValue={"Choose..."} className="form-select" id="validationCustom04" required>
-                    <option disabled placeholder="">Choose...</option>
-                    <option>Student</option>
-                    <option>Rental</option>
-                    <option>Property Owner</option>
-                    <option>Living with family</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Toronto"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="YYYY/MM/DD"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="5000"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Mark"/>
-                </td>
-                <td>
-                  <select defaultValue={"Choose..."} className="form-select" id="validationCustom04" required>
-                    <option disabled placeholder="">Choose...</option>
-                    <option>Student</option>
-                    <option>Rental</option>
-                    <option>Property Owner</option>
-                    <option>Living with family</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Toronto"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="YYYY/MM/DD"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="5000"/>
-                </td>
-                <td>
-                  <input type="text" className="form-control" id="validationCustom02" placeholder="Mark"/>
-                </td>
-                <td>
-                  <select defaultValue={"Choose..."} className="form-select" id="validationCustom04" required>
-                    <option disabled placeholder="">Choose...</option>
-                    <option>Student</option>
-                    <option>Rental</option>
-                    <option>Property Owner</option>
-                    <option>Living with family</option>
-                  </select>
-                </td>
-              </tr>
-          </tbody>
-        </table>
+            </tbody>
+          </table>
         </div>
-        </form>
-        </section>  )
+      </form>
+    </section>)
+
+  function getConfig() {
+    const tbhead = ['Mailing Address',
+      'Moving in',
+      'Rental paid/Property tax',
+      'Landlord name',
+      'Residence Type'];
+    const formObject = {
+      'Mailing Address': null,
+      'Moving in': null,
+      'Rental paid/Property tax': null,
+      'Landlord name': null,
+      'Residence Type': null
+    };
+    const formholder = {
+      'Mailing Address': "Toronto",
+      'Moving in': "YYYY/MM/DD",
+      'Rental paid/Property tax': "5000",
+      'Landlord name': "Mark",
+      'Residence Type': "Choose..."
+    };
+    const formOptions = {
+      'Mailing Address': null,
+      'Moving in': null,
+      'Rental paid/Property tax': null,
+      'Landlord name': null,
+      'Residence Type': ['Choose...',
+        'Student',
+        'Rental',
+        'Property Owner',
+        'Living with family'
+      ]
+    };
+    return { tbhead, formholder, formOptions,formObject };
+  }
 }
 
 export default PropertDetails

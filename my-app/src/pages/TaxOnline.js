@@ -5,20 +5,20 @@ import PropertDetails from '../components/PropertDetails'
 import DependentList from '../components/DependentList'
 import UploadFile from '../components/UploadFile'
 import Terms from '../components/Terms'
-const TaxOnline = () => {
+const TaxOnline = ({ user }) => {
   return (
     <>
-      <Reservation />
+      <Reservation user={user} />
       <hr />
-      <Taxform />
+      <Taxform user={user}/>
       <hr />
-      <PropertDetails />
+      <PropertDetails user={user}/>
       <hr />
-      <DependentList />
+      <DependentList user={user}/>
       <hr />
-      <UploadFile />
+      <UploadFile user={user}/>
       <hr />
-      <Terms />
+      <Terms user={user}/>
     </>
   )
 }

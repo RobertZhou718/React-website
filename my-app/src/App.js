@@ -42,7 +42,7 @@ const App = () => {
           <Route path='ContactUs' element={<ContactUs/>} activeClassName='actived'/>
           <Route path='Housing' element={<Housing/>} activeClassName='actived'/>
           <Route path='Personal' element={<Personal/>} activeClassName='actived'/>
-          <Route path='TaxOnline' element={<TaxOnline/>} activeClassName='actived'/>
+          <Route path='TaxOnline' element={<TaxOnline user={user} />} activeClassName='actived'/>
           <Route path='SignIn' element={<SignIn setUser={setUser}/>} activeClassName='actived'/>
           <Route path="*" element={<NoMatch/>} />
       </Routes>
