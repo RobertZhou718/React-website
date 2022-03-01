@@ -1,17 +1,41 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import InputForm from "./InputForm";
 import objectToCSV from './objectToCSV';
 
-const PropertDetails = () => {
-  const { tbhead, formholder, formOptions,formObject } = getConfig();
-  const [inputs, setInputs] = useState(formObject);
-  const handleChange = e => setInputs(prevState => ({
-    ...prevState, [e.target.name
-    ]: e.target.value
-  }));
+
+const PropertDetails =  ({ user }) => {
+  const { tbhead, formholder, formOptions, formObject } = getConfig();
+  const [recodes, setRecodes] = useState([formObject]);
+  const handleChange = recordindex => e => {
+    console.log('index: ' + recordindex);
+    console.log('property name: ' + e.target.name);
+    let newArr = [...recodes]; // copying the old datas array
+    newArr[recordindex][e.target.name] = e.target.value; // replace e.target.value with whatever you want to change it to
+    setRecodes(newArr);
+  }
+  const addRecord = e => {
+    e.preventDefault();
+    setRecodes([...recodes, formObject]);
+  }
+  const delRecord = recordindex => e => {
+    console.log('index: ' + recordindex);
+    console.log('property name: ' + e.target.name);
+    e.preventDefault();
+    let newArr = [...recodes];
+    newArr.splice(recordindex, 1);
+    setRecodes(newArr);
+  }
+  const handleSubmit = e => {
+    e.preventDefault();
+    if (user) {
+        objectToCSV(tbhead, [recodes], e.target.name + ".csv", user.email);
+    } else {
+        alert("Log in first")
+    }
+}
   return (
     <section>
-      <form action="#" className="form-horizontal" >
+      <form className="form-horizontal" >
         <div className="container">
           <h2 className="large">
             <b><strong>Property Details/(it only applies to Ontario address)</strong></b>
@@ -19,25 +43,45 @@ const PropertDetails = () => {
           <table className="table-striped table-hover" align="center">
             <thead>
               <tr>
-                {tbhead.map((a) => <th>{a}</th>)}
+                {tbhead.map((a, i) => <th key={i}>{a}</th>)}
               </tr>
             </thead>
             <tbody>
-              <tr>
-
-                    {tbhead.map((head =>      <td><InputForm
-                      key={head}
-                      name={head}
-                      holder={formholder[head]}
-                      value={inputs.head}
-                      setValue={handleChange}
-                      options={formOptions[head]}
-                    /></td>))}
-
-              </tr>
+              {recodes.map((recodes, recordindex) =>
+                <tr key={recordindex}>
+                  {tbhead.map((head) =>
+                    <td key={head}>
+                      <InputForm
+                        name={head}
+                        holder={formholder[head]}
+                        value={recodes.head}
+                        setValue={handleChange(recordindex)}
+                        options={formOptions[head]}
+                      />
+                    </td>
+                  )}
+                  <td>
+                    {recordindex === 0 ?
+                      <button className="btn btn-primary" onClick={addRecord}>Add</button> : <button className="btn btn-primary" onClick={delRecord(recordindex)}>Delet</button>}
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
+        <div className="col-md-12" align="center">
+                            <button className="btn btn-primary" type="submit"
+                                name='Propert Details'
+                                onClick={handleSubmit}
+                                disabled={Object.values(...recodes).some(value => {
+                                    if (value === null) {
+                                        return true;
+                                    }
+                                    return false;
+                                })}
+                            >Submit form</button>
+
+                        </div>
       </form>
     </section>)
 
@@ -66,14 +110,14 @@ const PropertDetails = () => {
       'Moving in': null,
       'Rental paid/Property tax': null,
       'Landlord name': null,
-      'Residence Type': ['Choose...',
+      'Residence Type': [
         'Student',
         'Rental',
         'Property Owner',
         'Living with family'
       ]
     };
-    return { tbhead, formholder, formOptions,formObject };
+    return { tbhead, formholder, formOptions, formObject };
   }
 }
 
