@@ -1,22 +1,18 @@
 import React, { useState } from "react";
 import { db } from "../config.js";
-import DatePicker from 'react-datepicker';
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import {
-  ref,
-  set,
-  get,
-} from "firebase/database";
+import { ref, set, get } from "firebase/database";
 
 function writeUserData(email, date) {
   try {
-    get(ref(db, `reservation/` + date ))
+    get(ref(db, `reservation/` + date))
       .then((snapshot) => {
         if (snapshot.exists()) {
           alert("this time not good");
           throw new Error("this time not good");
         } else {
-          set(ref(db, "reservation/" + date.replace(/\W/g, "_") ), {
+          set(ref(db, "reservation/" + date.replace(/\W/g, "_")), {
             email: email,
             date: date,
           });
@@ -26,42 +22,51 @@ function writeUserData(email, date) {
         console.error(error);
       });
   } catch (error) {
-    set(ref(db, "reservation/" + date.replace(/\W/g, "_") ), {
+    set(ref(db, "reservation/" + date.replace(/\W/g, "_")), {
       email: email,
       date: date,
     });
   }
 }
-const Reservation = ({user}) => {
+const Reservation = ({ user }) => {
   const [startDate, setStartDate] = useState(null);
   const filterPassedTime = (time) => {
     const currentDate = new Date();
     const selectedDate = new Date(time);
-    return currentDate.getTime() < selectedDate.getTime()&&(time.getHours() > 8 && time.getHours()<20);
+    return (
+      currentDate.getTime() < selectedDate.getTime() &&
+      time.getHours() > 8 &&
+      time.getHours() < 20
+    );
   };
   const changeTimeCLass = (time) => {
-    return (time.getHours()> 8 && time.getHours()<20)&&(time.getMinutes()=== 0)?"":"d-none";
+    return time.getHours() > 8 &&
+      time.getHours() < 20 &&
+      time.getMinutes() === 0
+      ? ""
+      : "d-none";
   };
 
-  const handleSubmit =()=> {
-    if(startDate){
-      console.log( startDate.toISOString().split('T')[0]);
-      writeUserData(user.email,startDate.toISOString().split('T')[0]);
+  const handleSubmit = () => {
+    if (startDate) {
+      console.log(startDate.toISOString().split("T")[0]);
+      writeUserData(user.email, startDate.toISOString().split("T")[0]);
     }
-  }
+  };
 
   return (
     <section className=" p-5 ">
       <div className="container mt-5">
         <h2 className="large">
-          <b><strong>Reservation</strong></b>
+          <b>
+            <strong>Reservation</strong>
+          </b>
         </h2>
         <h3 className="small">
-          <b>
-            Please select a date and time to make an appointment.
-          </b>
+          <b>Please select a date and time to make an appointment.</b>
         </h3>
-        <DatePicker showTimeSelect
+        <DatePicker
+          showTimeSelect
           selected={startDate}
           onChange={(date) => setStartDate(date)}
           timeClassName={changeTimeCLass}
@@ -69,15 +74,19 @@ const Reservation = ({user}) => {
           filterTime={filterPassedTime}
           dateFormat="yyyy/MM/dd HH:MM"
           inline
-          />
+        />
         <div className="col-md-2">
-          <button className="btn btn-primary"  disabled={!startDate}
-          onClick={handleSubmit}
->Select</button>
+          <button
+            className="btn btn-primary"
+            disabled={!startDate}
+            onClick={handleSubmit}
+          >
+            Select
+          </button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Reservation
+export default Reservation;

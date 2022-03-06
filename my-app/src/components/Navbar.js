@@ -2,12 +2,13 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { auth } from "../config";
 import { signOut } from "firebase/auth";
+import { Trans } from "@lingui/macro";
 
 export function logout() {
   return signOut(auth);
 }
 
-const Navbar = ({ user }) => {
+const Navbar = ({ user, setLanguage }) => {
   const [loginDiv, setLoginDiv] = useState(null);
   const [showLogin, hideLogin] = useState(false);
   useEffect(() => {
@@ -53,7 +54,7 @@ const Navbar = ({ user }) => {
                 }
                 to="/"
               >
-                Home
+                <Trans>Home</Trans>
               </NavLink>
             </li>
             <li className="nav-item drop_down">
@@ -68,7 +69,7 @@ const Navbar = ({ user }) => {
                 role="button"
                 aria-expanded="false"
               >
-                Personal Tax
+                <Trans> Personal Tax</Trans>
               </NavLink>
               <ul
                 className="dropdown-menu drop_down-content"
@@ -76,17 +77,17 @@ const Navbar = ({ user }) => {
               >
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Tax For Students
+                    <Trans>Tax For Students</Trans>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Rental Income
+                    <Trans> Rental Income</Trans>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Self-employed Taxes
+                    <Trans> Self-employed Taxes</Trans>
                   </a>
                 </li>
               </ul>
@@ -103,7 +104,7 @@ const Navbar = ({ user }) => {
                 role="button"
                 aria-expanded="false"
               >
-                Business Tax
+                <Trans>Business Tax</Trans>
               </NavLink>
               <ul
                 className="dropdown-menu drop_down-content"
@@ -111,22 +112,22 @@ const Navbar = ({ user }) => {
               >
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Incorporation & Business Registration
+                    <Trans> Incorporation & Business Registration</Trans>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Payroll & Remittance
+                    <Trans> Payroll & Remittance</Trans>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Accounting & Bookkeeping
+                    <Trans> Accounting & Bookkeeping</Trans>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Financial Statements
+                    <Trans> Financial Statements</Trans>
                   </a>
                 </li>
               </ul>
@@ -140,7 +141,7 @@ const Navbar = ({ user }) => {
                 }
                 to="Housing"
               >
-                Housing Related Tax
+                <Trans> Housing Related Tax</Trans>
               </NavLink>
             </li>
             <li className="nav-item drop_down">
@@ -155,7 +156,7 @@ const Navbar = ({ user }) => {
                 role="button"
                 aria-expanded="false"
               >
-                About Us
+                <Trans> About Us</Trans>
               </NavLink>
               <ul
                 className="dropdown-menu  drop_down-content"
@@ -163,7 +164,7 @@ const Navbar = ({ user }) => {
               >
                 <li>
                   <NavLink className="dropdown-item" to="#section1">
-                    COVID-19 Related Tax Assistance
+                    <Trans>COVID-19 Related Tax Assistance</Trans>
                   </NavLink>
                 </li>
               </ul>
@@ -179,7 +180,7 @@ const Navbar = ({ user }) => {
                 id="navbarDarkDropdownMenuLink"
                 aria-expanded="false"
               >
-                Contact Us
+                <Trans>Contact Us</Trans>
               </NavLink>
               <ul
                 className="dropdown-menu  drop_down-content"
@@ -187,12 +188,12 @@ const Navbar = ({ user }) => {
               >
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Download Centre
+                    <Trans>Download Centre</Trans>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    Resource Centre
+                    <Trans> Resource Centre </Trans>
                   </a>
                 </li>
               </ul>
@@ -206,7 +207,7 @@ const Navbar = ({ user }) => {
                 }
                 to="TaxOnline"
               >
-                Tax online
+                <Trans> Tax online</Trans>
               </NavLink>
             </li>
             <li className="nav-item ">
@@ -218,7 +219,7 @@ const Navbar = ({ user }) => {
                 }
                 to="SignIn"
               >
-                SignIn
+                <Trans>SignIn</Trans>
               </NavLink>
             </li>
 
@@ -228,19 +229,31 @@ const Navbar = ({ user }) => {
                 role="button"
                 aria-expanded="false"
               >
-                lang
+                <Trans>Lang</Trans>
               </span>
               <ul
                 className="dropdown-menu dropdown-menu-light drop_down-content"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <button className="dropdown-item text-center" id="English">
+                  <button
+                    className="dropdown-item text-center"
+                    id="English"
+                    onClick={() => {
+                      setLanguage("en");
+                    }}
+                  >
                     EN
                   </button>
                 </li>
                 <li>
-                  <button className="dropdown-item text-center" id="Chinese">
+                  <button
+                    className="dropdown-item text-center"
+                    id="Chinese"
+                    onClick={() => {
+                      setLanguage("cn");
+                    }}
+                  >
                     中文
                   </button>
                 </li>
@@ -264,7 +277,7 @@ const Navbar = ({ user }) => {
                       className="dropdown-item text-center"
                       onClick={logout}
                     >
-                      Sign out
+                      <Trans>Sign out</Trans>
                     </button>
                   </li>
                 </ul>

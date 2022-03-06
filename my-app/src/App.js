@@ -7,48 +7,92 @@ import ContactUs from "./pages/ContactUs";
 import Housing from "./pages/Housing";
 import Personal from "./pages/Personal";
 import TaxOnline from "./pages/TaxOnline";
-import {NoMatch} from "./pages/nomatch";
+import { NoMatch } from "./pages/nomatch";
 import SignIn from "./pages/SignIn";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState,useEffect  } from "react";
-import {
-  onAuthStateChanged,
-} from "firebase/auth";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./config.js";
+import { i18n } from "@lingui/core";
+import { I18nProvider } from "@lingui/react";
+import { messages as enMessages } from "./locales/en/messages";
+import { messages as cnMessages } from "./locales/zh-CN/messages";
+
+i18n.loadLocaleData({
+  en: { plurals: "en" },
+  cn: { plurals: "zh-CN" },
+});
+i18n.load({
+  en: enMessages,
+  cn: cnMessages,
+});
+i18n.activate("en");
+function setLanguage(language) {
+  i18n.activate(language);
+}
 
 const App = () => {
-  const [user,setUser]= useState(null);
+  const [user, setUser] = useState(null);
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         if (user.emailVerified) {
           setUser(user);
         } else {
-
           alert("please verify");
         }
       } else {
         setUser(null);
-        }
+      }
     });
-  })
+  });
   return (
-    <BrowserRouter>
-      <Navbar user={user} />
-      <Routes>
-        <Route path='/'  element={<Home/>} />
-          <Route path='AboutUs' element={<AboutUs/>} activeClassName='actived'/>
-          <Route path='Business' element={<Business/>} activeClassName='actived'/>
-          <Route path='ContactUs' element={<ContactUs/>} activeClassName='actived'/>
-          <Route path='Housing' element={<Housing/>} activeClassName='actived'/>
-          <Route path='Personal' element={<Personal/>} activeClassName='actived'/>
-          <Route path='TaxOnline' element={<TaxOnline user={user} />} activeClassName='actived'/>
-          <Route path='SignIn' element={<SignIn setUser={setUser}/>} activeClassName='actived'/>
-          <Route path="*" element={<NoMatch/>} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <I18nProvider i18n={i18n}>
+      <BrowserRouter>
+        <Navbar user={user} setLanguage={setLanguage} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="AboutUs"
+            element={<AboutUs />}
+            activeClassName="actived"
+          />
+          <Route
+            path="Business"
+            element={<Business />}
+            activeClassName="actived"
+          />
+          <Route
+            path="ContactUs"
+            element={<ContactUs />}
+            activeClassName="actived"
+          />
+          <Route
+            path="Housing"
+            element={<Housing />}
+            activeClassName="actived"
+          />
+          <Route
+            path="Personal"
+            element={<Personal />}
+            activeClassName="actived"
+          />
+          <Route
+            path="TaxOnline"
+            element={<TaxOnline user={user} />}
+            activeClassName="actived"
+          />
+          <Route
+            path="SignIn"
+            element={<SignIn setUser={setUser} />}
+            activeClassName="actived"
+          />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </I18nProvider>
   );
-}
+};
 
 export default App;
