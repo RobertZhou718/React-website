@@ -3,6 +3,7 @@ import { db } from "../config.js";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ref, set, get } from "firebase/database";
+import { Trans } from "@lingui/macro";
 
 function writeUserData(email, date) {
   try {
@@ -59,11 +60,15 @@ const Reservation = ({ user }) => {
       <div className="container mt-5">
         <h2 className="large">
           <b>
-            <strong>Reservation</strong>
+            <strong>
+              <Trans>Reservation</Trans>
+            </strong>
           </b>
         </h2>
         <h3 className="small">
-          <b>Please select a date and time to make an appointment.</b>
+          <b>
+            <Trans>Please select a date and time to make an appointment.</Trans>
+          </b>
         </h3>
         <DatePicker
           showTimeSelect
@@ -81,7 +86,7 @@ const Reservation = ({ user }) => {
             disabled={!startDate}
             onClick={handleSubmit}
           >
-            Select
+            <Trans> Select</Trans>
           </button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputForm from "./InputForm";
 import objectToCSV from "./objectToCSV";
+import { Trans } from "@lingui/macro";
 
 const DependentList = ({ user }) => {
   const { tbhead, formholder, formObject } = getConfig();
@@ -39,7 +40,9 @@ const DependentList = ({ user }) => {
         <div className="container">
           <h2 className="large">
             <b>
-              <strong>Dependants List/(18 or less)</strong>
+              <strong>
+                <Trans>Dependants List/(18 or less)</Trans>
+              </strong>
             </b>
           </h2>
           <table className="table-striped table-hover" align="center">
@@ -118,7 +121,7 @@ const DependentList = ({ user }) => {
               return false;
             })}
           >
-            Submit form
+            <Trans>Submit form</Trans>
           </button>
         </div>
       </form>

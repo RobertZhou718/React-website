@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InputForm from "./InputForm";
 import objectToCSV from "./objectToCSV";
+import { Trans } from "@lingui/macro";
 
 const PropertDetails = ({ user }) => {
   const { tbhead, formholder, formOptions, formObject } = getConfig();
@@ -39,7 +40,9 @@ const PropertDetails = ({ user }) => {
           <h2 className="large">
             <b>
               <strong>
-                Property Details/(it only applies to Ontario address)
+                <Trans>
+                  Property Details/(it only applies to Ontario address)
+                </Trans>
               </strong>
             </b>
           </h2>
@@ -120,7 +123,7 @@ const PropertDetails = ({ user }) => {
               return false;
             })}
           >
-            Submit form
+            <Trans> Submit form</Trans>
           </button>
         </div>
       </form>

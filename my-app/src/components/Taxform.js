@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import InputForm from "./InputForm";
 import objectToCSV from "./objectToCSV";
+import { Trans } from "@lingui/macro";
 
 const Taxform = ({ user }) => {
   const { taxFormHead, invalid, holder, starValue, options, formHead } =
@@ -31,17 +32,23 @@ const Taxform = ({ user }) => {
                 className="medium"
                 style={{ backgroundColor: "blanchedalmond" }}
               >
-                Due to the high volume of customers, our current process time
-                will be:
+                <Trans>
+                  Due to the high volume of customers, our current process time
+                  will be:
+                </Trans>
                 <b>
-                  <strong>1 DAY</strong>
+                  <strong>
+                    <Trans>1 DAY</Trans>
+                  </strong>
                 </b>
               </span>
             </div>
           </div>
           <h2 className="large">
             <b>
-              <strong>Tax Form</strong>
+              <strong>
+                <Trans>Tax Form</Trans>
+              </strong>
             </b>
           </h2>
           <form className="form-horizontal">
@@ -77,7 +84,7 @@ const Taxform = ({ user }) => {
                   return false;
                 })}
               >
-                Submit form
+                <Trans> Submit form</Trans>
               </button>
             </div>
           </form>

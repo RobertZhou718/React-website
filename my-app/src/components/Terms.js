@@ -1,10 +1,13 @@
 import React from "react";
+import { Trans } from "@lingui/macro";
 
 const Terms = () => {
   return (
     <section className="p-5">
       <div className="container">
-        <h2 className="text-center">Frequently Asked Questions</h2>
+        <h2 className="text-center">
+          <Trans>Frequently Asked Questions</Trans>
+        </h2>
         <div className="accordion accordion-flush" id="accordionFlushExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="flush-headingOne">

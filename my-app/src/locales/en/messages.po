@@ -13,49 +13,150 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/Taxform.js:41
+msgid "1 DAY"
+msgstr "1 DAY"
+
+#: src/pages/Housing.js:51
+#: src/pages/Housing.js:106
+msgid "15% Non-Resident Speculation Tax (NRST) Rebate"
+msgstr "15% Non-Resident Speculation Tax (NRST) Rebate"
+
 #: src/components/Navbar.js:159
+#: src/pages/AboutUs.js:11
 msgid "About Us"
 msgstr "About Us"
+
+#: src/pages/Business.js:131
+msgid "Accounting"
+msgstr "Accounting"
 
 #: src/components/Navbar.js:125
 msgid "Accounting & Bookkeeping"
 msgstr "Accounting & Bookkeeping"
 
+#: src/pages/ContactUs.js:22
+#: src/pages/Home.js:402
+msgid "Address:"
+msgstr "Address:"
+
+#: src/pages/Business.js:82
+msgid "Business Registration"
+msgstr "Business Registration"
+
 #: src/components/Navbar.js:107
+#: src/pages/Business.js:11
+#: src/pages/Home.js:113
+#: src/pages/Home.js:192
 msgid "Business Tax"
 msgstr "Business Tax"
 
 #: src/components/Navbar.js:167
+#: src/pages/AboutUs.js:38
 msgid "COVID-19 Related Tax Assistance"
 msgstr "COVID-19 Related Tax Assistance"
 
+#: src/components/UploadFile.js:100
+msgid "Click to agree terms and conditions above."
+msgstr "Click to agree terms and conditions above."
+
 #: src/components/Navbar.js:183
+#: src/pages/Home.js:392
 msgid "Contact Us"
 msgstr "Contact Us"
+
+#: src/components/UploadFile.js:23
+msgid "Default file input example"
+msgstr "Default file input example"
+
+#: src/components/DependentList.js:44
+msgid "Dependants List/(18 or less)"
+msgstr "Dependants List/(18 or less)"
+
+#: src/pages/Housing.js:41
+#: src/pages/Housing.js:86
+msgid "Disposition of Taxable Property for Non-Resident"
+msgstr "Disposition of Taxable Property for Non-Resident"
 
 #: src/components/Navbar.js:191
 msgid "Download Centre"
 msgstr "Download Centre"
 
+#: src/components/Taxform.js:35
+msgid "Due to the high volume of customers, our current process time will be:"
+msgstr "Due to the high volume of customers, our current process time will be:"
+
+#: src/pages/Home.js:399
+msgid "E-mail:"
+msgstr "E-mail:"
+
 #: src/components/LoginForm.js:61
+#: src/pages/ContactUs.js:60
 msgid "Email:"
 msgstr "Email:"
+
+#: src/pages/Business.js:151
+msgid "Financial Statement"
+msgstr "Financial Statement"
 
 #: src/components/Navbar.js:130
 msgid "Financial Statements"
 msgstr "Financial Statements"
+
+#: src/components/Terms.js:9
+#: src/pages/AboutUs.js:74
+#: src/pages/Business.js:197
+#: src/pages/ContactUs.js:162
+#: src/pages/Home.js:243
+#: src/pages/Housing.js:153
+#: src/pages/Personal.js:174
+msgid "Frequently Asked Questions"
+msgstr "Frequently Asked Questions"
+
+#: src/pages/Housing.js:33
+#: src/pages/Housing.js:66
+msgid "GST New Residential Rental Property Rebate"
+msgstr "GST New Residential Rental Property Rebate"
 
 #: src/components/Navbar.js:57
 msgid "Home"
 msgstr "Home"
 
 #: src/components/Navbar.js:144
+#: src/pages/Home.js:133
+#: src/pages/Home.js:215
+#: src/pages/Housing.js:10
 msgid "Housing Related Tax"
 msgstr "Housing Related Tax"
+
+#: src/pages/Business.js:32
+#: src/pages/Personal.js:30
+msgid "Income and expenses"
+msgstr "Income and expenses"
 
 #: src/components/Navbar.js:115
 msgid "Incorporation & Business Registration"
 msgstr "Incorporation & Business Registration"
+
+#: src/components/Navbar.js:232
+msgid "Lang"
+msgstr "Lang"
+
+#: src/pages/Business.js:91
+#: src/pages/Business.js:116
+#: src/pages/Business.js:140
+#: src/pages/Business.js:160
+#: src/pages/Home.js:97
+#: src/pages/Home.js:122
+#: src/pages/Home.js:142
+#: src/pages/Home.js:167
+#: src/pages/Home.js:204
+#: src/pages/Home.js:227
+#: src/pages/Personal.js:91
+#: src/pages/Personal.js:112
+#: src/pages/Personal.js:135
+msgid "Learn more"
+msgstr "Learn more"
 
 #: src/components/LoginForm.js:98
 msgid "Login"
@@ -65,25 +166,76 @@ msgstr "Login"
 msgid "Login with Google"
 msgstr "Login with Google"
 
+#: src/pages/SignIn.js:16
+msgid "Login/Sign up"
+msgstr "Login/Sign up"
+
+#: src/pages/Business.js:26
+msgid "Materials required for Business tax"
+msgstr "Materials required for Business tax"
+
+#: src/pages/Personal.js:24
+msgid "Materials required for personal tax"
+msgstr "Materials required for personal tax"
+
+#: src/pages/ContactUs.js:137
+msgid "Message"
+msgstr "Message"
+
 #: src/components/LoginForm.js:72
 msgid "Password:"
 msgstr "Password:"
 
 #: src/components/Navbar.js:120
+#: src/pages/Business.js:107
 msgid "Payroll & Remittance"
 msgstr "Payroll & Remittance"
 
 #: src/components/Navbar.js:72
+#: src/pages/Home.js:88
+#: src/pages/Home.js:155
+#: src/pages/Personal.js:9
 msgid "Personal Tax"
 msgstr "Personal Tax"
 
+#: src/pages/ContactUs.js:41
+#: src/pages/Home.js:396
+msgid "Phone:"
+msgstr "Phone:"
+
+#: src/components/Reservation.js:70
+msgid "Please select a date and time to make an appointment."
+msgstr "Please select a date and time to make an appointment."
+
+#: src/pages/Business.js:35
+#: src/pages/Personal.js:33
+msgid "Prepared materials"
+msgstr "Prepared materials"
+
+#: src/components/PropertDetails.js:43
+msgid "Property Details/(it only applies to Ontario address)"
+msgstr "Property Details/(it only applies to Ontario address)"
+
 #: src/components/Navbar.js:85
+#: src/pages/Personal.js:102
 msgid "Rental Income"
 msgstr "Rental Income"
+
+#: src/components/Reservation.js:64
+msgid "Reservation"
+msgstr "Reservation"
 
 #: src/components/Navbar.js:196
 msgid "Resource Centre"
 msgstr "Resource Centre"
+
+#: src/components/Reservation.js:89
+msgid "Select"
+msgstr "Select"
+
+#: src/pages/Personal.js:124
+msgid "Self employed"
+msgstr "Self employed"
 
 #: src/components/Navbar.js:90
 msgid "Self-employed Taxes"
@@ -101,14 +253,66 @@ msgstr "Sign up"
 msgid "SignIn"
 msgstr "SignIn"
 
+#: src/components/UploadFile.js:61
+msgid "Size of each file should be less 5Mbytes. File name should be less than 60 characters. File name should NOT include special characters."
+msgstr "Size of each file should be less 5Mbytes. File name should be less than 60 characters. File name should NOT include special characters."
+
+#: src/pages/Personal.js:79
+msgid "Students Tax"
+msgstr "Students Tax"
+
+#: src/pages/ContactUs.js:124
+msgid "Subject"
+msgstr "Subject"
+
+#: src/pages/ContactUs.js:149
+msgid "Submit Form"
+msgstr "Submit Form"
+
+#: src/components/DependentList.js:124
+#: src/components/PropertDetails.js:126
+#: src/components/Taxform.js:87
+#: src/components/UploadFile.js:116
+msgid "Submit form"
+msgstr "Submit form"
+
 #: src/components/Navbar.js:80
 msgid "Tax For Students"
 msgstr "Tax For Students"
+
+#: src/components/Taxform.js:50
+msgid "Tax Form"
+msgstr "Tax Form"
+
+#: src/pages/Business.js:180
+#: src/pages/Business.js:188
+#: src/pages/Housing.js:126
+#: src/pages/Housing.js:138
+#: src/pages/Personal.js:146
+#: src/pages/Personal.js:158
+msgid "Tax Online"
+msgstr "Tax Online"
 
 #: src/components/Navbar.js:210
 msgid "Tax online"
 msgstr "Tax online"
 
-#: src/components/Navbar.js:232
-msgid "lang"
-msgstr "lang"
+#: src/components/UploadFile.js:82
+msgid "Terms and conditions"
+msgstr "Terms and conditions"
+
+#: src/components/UploadFile.js:55
+msgid "Upload files"
+msgstr "Upload files"
+
+#: src/pages/ContactUs.js:81
+msgid "Website"
+msgstr "Website"
+
+#: src/pages/ContactUs.js:111
+msgid "Your Email"
+msgstr "Your Email"
+
+#: src/pages/ContactUs.js:98
+msgid "Your Name"
+msgstr "Your Name"

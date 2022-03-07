@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { storage } from "../config";
 import { ref, uploadBytes } from "firebase/storage";
+import { Trans } from "@lingui/macro";
 
 function uploadfile(inputfiles, useEmail) {
   inputfiles.forEach((file) => {
@@ -19,7 +20,7 @@ const FileInput = (props) => {
   return (
     <div className="mb-3">
       <label htmlFor="formFile" className="form-label">
-        Default file input example
+        <Trans>Default file input example</Trans>
       </label>
       <input
         name={props.name}
@@ -50,14 +51,18 @@ const UploadFile = ({ user }) => {
         <div className="container">
           <h2 className="large">
             <b>
-              <strong>Upload files</strong>
+              <strong>
+                <Trans>Upload files</Trans>
+              </strong>
             </b>
           </h2>
           <h3 className="small">
             <b>
-              Size of each file should be less 5Mbytes. File name should be less
-              than 60 characters. File name should NOT include special
-              characters.
+              <Trans>
+                Size of each file should be less 5Mbytes. File name should be
+                less than 60 characters. File name should NOT include special
+                characters.
+              </Trans>
             </b>
           </h3>
           {fileList.map((fileindex) => (
@@ -73,7 +78,9 @@ const UploadFile = ({ user }) => {
         <div className="container">
           <h2 className="large">
             <b>
-              <strong>Terms and conditions</strong>
+              <strong>
+                <Trans>Terms and conditions</Trans>
+              </strong>
             </b>
           </h2>
           <div className="row">
@@ -90,7 +97,7 @@ const UploadFile = ({ user }) => {
           <div className="form-check">
             <input className="form-check-input" type="checkbox" required />
             <label className="form-check-label" htmlFor="invalidCheck">
-              Click to agree terms and conditions above.
+              <Trans>Click to agree terms and conditions above.</Trans>
             </label>
           </div>
         </div>
@@ -106,7 +113,7 @@ const UploadFile = ({ user }) => {
             })}
             onClick={handleSubmit}
           >
-            Submit form
+            <Trans> Submit form</Trans>
           </button>
         </div>
       </form>
