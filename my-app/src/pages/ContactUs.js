@@ -10,8 +10,8 @@ setContent({ ...content, [name]: value });
 };
 
   const sendMail = () => {
-    axios.get( "/sendMail" +
-      "?Username=" +
+    axios.get( "/sendmail" +
+      "?username=" +
       encodeURI(content.name) +
       "&email=" +
       encodeURI(content.email) +
