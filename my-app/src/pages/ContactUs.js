@@ -1,7 +1,37 @@
-import React from "react";
+import React,{useState} from "react";
 import { Trans } from "@lingui/macro";
+const axios = require('axios');
 
 const ContactUs = () => {
+  const [content, setContent] = useState([])
+const handleOnChange = event => {
+const { name, value } = event.target;
+setContent({ ...content, [name]: value });
+};
+
+  const sendMail = () => {
+    axios.get( "/sendMail" +
+      "?Username=" +
+      encodeURI(content.name) +
+      "&email=" +
+      encodeURI(content.email) +
+      "&subject=" +
+      encodeURI(content.subject) +
+      "&message=" +
+      encodeURI(content.message))
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  }
+
   return (
     <div>
       <section className="bg-light p-5 mt-5">
@@ -94,46 +124,51 @@ const ContactUs = () => {
                 <div className="bg-light">
                   <div className="p-4 rounded shadow-md">
                     <div>
-                      <label for="name" className="form-label">
+                      <label htmlFor="name" className="form-label">
                         <Trans>Your Name</Trans>
                       </label>
                       <input
                         id="UserName"
                         type="text"
                         name="name"
+                        onChange={handleOnChange}
                         className="form-control"
                         placeholder="Your Name"
                         required
                       />
                     </div>
                     <div className="mt-3">
-                      <label for="email" className="form-label">
+                      <label htmlFor="email" className="form-label">
                         <Trans> Your Email</Trans>
                       </label>
                       <input
                         id="UserEmail"
                         type="text"
                         name="email"
+                        onChange={handleOnChange}
+
                         className="form-control"
                         placeholder="Your Email"
                         required
                       />
                     </div>
                     <div className="mt-3">
-                      <label for="subject" className="form-label">
+                      <label htmlFor="subject" className="form-label">
                         <Trans> Subject</Trans>
                       </label>
                       <input
                         id="UserSub"
                         type="text"
                         name="subject"
+                        onChange={handleOnChange}
+
                         className="form-control"
                         placeholder="Subject"
                         required
                       />
                     </div>
                     <div className="mt-3 mb-3">
-                      <label for="message" className="form-label">
+                      <label htmlFor="message" className="form-label">
                         <Trans>Message</Trans>
                       </label>
                       <textarea
@@ -141,11 +176,13 @@ const ContactUs = () => {
                         name="message"
                         cols="20"
                         rows="6"
+                        onChange={handleOnChange}
                         className="form-control"
                         placeholder="message"
                       ></textarea>
                     </div>
-                    <button className="btn btn-primary" id="ContactForm">
+                    <button className="btn btn-primary" onClick={sendMail}
+                                disabled={!content||Object.values(content).length!=4}                                >
                       <Trans> Submit Form</Trans>
                     </button>
                   </div>
