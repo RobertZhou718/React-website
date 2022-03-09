@@ -5,8 +5,14 @@ import objectToCSV from "./objectToCSV";
 import { Trans } from "@lingui/macro";
 
 const Taxform = ({ user }) => {
-  const { taxFormHead, invalid, holder, starValue, options, formHead } =
-    getConfig();
+  const {
+    taxFormHead,
+    invalid,
+    holder,
+    starValue,
+    options,
+    formHead,
+  } = getConfig();
   const [inputs, setInputs] = useState(formHead);
   const handleChange = (e) =>
     setInputs((prevState) => ({
@@ -18,6 +24,7 @@ const Taxform = ({ user }) => {
     e.preventDefault();
     if (user) {
       objectToCSV(taxFormHead, [inputs], e.target.name + ".csv", user.email);
+      alert("Success");
     } else {
       alert("Log in first");
     }

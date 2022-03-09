@@ -10,7 +10,13 @@
       {
         "source": "/sendmail",
         "function": "app"
+      },
+      {
+        "source": "**",
+        "destination":"index.html"
       }
+    
+      
     ]
   },
   "functions": {

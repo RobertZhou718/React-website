@@ -17,6 +17,7 @@ function writeUserData(email, date) {
             email: email,
             date: date,
           });
+          alert("Success");
         }
       })
       .catch((error) => {

@@ -33,11 +33,20 @@ const LoginForm = () => {
     } catch (error) {
       setError(error);
     }
+    let interval = setInterval(async () => {
+      if (auth.currentUser.emailVerified) {
+        clearInterval(interval);
+        //history.push("/desired-link");
+      }
+      await auth.currentUser.reload();
+    }, 2000);
   };
   const login = async (e) => {
     e.preventDefault();
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password).then(() => {
+        window.location.href = "/";
+      });
     } catch (error) {
       if (error.code === AuthErrorCodes.INVALID_PASSWORD) {
         setError(`Wrong password. Try again.`);
@@ -48,7 +57,9 @@ const LoginForm = () => {
   };
   function loginWithAuthProvider(provider) {
     signInWithPopup(auth, provider)
-      .then((result) => {})
+      .then(() => {
+        window.location.href = "/";
+      })
       .catch((error) => {
         setError(error);
       });

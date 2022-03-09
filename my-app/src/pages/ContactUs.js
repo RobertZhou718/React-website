@@ -1,36 +1,39 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Trans } from "@lingui/macro";
-const axios = require('axios');
+const axios = require("axios");
 
 const ContactUs = () => {
-  const [content, setContent] = useState([])
-const handleOnChange = event => {
-const { name, value } = event.target;
-setContent({ ...content, [name]: value });
-};
+  const [content, setContent] = useState([]);
+  const handleOnChange = (event) => {
+    const { name, value } = event.target;
+    setContent({ ...content, [name]: value });
+  };
 
   const sendMail = () => {
-    axios.get( "/sendmail" +
-      "?username=" +
-      encodeURI(content.name) +
-      "&email=" +
-      encodeURI(content.email) +
-      "&subject=" +
-      encodeURI(content.subject) +
-      "&message=" +
-      encodeURI(content.message))
-      .then(function (response) {
+    axios
+      .get(
+        "/sendmail" +
+          "?username=" +
+          encodeURI(content.name) +
+          "&email=" +
+          encodeURI(content.email) +
+          "&subject=" +
+          encodeURI(content.subject) +
+          "&message=" +
+          encodeURI(content.message)
+      )
+      .then(function(response) {
         // handle success
         console.log(response);
       })
-      .catch(function (error) {
+      .catch(function(error) {
         // handle error
         console.log(error);
       })
-      .then(function () {
+      .then(function() {
         // always executed
       });
-  }
+  };
 
   return (
     <div>
@@ -146,7 +149,6 @@ setContent({ ...content, [name]: value });
                         type="text"
                         name="email"
                         onChange={handleOnChange}
-
                         className="form-control"
                         placeholder="Your Email"
                         required
@@ -161,7 +163,6 @@ setContent({ ...content, [name]: value });
                         type="text"
                         name="subject"
                         onChange={handleOnChange}
-
                         className="form-control"
                         placeholder="Subject"
                         required
@@ -181,8 +182,11 @@ setContent({ ...content, [name]: value });
                         placeholder="message"
                       ></textarea>
                     </div>
-                    <button className="btn btn-primary" onClick={sendMail}
-                                disabled={!content||Object.values(content).length!=4}                                >
+                    <button
+                      className="btn btn-primary"
+                      onClick={sendMail}
+                      disabled={!content || Object.values(content).length !== 4}
+                    >
                       <Trans> Submit Form</Trans>
                     </button>
                   </div>

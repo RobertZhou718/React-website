@@ -38,6 +38,7 @@ const App = () => {
       if (user) {
         if (user.emailVerified) {
           setUser(user);
+          
         } else {
           alert("please verify");
         }
