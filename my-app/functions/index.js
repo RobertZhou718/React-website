@@ -1,17 +1,20 @@
 const functions = require("firebase-functions");
-const nodemailer = require("nodemailer")
+const nodemailer = require("nodemailer");
 const express = require("express");
-const app = express()
+const app = express();
 
 let transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
   service: "gmail",
+  port: 465,
+  secure: true,
   auth: {
     user: "pingduzhou88@gmail.com",
     pass: "zpd07185",
   },
 });
 
-app.get("/sendmail",(req, res) => {
+app.get("/sendmail", (req, res) => {
   const dest = "15703476199ma@gmail.com";
   const Username = decodeURI(req.query.Username);
   const email = decodeURI(req.query.email);
@@ -28,12 +31,11 @@ app.get("/sendmail",(req, res) => {
 
   // returning result
   try {
-   transporter.sendMail(mailOptions)
-    res.send("success")
+    transporter.sendMail(mailOptions);
+    res.send("success");
   } catch (error) {
-    res.send("error",error)
+    res.send("error", error);
   }
-
 });
 
-exports.app = functions.https.onRequest(app)
+exports.app = functions.https.onRequest(app);
