@@ -10,6 +10,10 @@ import {
 } from "firebase/auth";
 import { Trans } from "@lingui/macro";
 
+const actionCodeSettings = {
+  url: "https://ninth-glider-325616.web.app",
+};
+
 const LoginForm = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
@@ -23,7 +27,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      sendEmailVerification(auth.currentUser)
+      sendEmailVerification(auth.currentUser, actionCodeSettings)
         .then(() => {
           alert("Email verification sent!");
         })
@@ -33,13 +37,13 @@ const LoginForm = () => {
     } catch (error) {
       setError(error);
     }
-    let interval = setInterval(async () => {
-      if (auth.currentUser.emailVerified) {
-        clearInterval(interval);
-        //history.push("/desired-link");
-      }
-      await auth.currentUser.reload();
-    }, 2000);
+    // let interval = setInterval(async () => {
+    //   if (auth.currentUser.emailVerified) {
+    //     clearInterval(interval);
+    //     //history.push("/desired-link");
+    //   }
+    //   await auth.currentUser.reload();
+    // }, 2000);
   };
   const login = async (e) => {
     e.preventDefault();

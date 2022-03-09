@@ -64,7 +64,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="Personal"
+                to="personal"
                 id="navbarDarkDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
@@ -99,7 +99,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="Business"
+                to="business"
                 id="navbarDarkDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
@@ -139,7 +139,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="Housing"
+                to="housing"
               >
                 <Trans> Housing Related Tax</Trans>
               </NavLink>
@@ -151,7 +151,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="AboutUs"
+                to="aboutus"
                 id="navbarDarkDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
@@ -176,7 +176,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="ContactUs"
+                to="contactus"
                 id="navbarDarkDropdownMenuLink"
                 aria-expanded="false"
               >
@@ -205,7 +205,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="TaxOnline"
+                to="taxonline"
               >
                 <Trans> Tax online</Trans>
               </NavLink>
@@ -217,7 +217,7 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "d-none"
                     : "nav-link text-dark  drop_btn"
                 }
-                to="SignIn"
+                to="signin"
               >
                 <Trans>SignIn</Trans>
               </NavLink>

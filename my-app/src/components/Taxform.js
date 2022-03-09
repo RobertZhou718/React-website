@@ -24,7 +24,6 @@ const Taxform = ({ user }) => {
     e.preventDefault();
     if (user) {
       objectToCSV(taxFormHead, [inputs], e.target.name + ".csv", user.email);
-      alert("Success");
     } else {
       alert("Log in first");
     }

@@ -28,7 +28,7 @@ const PropertDetails = ({ user }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user) {
-      objectToCSV(tbhead, [recodes], e.target.name + ".csv", user.email);
+      objectToCSV(tbhead, recodes, e.target.name + ".csv", user.email);
       alert("Success");
     } else {
       alert("Log in first");
