@@ -7,10 +7,18 @@
       "**/node_modules/**"
     ],
     "rewrites": [
+
       {
         "source": "/sendmail",
         "function": "app"
+      },
+      {
+        "source": "**",
+        "destination":"/index.html"
+
       }
+    
+      
     ]
   },
   "functions": {

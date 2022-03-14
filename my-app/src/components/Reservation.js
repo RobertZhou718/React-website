@@ -5,18 +5,20 @@ import "react-datepicker/dist/react-datepicker.css";
 import { ref, set, get } from "firebase/database";
 import { Trans } from "@lingui/macro";
 
-function writeUserData(email, date) {
+function writeUserData(email, date, hour) {
   try {
-    get(ref(db, `reservation/` + date))
+    get(ref(db, "reservation/" + date.replace(/\W/g, "_") + `/` + hour))
       .then((snapshot) => {
         if (snapshot.exists()) {
           alert("this time not good");
           throw new Error("this time not good");
         } else {
-          set(ref(db, "reservation/" + date.replace(/\W/g, "_")), {
+          set(ref(db, "reservation/" + date.replace(/\W/g, "_") + `/` + hour), {
             email: email,
             date: date,
+            hour: hour,
           });
+          alert("Success");
         }
       })
       .catch((error) => {
@@ -50,8 +52,18 @@ const Reservation = ({ user }) => {
 
   const handleSubmit = () => {
     if (startDate) {
-      console.log(startDate.toISOString().split("T")[0]);
-      writeUserData(user.email, startDate.toISOString().split("T")[0]);
+      // console.log(
+      //   startDate.toLocaleDateString().split("T") + startDate.getHours()
+      // );
+
+      writeUserData(
+        user.email,
+        startDate
+          .toLocaleDateString()
+          .split(":")
+          .toString(),
+        startDate.getHours()
+      );
     }
   };
 

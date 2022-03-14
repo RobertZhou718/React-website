@@ -18,6 +18,7 @@ import { I18nProvider } from "@lingui/react";
 import { messages as enMessages } from "./locales/en/messages";
 import { messages as cnMessages } from "./locales/zh-CN/messages";
 
+
 i18n.loadLocaleData({
   en: { plurals: "en" },
   cn: { plurals: "zh-CN" },
@@ -50,40 +51,40 @@ const App = () => {
     <I18nProvider i18n={i18n}>
       <BrowserRouter>
         <Navbar user={user} setLanguage={setLanguage} />
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route
-            path="AboutUs"
+            path="aboutus"
             element={<AboutUs />}
             activeClassName="actived"
           />
           <Route
-            path="Business"
+            path="business"
             element={<Business />}
             activeClassName="actived"
           />
           <Route
-            path="ContactUs"
+            path="contactus"
             element={<ContactUs />}
             activeClassName="actived"
           />
           <Route
-            path="Housing"
+            path="housing"
             element={<Housing />}
             activeClassName="actived"
           />
           <Route
-            path="Personal"
+            path="personal"
             element={<Personal />}
             activeClassName="actived"
           />
           <Route
-            path="TaxOnline"
+            path="taxonline"
             element={<TaxOnline user={user} />}
             activeClassName="actived"
           />
           <Route
-            path="SignIn"
+            path="signin"
             element={<SignIn setUser={setUser} />}
             activeClassName="actived"
           />
