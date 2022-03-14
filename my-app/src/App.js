@@ -2,10 +2,9 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import Business from "./pages/Business";
+import Reservation from "./pages/Reservation";
 import ContactUs from "./pages/ContactUs";
-import Housing from "./pages/Housing";
-import Personal from "./pages/Personal";
+import Pricing from "./pages/Pricing";
 import TaxOnline from "./pages/TaxOnline";
 import { NoMatch } from "./pages/nomatch";
 import SignIn from "./pages/SignIn";
@@ -17,7 +16,6 @@ import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import { messages as enMessages } from "./locales/en/messages";
 import { messages as cnMessages } from "./locales/zh-CN/messages";
-
 
 i18n.loadLocaleData({
   en: { plurals: "en" },
@@ -51,7 +49,7 @@ const App = () => {
     <I18nProvider i18n={i18n}>
       <BrowserRouter>
         <Navbar user={user} setLanguage={setLanguage} />
-        <Routes >
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route
             path="aboutus"
@@ -59,8 +57,8 @@ const App = () => {
             activeClassName="actived"
           />
           <Route
-            path="business"
-            element={<Business />}
+            path="reservation"
+            element={<Reservation />}
             activeClassName="actived"
           />
           <Route
@@ -69,13 +67,8 @@ const App = () => {
             activeClassName="actived"
           />
           <Route
-            path="housing"
-            element={<Housing />}
-            activeClassName="actived"
-          />
-          <Route
-            path="personal"
-            element={<Personal />}
+            path="pricing"
+            element={<Pricing />}
             activeClassName="actived"
           />
           <Route

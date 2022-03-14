@@ -6,69 +6,124 @@ const Home = () => {
     <div>
       <section className="text-light">
         <div
-          id="carouselExampleDark"
-          className="carousel carousel-dark slide"
+          id="carouselExampleCaptions"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators">
+          <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              className="active"
+              class="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
           </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="10000">
-              <img src="img/Index1.png" className="d-block w-100" alt="Tax1" />
-              <div className="carousel-caption d-none d-md-block"></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/1.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption text-start text-dark container py-5 my-5">
+                <h1>INCOME TAXES</h1>
+                <p className="lead">
+                  Income tax is one of life's biggest expenses. If you are a
+                  small business owner, in most cases tax preparation should be
+                  handled by a professional. At Sum Accounting, we provide
+                  year-round tax services to our small business and farmer
+                  clients who have monthly accounting plans with us. We are also
+                  happy to work with your existing CPA or tax accountant. Note -
+                  we are currently not doing new basic personal income tax work,
+                  but are focusing on monthly accounting services.
+                </p>
+                <a href="/reservation" className="btn btn-dark my-3">
+                  <Trans>Learn more</Trans>
+                </a>
+              </div>
             </div>
-            <div className="carousel-item" data-bs-interval="2000">
-              <img src="img/Index2.png" className="d-block w-100" alt="Tax2" />
-              <div className="carousel-caption d-none d-md-block"></div>
+            <div class="carousel-item">
+              <img src="img/2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption  text-center ">
+                <h1>PAYROLL</h1>
+                <h3>
+                  Payroll can be a headache for any company due to its time
+                  sensitiveness and recurring nature. Why not provide us with
+                  the details to ensure an accurate and timely payrun everytime
+                  – year end T4s included.
+                </h3>
+                <a href="/reservation" className="btn-lg btn-dark mt-3">
+                  <Trans>Learn more</Trans>
+                </a>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src="img/Index3.png" className="d-block w-100" alt="Tax3" />
-              <div className="carousel-caption d-none d-md-block"></div>
+            <div class="carousel-item">
+              <img src="img/3.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption text-center text-dark">
+                <h1>MONTHLY ONLINE ACCOUNTING</h1>
+                <p>
+                  Let us manage your books so your business can run at its peak
+                  with your financials updated monthly and your numbers
+                  available to you anywhere. We are not your typical bookkeeping
+                  or accounting firm. We believe meaningful, year round
+                  relationships are equally as important as accurate numbers.
+                </p>
+                <a href="/reservation" className="btn btn-dark mt-3">
+                  <Trans>Learn more</Trans>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/4.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption text-end">
+                <h1>OTHER BUSINESS SERVICES</h1>
+                <p>
+                  Accounting requirements and needs of small businesses and
+                  individuals today cover a range of things. Maybe you require a
+                  mid year financial statement (typically prepared w/T2 taxes)
+                  for funding or need an electronic bill payment system to
+                  streamline your accounts payable. Just give us a call!
+                  204.816.8655
+                </p>
+                <a href="/Business.html" className="btn btn-dark mt-3">
+                  <Trans>Learn more</Trans>
+                </a>
+              </div>
             </div>
           </div>
           <button
-            className="carousel-control-prev"
+            class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
@@ -329,63 +384,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="p-5 bg-primary">
-        <div className="container">
-          <h2 className="text-center text-light">
-            Lorem, <span className="text-warning">ipsum.</span>
-          </h2>
-          <p className="lead text-center text-white mb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            corporis ex est, similique nihil omnis libe
-          </p>
-          <div className="row g-4">
-            <div className="col-md-6 col-lg-3">
-              <div className="card bg-light">
-                <div className="card-body text-center">
-                  <h3 className="card-title">Lorem</h3>
-                  <p className="card-text ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde, corrupti!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="card bg-light">
-                <div className="card-body text-center">
-                  <h3 className="card-title">Lorem</h3>
-                  <p className="card-text ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde, corrupti!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="card bg-light">
-                <div className="card-body text-center">
-                  <h3 className="card-title">Lorem</h3>
-                  <p className="card-text ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde, corrupti!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="card bg-light">
-                <div className="card-body text-center">
-                  <h3 className="card-title">Lorem</h3>
-                  <p className="card-text ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde, corrupti!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section className="p-5">
         <div className="container">
           <h2 className="text-center mb-4">
@@ -393,7 +392,7 @@ const Home = () => {
           </h2>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
-              <Trans>Phone: </Trans>(647)-830-8595
+              <Trans>Phone:</Trans> (647)-830-8595
             </li>
             <li className="list-group-item">
               <Trans>E-mail:</Trans> jessishan@sumaccounting.ca

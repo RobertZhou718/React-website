@@ -23,15 +23,6 @@ const Navbar = ({ user, setLanguage }) => {
   return (
     <nav className="navbar navbar-expand-md bg-white navbar-light fixed-top">
       <div className="container">
-        <a href="/" className="navbar-brand">
-          <img
-            src="img/logo.jpg"
-            alt=""
-            width="250"
-            height="55"
-            className="d-inline-block align-text-top"
-          />
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -43,8 +34,20 @@ const Navbar = ({ user, setLanguage }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <a href="/" className="navbar-brand">
+            <img
+              src="img/logo.jpg"
+              alt=""
+              width="250"
+              height="55"
+              className="d-inline-block align-text-top"
+            />
+          </a>
+          <ul className="navbar-nav">
             <li className="nav-item drop_down ">
               <NavLink
                 className={({ isActive }) =>
@@ -64,33 +67,13 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="personal"
+                to="pricing"
                 id="navbarDarkDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
               >
-                <Trans> Personal Tax</Trans>
+                <Trans> Pricing</Trans>
               </NavLink>
-              <ul
-                className="dropdown-menu drop_down-content"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-              >
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans>Tax For Students</Trans>
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans> Rental Income</Trans>
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans> Self-employed Taxes</Trans>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item  drop_down ">
               <NavLink
@@ -99,49 +82,12 @@ const Navbar = ({ user, setLanguage }) => {
                     ? "current_page nav-link text-dark drop_btn"
                     : "nav-link text-dark drop_btn"
                 }
-                to="business"
+                to="reservation"
                 id="navbarDarkDropdownMenuLink"
                 role="button"
                 aria-expanded="false"
               >
-                <Trans>Business Tax</Trans>
-              </NavLink>
-              <ul
-                className="dropdown-menu drop_down-content"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-              >
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans> Incorporation & Business Registration</Trans>
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans> Payroll & Remittance</Trans>
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans> Accounting & Bookkeeping</Trans>
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/#">
-                    <Trans> Financial Statements</Trans>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item drop_down ">
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "current_page nav-link text-dark drop_btn"
-                    : "nav-link text-dark drop_btn"
-                }
-                to="housing"
-              >
-                <Trans> Housing Related Tax</Trans>
+                <Trans>Reservation</Trans>
               </NavLink>
             </li>
             <li className="nav-item drop_down">
@@ -182,7 +128,7 @@ const Navbar = ({ user, setLanguage }) => {
               >
                 <Trans>Contact Us</Trans>
               </NavLink>
-              <ul
+              {/* <ul
                 className="dropdown-menu  drop_down-content"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
@@ -196,7 +142,7 @@ const Navbar = ({ user, setLanguage }) => {
                     <Trans> Resource Centre </Trans>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             <li className="nav-item drop_down bg-warning">
               <NavLink
@@ -219,7 +165,7 @@ const Navbar = ({ user, setLanguage }) => {
                 }
                 to="signin"
               >
-                <Trans>SignIn</Trans>
+                <Trans>Login</Trans>
               </NavLink>
             </li>
 
@@ -243,7 +189,7 @@ const Navbar = ({ user, setLanguage }) => {
                       setLanguage("en");
                     }}
                   >
-                    EN
+                    English
                   </button>
                 </li>
                 <li>
