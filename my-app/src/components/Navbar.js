@@ -11,6 +11,7 @@ export function logout() {
 const Navbar = ({ user, setLanguage }) => {
   const [loginDiv, setLoginDiv] = useState(null);
   const [showLogin, hideLogin] = useState(false);
+
   useEffect(() => {
     if (user) {
       setLoginDiv(user.displayName);
@@ -20,8 +21,9 @@ const Navbar = ({ user, setLanguage }) => {
       hideLogin(false);
     }
   }, [user]);
+
   return (
-    <nav className="navbar navbar-expand-md bg-white navbar-light fixed-top">
+    <nav className="navbar navbar-expand-md navbar-transparent fixed-top">
       <div className="container">
         <button
           className="navbar-toggler"
@@ -40,7 +42,7 @@ const Navbar = ({ user, setLanguage }) => {
         >
           <a href="/" className="navbar-brand">
             <img
-              src="img/logo.jpg"
+              src="img/trans.png"
               alt=""
               width="250"
               height="55"

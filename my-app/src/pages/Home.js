@@ -7,15 +7,15 @@ const Home = () => {
       <section className="text-light">
         <div
           id="carouselExampleCaptions"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -38,10 +38,10 @@ const Home = () => {
               aria-label="Slide 4"
             ></button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/1.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption text-start text-dark container py-5 my-5">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="img/1.png" className="d-block w-100" alt="..." />
+              <div className="carousel-caption text-start text-dark container py-5 my-5">
                 <h1>INCOME TAXES</h1>
                 <p className="lead">
                   Income tax is one of life's biggest expenses. If you are a
@@ -53,47 +53,47 @@ const Home = () => {
                   we are currently not doing new basic personal income tax work,
                   but are focusing on monthly accounting services.
                 </p>
-                <a href="/reservation" className="btn btn-dark my-3">
+                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/2.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption  text-center ">
+            <div className="carousel-item">
+              <img src="img/2.jpg" className="d-block w-100" alt="..." />
+              <div className="carousel-caption  text-center  py-5 my-5 ">
                 <h1>PAYROLL</h1>
-                <h3>
+                <p className="lead">
                   Payroll can be a headache for any company due to its time
                   sensitiveness and recurring nature. Why not provide us with
                   the details to ensure an accurate and timely payrun everytime
                   – year end T4s included.
-                </h3>
-                <a href="/reservation" className="btn-lg btn-dark mt-3">
+                </p>
+                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/3.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption text-center text-dark">
+            <div className="carousel-item">
+              <img src="img/3.jpg" className="d-block w-100" alt="..." />
+              <div className="carousel-caption text-center text-dark  py-5 my-5 ">
                 <h1>MONTHLY ONLINE ACCOUNTING</h1>
-                <p>
+                <p className="lead">
                   Let us manage your books so your business can run at its peak
                   with your financials updated monthly and your numbers
                   available to you anywhere. We are not your typical bookkeeping
                   or accounting firm. We believe meaningful, year round
                   relationships are equally as important as accurate numbers.
                 </p>
-                <a href="/reservation" className="btn btn-dark mt-3">
+                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/4.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption text-end">
+            <div className="carousel-item">
+              <img src="img/4.jpg" className="d-block w-100" alt="..." />
+              <div className="carousel-caption text-end  py-5 my-5">
                 <h1>OTHER BUSINESS SERVICES</h1>
-                <p>
+                <p className="lead">
                   Accounting requirements and needs of small businesses and
                   individuals today cover a range of things. Maybe you require a
                   mid year financial statement (typically prepared w/T2 taxes)
@@ -101,29 +101,35 @@ const Home = () => {
                   streamline your accounts payable. Just give us a call!
                   204.816.8655
                 </p>
-                <a href="/Business.html" className="btn btn-dark mt-3">
+                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </section>
@@ -319,8 +325,8 @@ const Home = () => {
               >
                 <div className="accordion-body">
                   Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
+                  demonstrate the <code>.accordion-flush</code> className. This
+                  is the first item's accordion body.
                 </div>
               </div>
             </div>
@@ -345,8 +351,8 @@ const Home = () => {
               >
                 <div className="accordion-body">
                   Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the second item's accordion body. Let's imagine this being
+                  demonstrate the <code>.accordion-flush</code> className. This
+                  is the second item's accordion body. Let's imagine this being
                   filled with some actual content.
                 </div>
               </div>
@@ -372,8 +378,8 @@ const Home = () => {
               >
                 <div className="accordion-body">
                   Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
+                  demonstrate the <code>.accordion-flush</code> className. This
+                  is the third item's accordion body. Nothing more exciting
                   happening here in terms of content, but just filling up the
                   space to make it look, at least at first glance, a bit more
                   representative of how this would look in a real-world
