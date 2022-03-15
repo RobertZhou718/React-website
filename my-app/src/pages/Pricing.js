@@ -6,7 +6,7 @@ const Pricing = () => {
         <div className="container">
           <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 className="display-4 fw-normal">Pricing</h1>
-            <p class="fs-5 text-muted">
+            <p className="fs-5 text-muted">
               <b>At Sum Accounting you are important!</b>
               <hr /> We are committed to creating value and peace of mind for
               our customers. One of the ways we achieve this is to offer upfront
@@ -19,8 +19,8 @@ const Pricing = () => {
       </section>
       <section className="p-5 bg-light">
         <div className="container">
-          <div className="row mb-3 text-center">
-            <div className="col-4">
+          <div className="row mb-3 row-cols-1 row-cols-md-3 text-center">
+            <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-header py-3">
                   <h4 className="my-0 fw-normal">SILVER SERVICE</h4>
@@ -44,12 +44,12 @@ const Pricing = () => {
                     type="button"
                     className="w-100 btn btn-lg btn-outline-primary"
                   >
-                    Sign up for free
+                    Make an appointment
                   </button>
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-header py-3">
                   <h4 className="my-0 fw-normal">GOLD SERVICE</h4>
@@ -72,12 +72,12 @@ const Pricing = () => {
                     type="button"
                     className="w-100 btn btn-lg btn-outline-primary"
                   >
-                    Get started
+                    Make an appointment
                   </button>
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm ">
                 <div className="card-header py-3">
                   <h4 className="my-0 fw-normal">DIAMOND SERVICE</h4>
@@ -101,7 +101,7 @@ const Pricing = () => {
                     type="button"
                     className="w-100 btn btn-lg btn-outline-primary"
                   >
-                    Contact us
+                    Make an appointment
                   </button>
                 </div>
               </div>
@@ -112,9 +112,9 @@ const Pricing = () => {
       <section className="p-5 white">
         <div className="container">
           <div id="silver">
-            <h2>
+            <h3>
               <Trans>SILVER SERVICE $69</Trans>
-            </h2>
+            </h3>
             <p className="lead">
               Income only, no deductions included other than exceptions for
               Seniors / Students as listed (Excludes situations where additional
@@ -136,11 +136,11 @@ const Pricing = () => {
             </ul>
           </div>
           <hr />
-          <br />
+
           <div id="gold" className="my-5">
-            <h2>
+            <h3>
               <Trans>GOLD SERVICE $97</Trans>
-            </h2>
+            </h3>
 
             <ul
               className="mt-3 mb-4 text-start"
@@ -159,11 +159,11 @@ const Pricing = () => {
             </ul>
           </div>
           <hr />
-          <br />
-          <div className="my-5">
-            <h2>
+
+          <div className="mt-5">
+            <h3>
               <Trans>DIAMOND SERVICE $150</Trans>
-            </h2>
+            </h3>
             <p className="lead">
               <b> INCLUDES everything above in GOLD Service, plus:</b>
             </p>
@@ -184,6 +184,167 @@ const Pricing = () => {
           </div>
         </div>
       </section>
+      <section className="p-5 bg-secondary">
+        <div className="container text-white">
+          <div id="addServe" className="mb-5">
+            <h3>
+              <Trans>ADDITIONAL SERVICES</Trans>
+            </h3>
+            <p className="lead">
+              All services below may be added onto GOLD level or higher
+            </p>
+            <div className="my-5">
+              <h4>Priority Service $45</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Skip the wait, prioritize your file with a 3 day turnaround.
+                  If you have multiple linked tax returns (Spouses, children)
+                  this will apply to each return separately. Note this may not
+                  be available during the last few days of April but we will
+                  inform you in that case.
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                Rental Property Income (for each property to be reported) $75
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Price is for preparation of T776 form and review of expenses
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>Long Haul Trucker $75</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Price is for preparation of TL2 form and review of expenses
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                Self-Employed / Business / Farm Income (T1
+                return-Non-Incorporated) $200
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Price is for preparation of T2125 or T2042 form and review of
+                  expenses (Agri Stability or Agri Invest not included)
+                </li>
+                <li>
+                  Totals must be provided for each expense category. If receipts
+                  or other forms are provided, or additional help is required to
+                  complete the form additional costs will apply. No additional
+                  cost for a verbal review of the form if you are new to using
+                  the form.
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>GST Return $65</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Calculation of GST Remittance or Refund, based upon completion
+                  of Business Income Return (above)
+                </li>
+                <li>Includes online filing with CRA</li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                Standard RRSP Planning $75 ($25 rebate at time of tax filing)
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Pre-return preparation the purpose of RRSP planning before
+                  RRSP deadline
+                </li>
+                <li>
+                  Estimated based on the information you can provide at the time
+                </li>
+                <li>In person meeting</li>
+                <li>Price is per return/person</li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>Complex Medical $59</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Applies if medical is partially paid by third party insurance
+                  and there is a substantial number of receipts. Third party
+                  statements are required. Maximum time of 1 hour which covers
+                  most situations, after which the rate is $70/hr.
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>Complex Investments $95</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  Applies if annual realized gain / loss statements are not
+                  provided and separate sale statements are required to
+                  calculate the income. Maximum time of 1 hour after which the
+                  rate is $70/hr
+                </li>
+                <li>Excludes options trading.</li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>T1 Adjustment $50 per year</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  for current or prior years, to include missed slips, or basic
+                  changes to tax situation
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>T1 Adjustment (more complex) $100 per year</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  for current or prior years, to include complex changes to tax
+                  situation. We can confirm in advance if simple or complex
+                  depending on individual situation
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>CRA contact or Notice of Assessment Copy $35 per access</h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  reprint of Notice of Assessment or Option C from CRA website
+                  for current or prior years
+                </li>
+                <li>contact CRA via phone for information on your behalf</li>
+                <li>contact CRA website for information on your behalf</li>
+                <li>this is covered under CRA Review Insurance</li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                Pre or Post Assessment Review $50-250 per review (at time of
+                review)
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  You receive a letter from CRA requesting further information
+                  to substantiate your tax credit request (happens most often
+                  when there is a large credit being claimed such as medical or
+                  donations or something isn’t clear to CRA)
+                </li>
+                <li>
+                  We will prepare a written reply and provide information
+                  requested from your tax return, on your behalf
+                </li>
+                <li>contact CRA website for information on your behalf</li>
+                <li>Follow up, as required, to close review</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="p-5 white">
         <div className="container">
           <div className="row align-items-center justify-content-between">
@@ -192,16 +353,12 @@ const Pricing = () => {
                 <Trans>Tax Online</Trans>
               </h2>
               <p className="my-4 lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                odit atque laudantium asperiores sit deserunt totam quis eius
-                quas accusamus, ex voluptatibus ea? Atque veniam ratione, sequi
-                doloribus itaque in. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Unde odit atque laudantium asperiores sit
-                deserunt totam quis eius quas accusamus, ex voluptatibus ea?
-                Atque veniam ratione, sequi doloribus itaque in.
+                After completing the appointment, please SignUp/Login to our
+                website to use the Tax online function, please fill in the form
+                according to your own needs, and upload the required documents.
               </p>
               <a href="/TaxOnline" className="btn btn-danger btn-lg">
-                <Trans> Tax Online</Trans>
+                <Trans>Tax Online</Trans>
               </a>
             </div>
             <div className="col-md">
