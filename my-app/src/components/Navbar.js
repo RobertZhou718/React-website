@@ -23,7 +23,7 @@ const Navbar = ({ user, setLanguage }) => {
   }, [user]);
 
   return (
-    <nav className="navbar navbar-expand-md navbar-transparent fixed-top">
+    <nav className={"navbar navbar-expand-lg bg-white fixed-top"}>
       <div className="container">
         <button
           className="navbar-toggler"
@@ -40,16 +40,16 @@ const Navbar = ({ user, setLanguage }) => {
           className="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <a href="/" className="navbar-brand">
-            <img
-              src="img/trans.png"
-              alt=""
-              width="250"
-              height="55"
-              className="d-inline-block align-text-top"
-            />
-          </a>
           <ul className="navbar-nav">
+            <a href="/" className="navbar-brand">
+              <img
+                src="img\logo512.png"
+                alt="logo"
+                width="55px"
+                height="55px"
+                className="d-inline-block align-text-top"
+              />
+            </a>
             <li className="nav-item drop_down ">
               <NavLink
                 className={({ isActive }) =>
@@ -106,16 +106,6 @@ const Navbar = ({ user, setLanguage }) => {
               >
                 <Trans> About Us</Trans>
               </NavLink>
-              <ul
-                className="dropdown-menu  drop_down-content"
-                aria-labelledby="navbarDarkDropdownMenuLink"
-              >
-                <li>
-                  <NavLink className="dropdown-item" to="#section1">
-                    <Trans>COVID-19 Related Tax Assistance</Trans>
-                  </NavLink>
-                </li>
-              </ul>
             </li>
             <li className="nav-item drop_down ">
               <NavLink

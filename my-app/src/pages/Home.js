@@ -39,69 +39,56 @@ const Home = () => {
             ></button>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className="carousel-item active ">
               <img src="img/1.png" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-start text-dark container py-5 my-5">
+              <div className="carousel-caption text-center text-dark col-lg-6 col-md-8 mx-auto">
                 <h1>INCOME TAXES</h1>
-                <p className="lead">
+                <p className="lead d-none d-md-block">
                   Income tax is one of life's biggest expenses. If you are a
                   small business owner, in most cases tax preparation should be
-                  handled by a professional. At Sum Accounting, we provide
-                  year-round tax services to our small business and farmer
-                  clients who have monthly accounting plans with us. We are also
-                  happy to work with your existing CPA or tax accountant. Note -
-                  we are currently not doing new basic personal income tax work,
-                  but are focusing on monthly accounting services.
+                  handled by a professional.
                 </p>
-                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
+                <a href="#More" className="btn btn-dark my-3  ">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
             <div className="carousel-item">
               <img src="img/2.jpg" className="d-block w-100" alt="..." />
-              <div className="carousel-caption  text-center  py-5 my-5 ">
+              <div className="carousel-caption text-center col-lg-6 col-md-8 mx-auto">
                 <h1>PAYROLL</h1>
-                <p className="lead">
+                <p className="lead d-none d-md-block">
                   Payroll can be a headache for any company due to its time
-                  sensitiveness and recurring nature. Why not provide us with
-                  the details to ensure an accurate and timely payrun everytime
-                  – year end T4s included.
+                  sensitiveness and recurring nature.
                 </p>
-                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
+                <a href="#More" className="btn btn-dark my-3 ">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
             <div className="carousel-item">
               <img src="img/3.jpg" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-center text-dark  py-5 my-5 ">
-                <h1>MONTHLY ONLINE ACCOUNTING</h1>
-                <p className="lead">
+              <div className="carousel-caption text-center text-dark  col-lg-6 col-md-8 mx-auto">
+                <h2>MONTHLY ONLINE ACCOUNTING</h2>
+                <p className="lead d-none d-md-block">
                   Let us manage your books so your business can run at its peak
                   with your financials updated monthly and your numbers
-                  available to you anywhere. We are not your typical bookkeeping
-                  or accounting firm. We believe meaningful, year round
-                  relationships are equally as important as accurate numbers.
+                  available to you anywhere.
                 </p>
-                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
+                <a href="#More" className="btn btn-dark my-3 ">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
             </div>
             <div className="carousel-item">
               <img src="img/4.jpg" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-end  py-5 my-5">
-                <h1>OTHER BUSINESS SERVICES</h1>
-                <p className="lead">
+              <div className="carousel-caption text-center col-lg-6 col-md-8 mx-auto">
+                <h2>OTHER BUSINESS SERVICES</h2>
+                <p className="lead d-none d-md-block">
                   Accounting requirements and needs of small businesses and
-                  individuals today cover a range of things. Maybe you require a
-                  mid year financial statement (typically prepared w/T2 taxes)
-                  for funding or need an electronic bill payment system to
-                  streamline your accounts payable. Just give us a call!
-                  204.816.8655
+                  individuals today cover a range of things.
                 </p>
-                <a href="/reservation" className="btn btn-lg btn-dark mt-3">
+                <a href="#More" className="btn  btn-dark my-3">
                   <Trans>Learn more</Trans>
                 </a>
               </div>
@@ -133,167 +120,134 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section className="p-5 bg-light">
+      <section className="p-5 bg-white">
         <div className="container">
-          <div className="row g-5">
+          <div className="row align-items-center justify-content-between">
+            <div className="col-md  ">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">
+                  <Trans>Phone:</Trans> (647)-830-8595
+                </li>
+                <li className="list-group-item">
+                  <Trans>E-mail:</Trans> jessishan@sumaccounting.ca
+                </li>
+                <li className="list-group-item">
+                  <Trans>Address:</Trans> Unit 119,445 apple creek blvd,
+                  Markham, ON L3R 9X7
+                </li>
+                <li className="list-group-item">
+                  <Trans>Website:</Trans> sumaccounting.ca
+                </li>
+              </ul>
+              <a href="/contactus" className="btn btn-primary my-3">
+                Contact us
+              </a>
+            </div>
             <div className="col-md">
-              <div className="card border-light bg-dark text-light">
+              <img
+                src="img/biglogo.png"
+                alt="logo"
+                className="img-fluid d-none d-md-block"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-5">
+            <div class="col-md-6 col-lg-3" id="More">
+              <div class="card border-light bg-light text-dark">
                 <img
-                  src="img/personal.jpg"
-                  className="card-img-top"
+                  src="img/company.jpg"
+                  class="card-img-top"
                   alt="Personal"
                 />
-                <div className="card-body text-center">
-                  <div className="card-title ">
+                <div class="card-body text-center">
+                  <div class="card-title ">
                     <h4>
-                      <Trans>Personal Tax</Trans>
+                      <Trans>INCOME TAXES</Trans>
                     </h4>
                   </div>
-                  <div className="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit veritatis velit necessitatibus, sequi, in est tempora
-                    nulla quaerat archite
+                  <div class="card-text">
+                    Income taxes are one of life’s largest expenses. If you are
+                    a small business owner in most cases tax prep should be
+                    handled by the pros. Here at GP Accounting we provide year
+                    round tax services for our small business and farmer
+                    customers that are on monthly accounting plans with us. We
+                    are also happy to work with your existing CPA or tax
+                    accountant. NOTE – We are not taking on new basic personal
+                    income tax work at this time but are rather focused on
+                    monthly accounting services.
                   </div>
-                  <a href="/Personal.html" className="btn btn-primary mt-3">
-                    <Trans>Learn more</Trans>
-                  </a>
                 </div>
               </div>
             </div>
 
-            <div className="col-md">
-              <div className="card border-light bg-light text-dark">
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light  border-light text-dark">
                 <img
-                  src="img/business.jpg"
-                  className="card-img-top"
+                  src="img/payroll.jpg"
+                  class="card-img-top"
                   alt="Business"
                 />
-                <div className="card-body text-center">
-                  <div className="card-title">
+                <div class="card-body text-center">
+                  <div class="card-title">
                     <h4>
-                      <Trans>Business Tax</Trans>
+                      <Trans>PAYROLL</Trans>
                     </h4>
                   </div>
-                  <div className="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit veritatis velit necessitatibus, sequi, in est tempora
-                    nulla quaerat archite
+                  <div class="card-text">
+                    Payroll can be a headache for any company due to its time
+                    sensitiveness and recurring nature. Why not provide us with
+                    the details to ensure an accurate and timely payrun
+                    everytime – year end T4s included.
                   </div>
-                  <a href="/Business.html" className="btn btn-dark mt-3">
-                    <Trans>Learn more</Trans>
-                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-md">
-              <div className="card border-light bg-dark text-light">
-                <img src="img/house.jpg" className="card-img-top" alt="House" />
-                <div className="card-body text-center">
-                  <div className="card-title">
+            <div class="col-md-6 col-lg-3">
+              <div class="card  border-light bg-light text-dark">
+                <img
+                  src="img/accounting.jpg"
+                  class="card-img-top"
+                  alt="House"
+                />
+                <div class="card-body text-center">
+                  <div class="card-title">
                     <h4>
-                      <Trans>Housing Related Tax</Trans>
+                      <Trans>MONTHLY ONLINE ACCOUNTING</Trans>
                     </h4>
                   </div>
-                  <div className="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit veritatis velit necessitatibus, sequi, in est tempora
-                    nulla quaerat archite
+                  <div class="card-text">
+                    Let us manage your books so your business can run at its
+                    peak with your financials updated monthly and your numbers
+                    available to you anywhere. We are not your typical
+                    bookkeeping or accounting firm. We believe meaningful, year
+                    round relationships are equally as important as accurate
+                    numbers.
                   </div>
-                  <a href="/Housing.html" className="btn btn-primary mt-3">
-                    <Trans>Learn more</Trans>
-                  </a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="p-5 bg-white text-dark text-center text-md-start">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-md">
-              <h2>
-                <Trans>Personal Tax</Trans>
-              </h2>
-              <p className="my-4 lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                odit atque laudantium asperiores sit deserunt totam quis eius
-                quas accusamus, ex voluptatibus ea? Atque veniam ratione, sequi
-                doloribus itaque in. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Unde odit atque laudantium asperiores sit
-                deserunt totam quis eius quas accusamus, ex voluptatibus ea?
-                Atque veniam ratione, sequi doloribus itaque in.
-              </p>
-              <a href="/Personal.html" className="btn btn-primary btn-lg">
-                <Trans> Learn more</Trans>
-              </a>
-            </div>
-            <div className="col-md">
-              <img
-                src="img/money1.png"
-                alt="showcase"
-                className="img-fluid d-none d-md-block"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="p-5 bg-dark text-light text-center text-md-start">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col">
-              <img
-                src="img/money2.png"
-                alt="showcase"
-                className="img-fluid d-none d-md-block"
-              />
-            </div>
-            <div className="col-md">
-              <h2>
-                <Trans>Business Tax</Trans>
-              </h2>
-              <p className="my-4 lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                odit atque laudantium asperiores sit deserunt totam quis eius
-                quas accusamus, ex voluptatibus ea? Atque veniam ratione, sequi
-                doloribus itaque in. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Unde odit atque laudantium asperiores sit
-                deserunt totam quis eius quas accusamus, ex voluptatibus ea?
-                Atque veniam ratione, sequi doloribus itaque in.
-              </p>
-              <a href="/Business.html" className="btn btn-primary btn-lg">
-                <Trans>Learn more</Trans>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="p-5 bg-light text-dark text-center text-md-start">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-md">
-              <h2>
-                <Trans>Housing Related Tax</Trans>
-              </h2>
-              <p className="my-4 lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                odit atque laudantium asperiores sit deserunt totam quis eius
-                quas accusamus, ex voluptatibus ea? Atque veniam ratione, sequi
-                doloribus itaque in. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Unde odit atque laudantium asperiores sit
-                deserunt totam quis eius quas accusamus, ex voluptatibus ea?
-                Atque veniam ratione, sequi doloribus itaque in.
-              </p>
-              <a href="/Housing.html" className="btn btn-primary btn-lg">
-                <Trans>Learn more</Trans>
-              </a>
-            </div>
-            <div className="col-md">
-              <img
-                src="img/hands.jpg"
-                alt="showcase"
-                className="img-fluid d-none d-md-block"
-              />
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light border-light text-dark">
+                <img src="img/hands.jpg" class="card-img-top" alt="House" />
+                <div class="card-body text-center">
+                  <div class="card-title">
+                    <h4>
+                      <Trans>OTHER BUSINESS SERVICES</Trans>
+                    </h4>
+                  </div>
+                  <div class="card-text">
+                    Accounting requirements and needs of small businesses and
+                    individuals today cover a range of things. Maybe you require
+                    a mid year financial statement (typically prepared w/T2
+                    taxes) for funding or need an electronic bill payment system
+                    to streamline your accounts payable.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -388,26 +342,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="p-5">
-        <div className="container">
-          <h2 className="text-center mb-4">
-            <Trans>Contact Us</Trans>
-          </h2>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <Trans>Phone:</Trans> (647)-830-8595
-            </li>
-            <li className="list-group-item">
-              <Trans>E-mail:</Trans> jessishan@sumaccounting.ca
-            </li>
-            <li className="list-group-item">
-              <Trans>Address:</Trans> Unit 119,445 apple creek blvd, Markham, ON
-              L3R 9X7
-            </li>
-          </ul>
         </div>
       </section>
     </div>

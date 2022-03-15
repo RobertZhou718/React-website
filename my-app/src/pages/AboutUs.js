@@ -33,38 +33,39 @@ const AboutUs = () => {
       </section>
       <section className="p-5 bg-dark">
         <div className="container">
-          <div id="section1" className="text-light">
+          <div className="text-light">
             <h1 className="text-center">
-              <Trans>COVID-19 Related Tax Assistance</Trans>
+              <Trans>COVID-19 NOTICE</Trans>
             </h1>
-            <h3 className="mt-5">Lorem ipsum dolor</h3>
+            <h3 className="mt-5">Online Income Tax Options during COVID-19</h3>
             <p className="lead mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              non placeat, quam, ullam quod sit vitae magnam ipsam architecto
-              incidunt recusandae quisquam, eum maiores excepturi numquam illo
-              ipsa ex accusamus?
+              To respect our clients health and do our part to not spread
+              sickness in our community we ask that you wear a mask and
+              following distancing guidelines as much as possible in our office.
+              We are open for in person meetings but also offer personal income
+              tax services with no need to visit our office. The following
+              options are available.
             </p>
-            <h3 className="mt-3">Lorem ipsum dolor</h3>
-            <p className="lead mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              non placeat, quam, ullam quod sit vitae magnam ipsam architecto
-              incidunt recusandae quisquam, eum maiores excepturi numquam illo
-              ipsa ex accusamus?
-            </p>
-            <h3 className="mt-3">Lorem ipsum dolor</h3>
-            <p className="lead mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              non placeat, quam, ullam quod sit vitae magnam ipsam architecto
-              incidunt recusandae quisquam, eum maiores excepturi numquam illo
-              ipsa ex accusamus?
-            </p>
-            <h3 className="mt-3">Lorem ipsum dolor</h3>
-            <p className="lead mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              non placeat, quam, ullam quod sit vitae magnam ipsam architecto
-              incidunt recusandae quisquam, eum maiores excepturi numquam illo
-              ipsa ex accusamus?
-            </p>
+            <ul style={{ "font-size": "20px" }}>
+              <li>
+                We use an online software called Zoom for online meetings where
+                we can share computer screens and share files as needed. You are
+                given access to your own secure portal to upload your documents
+                to us prior to our meeting. Start by choosing a meeting time{" "}
+                <a href="/reservation">here</a>
+              </li>
+              <li>
+                If a computer screen share is not needed you can also choose to
+                simply request access to your secure portal to send us your
+                documents and we will contact you once your return is started to
+                go through any questions and to complete your return.
+              </li>
+              <li>
+                Another option is to send all documents to us using the secure
+                messaging app like Whatsapp or Telegram. Contact us for details
+                if you are new to using these apps.
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -19,8 +19,8 @@ const Pricing = () => {
       </section>
       <section className="p-5 bg-light">
         <div className="container">
-          <div className="row mb-3 text-center">
-            <div className="col-4">
+          <div className="row mb-3 row-cols-1 row-cols-md-3 text-center">
+            <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-header py-3">
                   <h4 className="my-0 fw-normal">SILVER SERVICE</h4>
@@ -49,7 +49,7 @@ const Pricing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-header py-3">
                   <h4 className="my-0 fw-normal">GOLD SERVICE</h4>
@@ -77,7 +77,7 @@ const Pricing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm ">
                 <div className="card-header py-3">
                   <h4 className="my-0 fw-normal">DIAMOND SERVICE</h4>
