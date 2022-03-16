@@ -11,8 +11,16 @@ export function logout() {
 const Navbar = ({ user, setLanguage }) => {
   const [loginDiv, setLoginDiv] = useState(null);
   const [showLogin, hideLogin] = useState(false);
-
+  const [show, setShow] = useState(true)
+  const navbarContoller =()=>{
+    if (window.scrollY>100) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
   useEffect(() => {
+    window.addEventListener('scroll',navbarContoller)
     if (user) {
       setLoginDiv(user.displayName);
       hideLogin(true);
@@ -22,8 +30,8 @@ const Navbar = ({ user, setLanguage }) => {
     }
   }, [user]);
 
-  return (
-    <nav className={"navbar navbar-expand-lg fixed-top"}>
+  return (<>
+     {show?<nav className={"navbar navbar-expand-lg fixed-top"}>
       <div className="container">
         <button
           className="navbar-toggler"
@@ -224,7 +232,9 @@ const Navbar = ({ user, setLanguage }) => {
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>:""}
+    </>
+
   );
 };
 
