@@ -23,7 +23,7 @@ const Navbar = ({ user, setLanguage }) => {
   }, [user]);
 
   return (
-    <nav className={"navbar navbar-expand-lg bg-white fixed-top"}>
+    <nav className={"navbar navbar-expand-lg fixed-top"}>
       <div className="container">
         <button
           className="navbar-toggler"
