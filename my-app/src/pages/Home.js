@@ -153,23 +153,23 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section class="p-5 bg-light">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-5">
-            <div class="col-md-6 col-lg-3" id="More">
-              <div class="card border-light bg-light text-dark">
+      <section className="p-5 bg-light">
+        <div className="container">
+          <div className="row row-cols-1 row-cols-md-2 g-5">
+            <div className="col-md-6 col-lg-3" id="More">
+              <div className="card border-light bg-light text-dark">
                 <img
                   src="img/company.jpg"
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Personal"
                 />
-                <div class="card-body text-center">
-                  <div class="card-title ">
+                <div className="card-body text-center">
+                  <div className="card-title ">
                     <h4>
                       <Trans>INCOME TAXES</Trans>
                     </h4>
                   </div>
-                  <div class="card-text">
+                  <div className="card-text">
                     Income taxes are one of life’s largest expenses. If you are
                     a small business owner in most cases tax prep should be
                     handled by the pros. Here at GP Accounting we provide year
@@ -184,20 +184,20 @@ const Home = () => {
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-              <div class="card bg-light  border-light text-dark">
+            <div className="col-md-6 col-lg-3">
+              <div className="card bg-light  border-light text-dark">
                 <img
                   src="img/payroll.jpg"
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="Business"
                 />
-                <div class="card-body text-center">
-                  <div class="card-title">
+                <div className="card-body text-center">
+                  <div className="card-title">
                     <h4>
                       <Trans>PAYROLL</Trans>
                     </h4>
                   </div>
-                  <div class="card-text">
+                  <div className="card-text">
                     Payroll can be a headache for any company due to its time
                     sensitiveness and recurring nature. Why not provide us with
                     the details to ensure an accurate and timely payrun
@@ -206,20 +206,20 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card  border-light bg-light text-dark">
+            <div className="col-md-6 col-lg-3">
+              <div className="card  border-light bg-light text-dark">
                 <img
                   src="img/accounting.jpg"
-                  class="card-img-top"
+                  className="card-img-top"
                   alt="House"
                 />
-                <div class="card-body text-center">
-                  <div class="card-title">
+                <div className="card-body text-center">
+                  <div className="card-title">
                     <h4>
                       <Trans>MONTHLY ONLINE ACCOUNTING</Trans>
                     </h4>
                   </div>
-                  <div class="card-text">
+                  <div className="card-text">
                     Let us manage your books so your business can run at its
                     peak with your financials updated monthly and your numbers
                     available to you anywhere. We are not your typical
@@ -230,16 +230,16 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card bg-light border-light text-dark">
-                <img src="img/hands.jpg" class="card-img-top" alt="House" />
-                <div class="card-body text-center">
-                  <div class="card-title">
+            <div className="col-md-6 col-lg-3">
+              <div className="card bg-light border-light text-dark">
+                <img src="img/hands.jpg" className="card-img-top" alt="House" />
+                <div className="card-body text-center">
+                  <div className="card-title">
                     <h4>
                       <Trans>OTHER BUSINESS SERVICES</Trans>
                     </h4>
                   </div>
-                  <div class="card-text">
+                  <div className="card-text">
                     Accounting requirements and needs of small businesses and
                     individuals today cover a range of things. Maybe you require
                     a mid year financial statement (typically prepared w/T2
