@@ -64,48 +64,53 @@ const LoginForm = () => {
   return (
     <div>
       <form>
-        <div className="form-outline mb-4">
-          <label className="form-label" htmlFor="email">
-            <Trans> Email:</Trans>
-          </label>
+        <h1 className="mb-3 fw-normal">
+          <Trans>Login/Signup</Trans>
+        </h1>
+        <div className="form-floating mt-5">
           <input
             type="email"
             id="email"
-            className="form-control form-control-lg"
+            className="form-control"
             onChange={(event) => setEmail(event.target.value)}
           />
-        </div>
-        <div className="form-outline mb-4">
-          <label className="form-label" htmlFor="password">
-            <Trans> Password:</Trans>
+          <label htmlFor="email">
+            <Trans>Email address</Trans>
           </label>
+        </div>
+        <div className="form-floating mb-4">
           <input
             type="password"
             id="password"
-            className="form-control form-control-lg"
+            className="form-control"
             onChange={(event) => setPassword(event.target.value)}
           />
+          <label htmlFor="password">
+            <Trans>Password</Trans>
+          </label>
         </div>
-        <div className="d-flex justify-content-center">
-          <button
-            type="submit"
-            value="Signup"
-            disabled={!email || !password}
-            className="btn btn-primary btn-block btn-lg text-light"
-            onClick={signup}
-          >
-            <Trans>Sign up</Trans>
-          </button>
-          <button
-            type="submit"
-            value="Login"
-            className="mx-2 btn btn-primary btn-block btn-lg text-light"
-            disabled={!email || !password}
-            onClick={login}
-          >
-            <Trans>Login</Trans>
-          </button>
-        </div>
+        <button
+          type="submit"
+          value="Login"
+          className="loginbtn btn btn-primary btn-lg"
+          disabled={!email || !password}
+          onClick={login}
+        >
+          <Trans>Login</Trans>
+        </button>
+        <span>
+          <Trans>Doesn't have an account? Please</Trans>
+        </span>
+        <button
+          type="submit"
+          value="Signup"
+          disabled={!email || !password}
+          className="loginbtn btn btn-primary btn-lg"
+          onClick={signup}
+        >
+          <Trans>Sign up</Trans>
+        </button>
+
         {errors.general && (
           <div id="divLoginError" role="alert" className="alert alert-warning">
             <label id="lblLoginErrorMessage" htmlFor="divLoginError"></label>
@@ -114,9 +119,9 @@ const LoginForm = () => {
         )}
       </form>
       <hr />
-      <div className="col-md-6 mx-auto ">
+      <div className="col-md-12">
         <br />
-        <button className="google loginbtn" onClick={loginWithGoogle}>
+        <button className="google loginbtn " onClick={loginWithGoogle}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

@@ -42,6 +42,9 @@ const ContactUs = () => {
         <div className="container">
           <div className="row justify-content-center mt-5">
             <div className="col-md mt-5">
+              <h1>
+                <Trans>Contact Us</Trans>
+              </h1>
               <div className="row mt-5">
                 <div className="row mt-4">
                   <div className="col-md-1">

@@ -1,42 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-
-.gradient-custom-3 {
-  /* fallback for old browsers */
-  background: #84fab0;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(245, 243, 148, 0.5),
-    rgba(143, 211, 244, 0.5)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(
-    to right,
-    rgba(250, 248, 132, 0.5),
-    rgba(143, 211, 244, 0.5)
-  );
-}
-.gradient-custom-4 {
-  /* fallback for old browsers */
-  background: #84fab0;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(132, 250, 176, 1),
-    rgba(143, 211, 244, 1)
-  );
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(
-    to right,
-    rgba(132, 250, 176, 1),
-    rgba(143, 211, 244, 1)
-  );
-}
 * {
   box-sizing: border-box;
 }
@@ -59,7 +22,7 @@
 /* add appropriate colors to fb, twitter and google buttons */
 
 .google {
-  background-color: #dd4b39;
+  background-color: #e64b36;
   color: white;
 }
 
@@ -206,7 +169,6 @@ h3 {
   line-height: 1.3;
 }
 
-
 @media only screen and (max-width: 800px) {
   nav {
     background-color: white;
@@ -216,7 +178,7 @@ h3 {
     font-size: small;
   }
   .swiper-slide .title {
-    margin-top: 60%;
+    margin-top: 100%;
     font-size: 2rem;
     text-align: center;
     display: inline-flex;
@@ -232,4 +194,53 @@ h3 {
     display: flex;
     justify-content: center;
   }
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.loginForm {
+  height: 100%;
+}
+
+.loginForm {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }

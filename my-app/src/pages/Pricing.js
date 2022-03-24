@@ -12,7 +12,7 @@ const Pricing = () => {
             <p className="fs-5 text-muted">
               <Trans>
                 <b>At Sum Accounting you are important!</b>
-                <hr /> We are committed to creating value and peace of mind for
+                <br /> We are committed to creating value and peace of mind for
                 our customers. One of the ways we achieve this is to offer
                 upfront fixed pricing as much as possible. We all hate to get
                 surprise bills that are over our budget so at Sum Accounting we
@@ -164,10 +164,7 @@ const Pricing = () => {
                 additional services are required. See additional services.)
               </Trans>
             </p>
-            <ul
-              className="mt-3 mb-4 text-start"
-              style={{ "font-size": "20px" }}
-            >
+            <ul className="mt-3 mb-4 text-start" style={{ fontSize: "20px" }}>
               <li>
                 <Trans>BASIC return – max 5 info slips (T3, T4, T5), OR</Trans>
               </li>
@@ -194,10 +191,7 @@ const Pricing = () => {
               <Trans>GOLD SERVICE $97</Trans>
             </h3>
 
-            <ul
-              className="mt-3 mb-4 text-start"
-              style={{ "font-size": "20px" }}
-            >
+            <ul className="mt-3 mb-4 text-start" style={{ fontSize: "20px" }}>
               <li>
                 <Trans>
                   return – up to 10 information slips (T3, T4, T5, etc)
@@ -227,10 +221,7 @@ const Pricing = () => {
                 <Trans> INCLUDES everything above in GOLD Service, plus:</Trans>
               </b>
             </p>
-            <ul
-              className="mt-3 mb-4 text-start"
-              style={{ "font-size": "20px" }}
-            >
+            <ul className="mt-3 mb-4 text-start" style={{ fontSize: "20px" }}>
               <li>
                 <Trans>UNLIMITED information slips & receipts</Trans>
               </li>
@@ -258,10 +249,7 @@ const Pricing = () => {
               </Trans>
             </h3>
 
-            <ul
-              className="mt-3 mb-4 text-start"
-              style={{ "font-size": "20px" }}
-            >
+            <ul className="mt-3 mb-4 text-start" style={{ fontSize: "20px" }}>
               <li>
                 <Trans>
                   Give yourself year round Peace of Mind !! Should your return
@@ -301,7 +289,7 @@ const Pricing = () => {
               <h4>
                 <Trans>Priority Service $45</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Skip the wait, prioritize your file with a 3 day turnaround.
@@ -319,7 +307,7 @@ const Pricing = () => {
                   Rental Property Income (for each property to be reported) $75
                 </Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Price is for preparation of T776 form and review of expenses
@@ -331,7 +319,7 @@ const Pricing = () => {
               <h4>
                 <Trans>Long Haul Trucker $75</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Price is for preparation of TL2 form and review of expenses
@@ -346,7 +334,7 @@ const Pricing = () => {
                   return-Non-Incorporated) $200
                 </Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Price is for preparation of T2125 or T2042 form and review
@@ -368,7 +356,7 @@ const Pricing = () => {
               <h4>
                 <Trans>GST Return $65</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Calculation of GST Remittance or Refund, based upon
@@ -386,7 +374,7 @@ const Pricing = () => {
                   Standard RRSP Planning $75 ($25 rebate at time of tax filing)
                 </Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Pre-return preparation the purpose of RRSP planning before
@@ -411,7 +399,7 @@ const Pricing = () => {
               <h4>
                 <Trans>Complex Medical $59</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Applies if medical is partially paid by third party
@@ -427,7 +415,7 @@ const Pricing = () => {
               <h4>
                 <Trans>Complex Investments $95</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Applies if annual realized gain / loss statements are not
@@ -445,7 +433,7 @@ const Pricing = () => {
               <h4>
                 <Trans>T1 Adjustment $50 per year</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     for current or prior years, to include missed slips, or
@@ -458,7 +446,7 @@ const Pricing = () => {
               <h4>
                 <Trans>T1 Adjustment (more complex) $100 per year</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     for current or prior years, to include complex changes to
@@ -474,7 +462,7 @@ const Pricing = () => {
                   CRA contact or Notice of Assessment Copy $35 per access
                 </Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     reprint of Notice of Assessment or Option C from CRA website
@@ -503,7 +491,7 @@ const Pricing = () => {
                   review)
                 </Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     You receive a letter from CRA requesting further information
@@ -541,7 +529,7 @@ const Pricing = () => {
               <h4>
                 <Trans>Disability Tax Credit Application $150</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Review of customer circumstances to determine possible
@@ -572,7 +560,7 @@ const Pricing = () => {
               <h4>
                 <Trans>Request for Tax Payer Relief starting at $200</Trans>
               </h4>
-              <ul style={{ "font-size": "20px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <Trans>
                     Preparation of CRA forms to request reduction or elimination

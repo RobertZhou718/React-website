@@ -53,7 +53,7 @@ const AboutUs = () => {
                 The following options are available.
               </Trans>
             </p>
-            <ul style={{ "font-size": "20px" }}>
+            <ul style={{ fontSize: "20px" }}>
               <li>
                 <Trans>
                   We use an online software called Zoom for online meetings

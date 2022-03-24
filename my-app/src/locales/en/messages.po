@@ -26,11 +26,11 @@ msgstr "1 DAY"
 msgid "<0>At Sum Accounting you are important!</0><1/> We are committed to creating value and peace of mind for our customers. One of the ways we achieve this is to offer upfront fixed pricing as much as possible. We all hate to get surprise bills that are over our budget so at Sum Accounting we strive to eliminate this."
 msgstr "<0>At Sum Accounting you are important!</0><1/> We are committed to creating value and peace of mind for our customers. One of the ways we achieve this is to offer upfront fixed pricing as much as possible. We all hate to get surprise bills that are over our budget so at Sum Accounting we strive to eliminate this."
 
-#: src/pages/Pricing.js:255
+#: src/pages/Pricing.js:246
 msgid "<0>NEW!</0>CRA Review Insurance $25 (at time of tax filing)"
 msgstr "<0>NEW!</0>CRA Review Insurance $25 (at time of tax filing)"
 
-#: src/pages/Pricing.js:293
+#: src/pages/Pricing.js:281
 msgid "ADDITIONAL SERVICES"
 msgstr "ADDITIONAL SERVICES"
 
@@ -55,12 +55,12 @@ msgstr "Accounting requirements and needs of small businesses and individuals to
 msgid "Accounting requirements and needs of small businesses and individuals today cover a range of things.<0>Learn more...</0>"
 msgstr "Accounting requirements and needs of small businesses and individuals today cover a range of things.<0>Learn more...</0>"
 
-#: src/pages/ContactUs.js:56
+#: src/pages/ContactUs.js:59
 #: src/pages/Home.js:146
 msgid "Address:"
 msgstr "Address:"
 
-#: src/pages/Pricing.js:602
+#: src/pages/Pricing.js:590
 msgid "After completing the appointment, please SignUp/Login to our website to use the Tax online function, please fill in the form according to your own needs, and upload the required documents."
 msgstr "After completing the appointment, please SignUp/Login to our website to use the Tax online function, please fill in the form according to your own needs, and upload the required documents."
 
@@ -68,7 +68,7 @@ msgstr "After completing the appointment, please SignUp/Login to our website to 
 msgid "After contact with us, you could log in to our website, and then use the Tax Online function to submit your basic information and required documents."
 msgstr "After contact with us, you could log in to our website, and then use the Tax Online function to submit your basic information and required documents."
 
-#: src/pages/Pricing.js:296
+#: src/pages/Pricing.js:284
 msgid "All services below may be added onto GOLD level or higher"
 msgstr "All services below may be added onto GOLD level or higher"
 
@@ -76,20 +76,20 @@ msgstr "All services below may be added onto GOLD level or higher"
 msgid "Another option is to send all documents to us using the secure messaging app like Whatsapp or Telegram. Contact us for details if you are new to using these apps."
 msgstr "Another option is to send all documents to us using the secure messaging app like Whatsapp or Telegram. Contact us for details if you are new to using these apps."
 
-#: src/pages/Pricing.js:432
+#: src/pages/Pricing.js:420
 msgid "Applies if annual realized gain / loss statements are not provided and separate sale statements are required to calculate the income. Maximum time of 1 hour after which the rate is $70/hr"
 msgstr "Applies if annual realized gain / loss statements are not provided and separate sale statements are required to calculate the income. Maximum time of 1 hour after which the rate is $70/hr"
 
-#: src/pages/Pricing.js:416
+#: src/pages/Pricing.js:404
 msgid "Applies if medical is partially paid by third party insurance and there is a substantial number of receipts. Third party statements are required. Maximum time of 1 hour which covers most situations, after which the rate is $70/hr."
 msgstr "Applies if medical is partially paid by third party insurance and there is a substantial number of receipts. Third party statements are required. Maximum time of 1 hour which covers most situations, after which the rate is $70/hr."
 
-#: src/pages/Pricing.js:552
+#: src/pages/Pricing.js:540
 msgid "Assistance in preparation of CRA Tax Credit Application"
 msgstr "Assistance in preparation of CRA Tax Credit Application"
 
 #: src/pages/Pricing.js:40
-#: src/pages/Pricing.js:172
+#: src/pages/Pricing.js:169
 msgid "BASIC return – max 5 info slips (T3, T4, T5), OR"
 msgstr "BASIC return – max 5 info slips (T3, T4, T5), OR"
 
@@ -113,15 +113,15 @@ msgstr "COVID-19 NOTICE"
 #~ msgid "COVID-19 Related Tax Assistance"
 #~ msgstr "COVID-19 Related Tax Assistance"
 
-#: src/pages/Pricing.js:473
+#: src/pages/Pricing.js:461
 msgid "CRA contact or Notice of Assessment Copy $35 per access"
 msgstr "CRA contact or Notice of Assessment Copy $35 per access"
 
-#: src/pages/Pricing.js:562
+#: src/pages/Pricing.js:550
 msgid "CRA follow up"
 msgstr "CRA follow up"
 
-#: src/pages/Pricing.js:373
+#: src/pages/Pricing.js:361
 msgid "Calculation of GST Remittance or Refund, based upon completion of Business Income Return (above)"
 msgstr "Calculation of GST Remittance or Refund, based upon completion of Business Income Return (above)"
 
@@ -129,15 +129,16 @@ msgstr "Calculation of GST Remittance or Refund, based upon completion of Busine
 #~ msgid "Click to agree terms and conditions above."
 #~ msgstr "Click to agree terms and conditions above."
 
-#: src/pages/Pricing.js:428
+#: src/pages/Pricing.js:416
 msgid "Complex Investments $95"
 msgstr "Complex Investments $95"
 
-#: src/pages/Pricing.js:412
+#: src/pages/Pricing.js:400
 msgid "Complex Medical $59"
 msgstr "Complex Medical $59"
 
 #: src/components/Navbar.js:131
+#: src/pages/ContactUs.js:46
 msgid "Contact Us"
 msgstr "Contact Us"
 
@@ -149,7 +150,7 @@ msgstr "Contact us"
 msgid "DIAMOND SERVICE"
 msgstr "DIAMOND SERVICE"
 
-#: src/pages/Pricing.js:223
+#: src/pages/Pricing.js:217
 msgid "DIAMOND SERVICE $150"
 msgstr "DIAMOND SERVICE $150"
 
@@ -161,7 +162,7 @@ msgstr "Default file input example"
 msgid "Dependants List/(18 or less)"
 msgstr "Dependants List/(18 or less)"
 
-#: src/pages/Pricing.js:542
+#: src/pages/Pricing.js:530
 msgid "Disability Tax Credit Application $150"
 msgstr "Disability Tax Credit Application $150"
 
@@ -169,6 +170,10 @@ msgstr "Disability Tax Credit Application $150"
 #: src/pages/Housing.js:86
 #~ msgid "Disposition of Taxable Property for Non-Resident"
 #~ msgstr "Disposition of Taxable Property for Non-Resident"
+
+#: src/components/LoginForm.js:102
+msgid "Doesn't have an account? Please"
+msgstr "Doesn't have an account? Please"
 
 #: src/components/Navbar.js:191
 #~ msgid "Download Centre"
@@ -182,26 +187,29 @@ msgstr "Due to the high volume of customers, our current process time will be:"
 msgid "E-mail:"
 msgstr "E-mail:"
 
-#: src/components/LoginForm.js:69
-#: src/pages/ContactUs.js:94
+#: src/components/LoginForm.js:78
+msgid "Email address"
+msgstr "Email address"
+
+#: src/pages/ContactUs.js:97
 msgid "Email:"
 msgstr "Email:"
 
 #: src/pages/Pricing.js:123
-#: src/pages/Pricing.js:238
-#: src/pages/Pricing.js:273
+#: src/pages/Pricing.js:229
+#: src/pages/Pricing.js:261
 msgid "Employment Expenses (with totals provided)"
 msgstr "Employment Expenses (with totals provided)"
 
-#: src/pages/Pricing.js:397
+#: src/pages/Pricing.js:385
 msgid "Estimated based on the information you can provide at the time"
 msgstr "Estimated based on the information you can provide at the time"
 
-#: src/pages/Pricing.js:440
+#: src/pages/Pricing.js:428
 msgid "Excludes options trading."
 msgstr "Excludes options trading."
 
-#: src/pages/Pricing.js:557
+#: src/pages/Pricing.js:545
 msgid "Filing with CRA, and copy retention at our office"
 msgstr "Filing with CRA, and copy retention at our office"
 
@@ -213,12 +221,12 @@ msgstr "Filing with CRA, and copy retention at our office"
 #~ msgid "Financial Statements"
 #~ msgstr "Financial Statements"
 
-#: src/pages/Pricing.js:527
+#: src/pages/Pricing.js:515
 msgid "Follow up, as required, to close review"
 msgstr "Follow up, as required, to close review"
 
 #: src/pages/Pricing.js:126
-#: src/pages/Pricing.js:241
+#: src/pages/Pricing.js:232
 msgid "Foreign pension"
 msgstr "Foreign pension"
 
@@ -230,7 +238,7 @@ msgstr "Frequently Asked Questions"
 msgid "GOLD SERVICE"
 msgstr "GOLD SERVICE"
 
-#: src/pages/Pricing.js:194
+#: src/pages/Pricing.js:191
 msgid "GOLD SERVICE $97"
 msgstr "GOLD SERVICE $97"
 
@@ -239,7 +247,7 @@ msgstr "GOLD SERVICE $97"
 #~ msgid "GST New Residential Rental Property Rebate"
 #~ msgstr "GST New Residential Rental Property Rebate"
 
-#: src/pages/Pricing.js:369
+#: src/pages/Pricing.js:357
 msgid "GST Return $65"
 msgstr "GST Return $65"
 
@@ -250,7 +258,7 @@ msgstr "GST Return $65"
 msgid "Get Start"
 msgstr "Get Start"
 
-#: src/pages/Pricing.js:266
+#: src/pages/Pricing.js:254
 msgid "Give yourself year round Peace of Mind !! Should your return be selected by CRA for a Pre or Post Assessment review, that we will take care of this for you."
 msgstr "Give yourself year round Peace of Mind !! Should your return be selected by CRA for a Pre or Post Assessment review, that we will take care of this for you."
 
@@ -273,11 +281,11 @@ msgstr "How can I contact you?"
 msgid "How can I use Tax Online function?"
 msgstr "How can I use Tax Online function?"
 
-#: src/pages/Pricing.js:227
+#: src/pages/Pricing.js:221
 msgid "INCLUDES everything above in GOLD Service, plus:"
 msgstr "INCLUDES everything above in GOLD Service, plus:"
 
-#: src/pages/Pricing.js:207
+#: src/pages/Pricing.js:201
 msgid "INCLUDES: <0/>Charitable Donations | Medical Receipts | Union Dues | Transit Passes (prior to 2017 tax year) | RRSP Income/contributions | UCCB (Child Benefit) (prior to 2017 tax year) | Student Loan Interest | Tuition & Education Amounts | Child Care Expenses | Support Payments | Pension Income Splitting | Amount for Eligible Dependent"
 msgstr "INCLUDES: <0/>Charitable Donations | Medical Receipts | Union Dues | Transit Passes (prior to 2017 tax year) | RRSP Income/contributions | UCCB (Child Benefit) (prior to 2017 tax year) | Student Loan Interest | Tuition & Education Amounts | Child Care Expenses | Support Payments | Pension Income Splitting | Amount for Eligible Dependent"
 
@@ -294,19 +302,19 @@ msgstr "INCOME TAXES"
 msgid "If a computer screen share is not needed you can also choose to simply request access to your secure portal to send us your documents and we will contact you once your return is started to go through any questions and to complete your return."
 msgstr "If a computer screen share is not needed you can also choose to simply request access to your secure portal to send us your documents and we will contact you once your return is started to go through any questions and to complete your return."
 
-#: src/pages/Pricing.js:531
+#: src/pages/Pricing.js:519
 msgid "If you have purchased CRA Review Insurance when we completed your return, this is not required and you should not receive a letter, it will be directed to our office, and we will deal with CRA on your behalf. Should you receive a letter, just get us a copy and we will take care of it for you"
 msgstr "If you have purchased CRA Review Insurance when we completed your return, this is not required and you should not receive a letter, it will be directed to our office, and we will deal with CRA on your behalf. Should you receive a letter, just get us a copy and we will take care of it for you"
 
-#: src/pages/Pricing.js:403
+#: src/pages/Pricing.js:391
 msgid "In person meeting"
 msgstr "In person meeting"
 
-#: src/pages/Pricing.js:379
+#: src/pages/Pricing.js:367
 msgid "Includes online filing with CRA"
 msgstr "Includes online filing with CRA"
 
-#: src/pages/Pricing.js:584
+#: src/pages/Pricing.js:572
 msgid "Includes review meeting with customer to discuss, and follow up"
 msgstr "Includes review meeting with customer to discuss, and follow up"
 
@@ -348,7 +356,7 @@ msgstr "Let us manage your books so your business can run at its peak with your 
 msgid "Let us manage your books so your business can run at its peak with your financials updated monthly and your numbers available to you anywhere.<0>Learn more...</0>"
 msgstr "Let us manage your books so your business can run at its peak with your financials updated monthly and your numbers available to you anywhere.<0>Learn more...</0>"
 
-#: src/components/LoginForm.js:106
+#: src/components/LoginForm.js:99
 #: src/components/Navbar.js:155
 msgid "Login"
 msgstr "Login"
@@ -358,10 +366,14 @@ msgstr "Login"
 #~ msgstr "Login with Google"
 
 #: src/pages/SignIn.js:16
-msgid "Login/Sign up"
-msgstr "Login/Sign up"
+#~ msgid "Login/Sign up"
+#~ msgstr "Login/Sign up"
 
-#: src/pages/Pricing.js:332
+#: src/components/LoginForm.js:68
+msgid "Login/Signup"
+msgstr "Login/Signup"
+
+#: src/pages/Pricing.js:320
 msgid "Long Haul Trucker $75"
 msgstr "Long Haul Trucker $75"
 
@@ -384,15 +396,15 @@ msgstr "Make an appointment"
 #~ msgid "Materials required for personal tax"
 #~ msgstr "Materials required for personal tax"
 
-#: src/pages/ContactUs.js:174
+#: src/pages/ContactUs.js:177
 msgid "Message"
 msgstr "Message"
 
-#: src/pages/Pricing.js:279
+#: src/pages/Pricing.js:267
 msgid "Need a copy of your Notice Of Assessment or an Option C printout? We can print it and send it to you at no additional cost"
 msgstr "Need a copy of your Notice Of Assessment or an Option C printout? We can print it and send it to you at no additional cost"
 
-#: src/pages/Pricing.js:276
+#: src/pages/Pricing.js:264
 msgid "Need someone to deal with CRA?"
 msgstr "Need someone to deal with CRA?"
 
@@ -410,9 +422,13 @@ msgstr "Online Income Tax Options during COVID-19"
 msgid "PAYROLL"
 msgstr "PAYROLL"
 
+#: src/components/LoginForm.js:89
+msgid "Password"
+msgstr "Password"
+
 #: src/components/LoginForm.js:80
-msgid "Password:"
-msgstr "Password:"
+#~ msgid "Password:"
+#~ msgstr "Password:"
 
 #: src/components/Navbar.js:120
 #: src/pages/Business.js:107
@@ -434,7 +450,7 @@ msgstr "Payroll can be a headache for any company due to its time sensitiveness 
 #~ msgid "Personal Tax"
 #~ msgstr "Personal Tax"
 
-#: src/pages/ContactUs.js:75
+#: src/pages/ContactUs.js:78
 #: src/pages/Home.js:140
 msgid "Phone:"
 msgstr "Phone:"
@@ -443,15 +459,15 @@ msgstr "Phone:"
 #~ msgid "Please select a date and time to make an appointment."
 #~ msgstr "Please select a date and time to make an appointment."
 
-#: src/pages/Pricing.js:501
+#: src/pages/Pricing.js:489
 msgid "Pre or Post Assessment Review $50-250 per review (at time of review)"
 msgstr "Pre or Post Assessment Review $50-250 per review (at time of review)"
 
-#: src/pages/Pricing.js:391
+#: src/pages/Pricing.js:379
 msgid "Pre-return preparation the purpose of RRSP planning before RRSP deadline"
 msgstr "Pre-return preparation the purpose of RRSP planning before RRSP deadline"
 
-#: src/pages/Pricing.js:577
+#: src/pages/Pricing.js:565
 msgid "Preparation of CRA forms to request reduction or elimination of penalties and / or interest due to extraordinary circumstances"
 msgstr "Preparation of CRA forms to request reduction or elimination of penalties and / or interest due to extraordinary circumstances"
 
@@ -460,19 +476,19 @@ msgstr "Preparation of CRA forms to request reduction or elimination of penaltie
 #~ msgid "Prepared materials"
 #~ msgstr "Prepared materials"
 
-#: src/pages/Pricing.js:351
+#: src/pages/Pricing.js:339
 msgid "Price is for preparation of T2125 or T2042 form and review of expenses (Agri Stability or Agri Invest not included)"
 msgstr "Price is for preparation of T2125 or T2042 form and review of expenses (Agri Stability or Agri Invest not included)"
 
-#: src/pages/Pricing.js:324
+#: src/pages/Pricing.js:312
 msgid "Price is for preparation of T776 form and review of expenses"
 msgstr "Price is for preparation of T776 form and review of expenses"
 
-#: src/pages/Pricing.js:336
+#: src/pages/Pricing.js:324
 msgid "Price is for preparation of TL2 form and review of expenses"
 msgstr "Price is for preparation of TL2 form and review of expenses"
 
-#: src/pages/Pricing.js:406
+#: src/pages/Pricing.js:394
 msgid "Price is per return/person"
 msgstr "Price is per return/person"
 
@@ -481,7 +497,7 @@ msgstr "Price is per return/person"
 msgid "Pricing"
 msgstr "Pricing"
 
-#: src/pages/Pricing.js:302
+#: src/pages/Pricing.js:290
 msgid "Priority Service $45"
 msgstr "Priority Service $45"
 
@@ -494,11 +510,11 @@ msgstr "Property Details/(it only applies to Ontario address)"
 #~ msgid "Rental Income"
 #~ msgstr "Rental Income"
 
-#: src/pages/Pricing.js:318
+#: src/pages/Pricing.js:306
 msgid "Rental Property Income (for each property to be reported) $75"
 msgstr "Rental Property Income (for each property to be reported) $75"
 
-#: src/pages/Pricing.js:573
+#: src/pages/Pricing.js:561
 msgid "Request for Tax Payer Relief starting at $200"
 msgstr "Request for Tax Payer Relief starting at $200"
 
@@ -511,12 +527,12 @@ msgstr "Reservation"
 #~ msgid "Resource Centre"
 #~ msgstr "Resource Centre"
 
-#: src/pages/Pricing.js:546
+#: src/pages/Pricing.js:534
 msgid "Review of customer circumstances to determine possible eligibility for tax credit"
 msgstr "Review of customer circumstances to determine possible eligibility for tax credit"
 
 #: src/pages/Pricing.js:45
-#: src/pages/Pricing.js:175
+#: src/pages/Pricing.js:172
 msgid "SENIORS with income splitting & investment slips, OR"
 msgstr "SENIORS with income splitting & investment slips, OR"
 
@@ -528,7 +544,7 @@ msgstr "SILVER SERVICE"
 msgid "SILVER SERVICE $69"
 msgstr "SILVER SERVICE $69"
 
-#: src/pages/Pricing.js:180
+#: src/pages/Pricing.js:177
 msgid "STUDENTS must be full time student in high school or post-secondary school during tax year (includes T2202A forms), under 21 yrs of age, includes T4’s from part-time/summer jobs, should file returns to create future RRSP contribution room & collect GST credits (if applicable)"
 msgstr "STUDENTS must be full time student in high school or post-secondary school during tax year (includes T2202A forms), under 21 yrs of age, includes T4’s from part-time/summer jobs, should file returns to create future RRSP contribution room & collect GST credits (if applicable)"
 
@@ -544,7 +560,7 @@ msgstr "STUDENTS must be full time student in high school or post-secondary scho
 #~ msgid "Self employed"
 #~ msgstr "Self employed"
 
-#: src/pages/Pricing.js:344
+#: src/pages/Pricing.js:332
 msgid "Self-Employed / Business / Farm Income (T1 return-Non-Incorporated) $200"
 msgstr "Self-Employed / Business / Farm Income (T1 return-Non-Incorporated) $200"
 
@@ -552,7 +568,7 @@ msgstr "Self-Employed / Business / Farm Income (T1 return-Non-Incorporated) $200
 #~ msgid "Self-employed Taxes"
 #~ msgstr "Self-employed Taxes"
 
-#: src/components/LoginForm.js:131
+#: src/components/LoginForm.js:136
 msgid "Sign in with Google"
 msgstr "Sign in with Google"
 
@@ -560,7 +576,7 @@ msgstr "Sign in with Google"
 msgid "Sign out"
 msgstr "Sign out"
 
-#: src/components/LoginForm.js:97
+#: src/components/LoginForm.js:111
 msgid "Sign up"
 msgstr "Sign up"
 
@@ -572,7 +588,7 @@ msgstr "Sign up"
 msgid "Simple investment reporting (buy/sell of shares, etc) which include T3’s, T5’s or T5008 accompanied with realized gain/loss report.) All other investing is considered complex and is priced separately –"
 msgstr "Simple investment reporting (buy/sell of shares, etc) which include T3’s, T5’s or T5008 accompanied with realized gain/loss report.) All other investing is considered complex and is priced separately –"
 
-#: src/pages/Pricing.js:244
+#: src/pages/Pricing.js:235
 msgid "Simple investment reporting (buy/sell of shares, etc) which include T3’s, T5’s or T5008 accompanied with realized gain/loss report.) All other investing is considered complex and is priced separately – see additional services."
 msgstr "Simple investment reporting (buy/sell of shares, etc) which include T3’s, T5’s or T5008 accompanied with realized gain/loss report.) All other investing is considered complex and is priced separately – see additional services."
 
@@ -580,11 +596,11 @@ msgstr "Simple investment reporting (buy/sell of shares, etc) which include T3�
 msgid "Size of each file should be less 5Mbytes. File name should be less than 60 characters. File name should NOT include special characters."
 msgstr "Size of each file should be less 5Mbytes. File name should be less than 60 characters. File name should NOT include special characters."
 
-#: src/pages/Pricing.js:306
+#: src/pages/Pricing.js:294
 msgid "Skip the wait, prioritize your file with a 3 day turnaround. If you have multiple linked tax returns (Spouses, children) this will apply to each return separately. Note this may not be available during the last few days of April but we will inform you in that case."
 msgstr "Skip the wait, prioritize your file with a 3 day turnaround. If you have multiple linked tax returns (Spouses, children) this will apply to each return separately. Note this may not be available during the last few days of April but we will inform you in that case."
 
-#: src/pages/Pricing.js:385
+#: src/pages/Pricing.js:373
 msgid "Standard RRSP Planning $75 ($25 rebate at time of tax filing)"
 msgstr "Standard RRSP Planning $75 ($25 rebate at time of tax filing)"
 
@@ -592,11 +608,11 @@ msgstr "Standard RRSP Planning $75 ($25 rebate at time of tax filing)"
 #~ msgid "Students Tax"
 #~ msgstr "Students Tax"
 
-#: src/pages/ContactUs.js:160
+#: src/pages/ContactUs.js:163
 msgid "Subject"
 msgstr "Subject"
 
-#: src/pages/ContactUs.js:191
+#: src/pages/ContactUs.js:194
 msgid "Submit Form"
 msgstr "Submit Form"
 
@@ -607,15 +623,15 @@ msgstr "Submit Form"
 msgid "Submit form"
 msgstr "Submit form"
 
-#: src/pages/Pricing.js:446
+#: src/pages/Pricing.js:434
 msgid "T1 Adjustment $50 per year"
 msgstr "T1 Adjustment $50 per year"
 
-#: src/pages/Pricing.js:459
+#: src/pages/Pricing.js:447
 msgid "T1 Adjustment (more complex) $100 per year"
 msgstr "T1 Adjustment (more complex) $100 per year"
 
-#: src/pages/Pricing.js:565
+#: src/pages/Pricing.js:553
 msgid "T1 Adjustments for the years impacted, up to 10 years maxs"
 msgstr "T1 Adjustments for the years impacted, up to 10 years maxs"
 
@@ -627,8 +643,8 @@ msgstr "T1 Adjustments for the years impacted, up to 10 years maxs"
 msgid "Tax Form"
 msgstr "Tax Form"
 
-#: src/pages/Pricing.js:599
-#: src/pages/Pricing.js:610
+#: src/pages/Pricing.js:587
+#: src/pages/Pricing.js:598
 msgid "Tax Online"
 msgstr "Tax Online"
 
@@ -648,12 +664,12 @@ msgstr "This is based on your needs, you can proceed to the next step with a bri
 msgid "To respect our clients health and do our part to not spread sickness in our community we ask that you wear a mask and following distancing guidelines as much as possible in our office. We are open for in person meetings but also offer personal income tax services with no need to visit our office. The following options are available."
 msgstr "To respect our clients health and do our part to not spread sickness in our community we ask that you wear a mask and following distancing guidelines as much as possible in our office. We are open for in person meetings but also offer personal income tax services with no need to visit our office. The following options are available."
 
-#: src/pages/Pricing.js:357
+#: src/pages/Pricing.js:345
 msgid "Totals must be provided for each expense category. If receipts or other forms are provided, or additional help is required to complete the form additional costs will apply. No additional cost for a verbal review of the form if you are new to using the form."
 msgstr "Totals must be provided for each expense category. If receipts or other forms are provided, or additional help is required to complete the form additional costs will apply. No additional cost for a verbal review of the form if you are new to using the form."
 
 #: src/pages/Pricing.js:120
-#: src/pages/Pricing.js:235
+#: src/pages/Pricing.js:226
 msgid "UNLIMITED information slips & receipts"
 msgstr "UNLIMITED information slips & receipts"
 
@@ -665,7 +681,7 @@ msgstr "Upload files"
 msgid "We use an online software called Zoom for online meetings where we can share computer screens and share files as needed. You are given access to your own secure portal to upload your documents to us prior to our meeting. Start by choosing a meeting time"
 msgstr "We use an online software called Zoom for online meetings where we can share computer screens and share files as needed. You are given access to your own secure portal to upload your documents to us prior to our meeting. Start by choosing a meeting time"
 
-#: src/pages/Pricing.js:516
+#: src/pages/Pricing.js:504
 msgid "We will prepare a written reply and provide information requested from your tax return, on your behalf"
 msgstr "We will prepare a written reply and provide information requested from your tax return, on your behalf"
 
@@ -673,7 +689,7 @@ msgstr "We will prepare a written reply and provide information requested from y
 #~ msgid "Website"
 #~ msgstr "Website"
 
-#: src/pages/ContactUs.js:115
+#: src/pages/ContactUs.js:118
 #: src/pages/Home.js:150
 msgid "Website:"
 msgstr "Website:"
@@ -690,32 +706,32 @@ msgstr "Which service should I book?"
 msgid "You can contact us by phone, email, 15-minute phone meeting reservation, or the form on the contact us page."
 msgstr "You can contact us by phone, email, 15-minute phone meeting reservation, or the form on the contact us page."
 
-#: src/pages/Pricing.js:508
+#: src/pages/Pricing.js:496
 msgid "You receive a letter from CRA requesting further information to substantiate your tax credit request (happens most often when there is a large credit being claimed such as medical or donations or something isn’t clear to CRA)"
 msgstr "You receive a letter from CRA requesting further information to substantiate your tax credit request (happens most often when there is a large credit being claimed such as medical or donations or something isn’t clear to CRA)"
 
-#: src/pages/ContactUs.js:146
+#: src/pages/ContactUs.js:149
 msgid "Your Email"
 msgstr "Your Email"
 
-#: src/pages/ContactUs.js:132
+#: src/pages/ContactUs.js:135
 msgid "Your Name"
 msgstr "Your Name"
 
-#: src/pages/Pricing.js:485
+#: src/pages/Pricing.js:473
 msgid "contact CRA via phone for information on your behalf"
 msgstr "contact CRA via phone for information on your behalf"
 
-#: src/pages/Pricing.js:490
-#: src/pages/Pricing.js:522
+#: src/pages/Pricing.js:478
+#: src/pages/Pricing.js:510
 msgid "contact CRA website for information on your behalf"
 msgstr "contact CRA website for information on your behalf"
 
-#: src/pages/Pricing.js:463
+#: src/pages/Pricing.js:451
 msgid "for current or prior years, to include complex changes to tax situation. We can confirm in advance if simple or complex depending on individual situation"
 msgstr "for current or prior years, to include complex changes to tax situation. We can confirm in advance if simple or complex depending on individual situation"
 
-#: src/pages/Pricing.js:450
+#: src/pages/Pricing.js:438
 msgid "for current or prior years, to include missed slips, or basic changes to tax situation"
 msgstr "for current or prior years, to include missed slips, or basic changes to tax situation"
 
@@ -723,12 +739,12 @@ msgstr "for current or prior years, to include missed slips, or basic changes to
 msgid "here"
 msgstr "here"
 
-#: src/pages/Pricing.js:479
+#: src/pages/Pricing.js:467
 msgid "reprint of Notice of Assessment or Option C from CRA website for current or prior years"
 msgstr "reprint of Notice of Assessment or Option C from CRA website for current or prior years"
 
 #: src/pages/Pricing.js:82
-#: src/pages/Pricing.js:202
+#: src/pages/Pricing.js:196
 msgid "return – up to 10 information slips (T3, T4, T5, etc)"
 msgstr "return – up to 10 information slips (T3, T4, T5, etc)"
 
@@ -736,6 +752,6 @@ msgstr "return – up to 10 information slips (T3, T4, T5, etc)"
 msgid "see additional services"
 msgstr "see additional services"
 
-#: src/pages/Pricing.js:495
+#: src/pages/Pricing.js:483
 msgid "this is covered under CRA Review Insurance"
 msgstr "this is covered under CRA Review Insurance"
