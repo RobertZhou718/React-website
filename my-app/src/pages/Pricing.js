@@ -1,11 +1,14 @@
 import { Trans } from "@lingui/macro";
+import Terms from "../components/Terms";
 const Pricing = () => {
   return (
     <div>
       <section className="p-5 bg-white mt-5">
         <div className="container">
           <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 className="display-4 fw-normal">Pricing</h1>
+            <h1 className="display-4 fw-normal">
+              <Trans>Pricing</Trans>
+            </h1>
             <p className="fs-5 text-muted">
               <Trans>
                 <b>At Sum Accounting you are important!</b>
@@ -131,7 +134,7 @@ const Pricing = () => {
                       </Trans>
                       <a href="#addServe">
                         <Trans>see additional services</Trans>
-                      </a>{" "}
+                      </a>
                       .
                     </li>
                   </ul>
@@ -239,11 +242,44 @@ const Pricing = () => {
               </li>
               <li>
                 <Trans>
-                  {" "}
                   Simple investment reporting (buy/sell of shares, etc) which
                   include T3’s, T5’s or T5008 accompanied with realized
                   gain/loss report.) All other investing is considered complex
                   and is priced separately – see additional services.
+                </Trans>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-5">
+            <h3>
+              <Trans>
+                <div className="text-danger">NEW!</div>
+                CRA Review Insurance $25 (at time of tax filing)
+              </Trans>
+            </h3>
+
+            <ul
+              className="mt-3 mb-4 text-start"
+              style={{ "font-size": "20px" }}
+            >
+              <li>
+                <Trans>
+                  Give yourself year round Peace of Mind !! Should your return
+                  be selected by CRA for a Pre or Post Assessment review, that
+                  we will take care of this for you.
+                </Trans>
+              </li>
+              <li>
+                <Trans>Employment Expenses (with totals provided)</Trans>
+              </li>
+              <li>
+                <Trans>Need someone to deal with CRA?</Trans>
+              </li>
+              <li>
+                <Trans>
+                  Need a copy of your Notice Of Assessment or an Option C
+                  printout? We can print it and send it to you at no additional
+                  cost
                 </Trans>
               </li>
             </ul>
@@ -258,7 +294,6 @@ const Pricing = () => {
             </h3>
             <p className="lead">
               <Trans>
-                {" "}
                 All services below may be added onto GOLD level or higher
               </Trans>
             </p>
@@ -269,7 +304,6 @@ const Pricing = () => {
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     Skip the wait, prioritize your file with a 3 day turnaround.
                     If you have multiple linked tax returns (Spouses, children)
                     this will apply to each return separately. Note this may not
@@ -282,14 +316,12 @@ const Pricing = () => {
             <div className="my-5">
               <h4>
                 <Trans>
-                  {" "}
                   Rental Property Income (for each property to be reported) $75
                 </Trans>
               </h4>
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     Price is for preparation of T776 form and review of expenses
                   </Trans>
                 </li>
@@ -310,7 +342,6 @@ const Pricing = () => {
             <div className="my-5">
               <h4>
                 <Trans>
-                  {" "}
                   Self-Employed / Business / Farm Income (T1
                   return-Non-Incorporated) $200
                 </Trans>
@@ -364,7 +395,6 @@ const Pricing = () => {
                 </li>
                 <li>
                   <Trans>
-                    {" "}
                     Estimated based on the information you can provide at the
                     time
                   </Trans>
@@ -400,7 +430,6 @@ const Pricing = () => {
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     Applies if annual realized gain / loss statements are not
                     provided and separate sale statements are required to
                     calculate the income. Maximum time of 1 hour after which the
@@ -419,7 +448,6 @@ const Pricing = () => {
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     for current or prior years, to include missed slips, or
                     basic changes to tax situation
                   </Trans>
@@ -433,7 +461,6 @@ const Pricing = () => {
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     for current or prior years, to include complex changes to
                     tax situation. We can confirm in advance if simple or
                     complex depending on individual situation
@@ -450,7 +477,6 @@ const Pricing = () => {
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     reprint of Notice of Assessment or Option C from CRA website
                     for current or prior years
                   </Trans>
@@ -473,7 +499,6 @@ const Pricing = () => {
             <div className="my-5">
               <h4>
                 <Trans>
-                  {" "}
                   Pre or Post Assessment Review $50-250 per review (at time of
                   review)
                 </Trans>
@@ -481,7 +506,6 @@ const Pricing = () => {
               <ul style={{ "font-size": "20px" }}>
                 <li>
                   <Trans>
-                    {" "}
                     You receive a letter from CRA requesting further information
                     to substantiate your tax credit request (happens most often
                     when there is a large credit being claimed such as medical
@@ -503,6 +527,66 @@ const Pricing = () => {
                   <Trans>Follow up, as required, to close review</Trans>
                 </li>
               </ul>
+              <p>
+                <Trans>
+                  If you have purchased CRA Review Insurance when we completed
+                  your return, this is not required and you should not receive a
+                  letter, it will be directed to our office, and we will deal
+                  with CRA on your behalf. Should you receive a letter, just get
+                  us a copy and we will take care of it for you
+                </Trans>
+              </p>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>Disability Tax Credit Application $150</Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    Review of customer circumstances to determine possible
+                    eligibility for tax credit
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Assistance in preparation of CRA Tax Credit Application
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Filing with CRA, and copy retention at our office
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>CRA follow up</Trans>
+                </li>
+                <li>
+                  <Trans>
+                    T1 Adjustments for the years impacted, up to 10 years maxs
+                  </Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>Request for Tax Payer Relief starting at $200</Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    Preparation of CRA forms to request reduction or elimination
+                    of penalties and / or interest due to extraordinary
+                    circumstances
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Includes review meeting with customer to discuss, and follow
+                    up
+                  </Trans>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -516,7 +600,6 @@ const Pricing = () => {
               </h2>
               <p className="my-4 lead">
                 <Trans>
-                  {" "}
                   After completing the appointment, please SignUp/Login to our
                   website to use the Tax online function, please fill in the
                   form according to your own needs, and upload the required
@@ -537,98 +620,7 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-      <section className="p-5">
-        <div className="container">
-          <h2 className="text-center">
-            <Trans>Frequently Asked Questions</Trans>
-          </h2>
-          <div className="accordion accordion-flush" id="accordionFlushExample">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-headingOne">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                className="accordion-collapse collapse"
-                aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div className="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> className. This
-                  is the first item's accordion body.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-headingTwo">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                className="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div className="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> className. This
-                  is the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-headingThree">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                className="accordion-collapse collapse"
-                aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div className="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> className. This
-                  is the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Terms />
     </div>
   );
 };
