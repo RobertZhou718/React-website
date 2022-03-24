@@ -1,29 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
-@media only screen and (max-width: 600px) {
-  nav {
-    background-color: white;
-  }
-  footer li,
-  p {
-    font-size: small;
-  }
-  .swiper-slide .title {
-    text-align: center;
-    display: inline-flex;
-  }
 
-  .swiper-slide .text {
-    display: flex;
-    text-align: center;
-
-    max-width: 400px;
-  }
-  .swiper-slide .slide_btn {
-    display: flex;
-    justify-content: center;
-  }
-}
 .gradient-custom-3 {
   /* fallback for old browsers */
   background: #84fab0;
@@ -227,4 +204,31 @@ h3 {
   font-size: 14px;
   max-width: 800px;
   line-height: 1.3;
+}
+
+
+@media only screen and (max-width: 800px) {
+  nav {
+    background-color: white;
+  }
+  footer li,
+  p {
+    font-size: small;
+  }
+  .swiper-slide .title {
+    font-size: 2rem;
+    text-align: center;
+    display: inline-flex;
+  }
+
+  .swiper-slide .text {
+    display: flex;
+    text-align: center;
+
+    max-width: 400px;
+  }
+  .swiper-slide .slide_btn {
+    display: flex;
+    justify-content: center;
+  }
 }
