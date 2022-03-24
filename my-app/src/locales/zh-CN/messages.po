@@ -19,106 +19,217 @@ msgstr "1 天"
 
 #: src/pages/Housing.js:51
 #: src/pages/Housing.js:106
-msgid "15% Non-Resident Speculation Tax (NRST) Rebate"
-msgstr "15% 海外买家 (NRST) 税"
+#~ msgid "15% Non-Resident Speculation Tax (NRST) Rebate"
+#~ msgstr "15% 海外买家 (NRST) 税"
 
-#: src/components/Navbar.js:159
+#: src/pages/Pricing.js:10
+msgid "<0>At Sum Accounting you are important!</0><1/> We are committed to creating value and peace of mind for our customers. One of the ways we achieve this is to offer upfront fixed pricing as much as possible. We all hate to get surprise bills that are over our budget so at Sum Accounting we strive to eliminate this."
+msgstr "<0>在全加会计，您很重要！</0><1/> 我们致力于为客户创造价值并让客户安心。 我们实现这一目标的方法之一是尽可能提供预先固定的定价。 我们都讨厌收到超出预算的意外账单，因此在全加会计 我们努力消除这种情况。"
+
+#: src/pages/Pricing.js:257
+msgid "ADDITIONAL SERVICES"
+msgstr "额外服务"
+
+#: src/components/Navbar.js:117
 #: src/pages/AboutUs.js:11
 msgid "About Us"
 msgstr "关于我们"
 
 #: src/pages/Business.js:131
-msgid "Accounting"
-msgstr "会计"
+#~ msgid "Accounting"
+#~ msgstr "会计"
 
 #: src/components/Navbar.js:125
-msgid "Accounting & Bookkeeping"
-msgstr "会计薄计"
+#~ msgid "Accounting & Bookkeeping"
+#~ msgstr "会计薄计"
 
-#: src/pages/ContactUs.js:22
-#: src/pages/Home.js:402
+#: src/pages/Home.js:261
+msgid "Accounting requirements and needs of small businesses and individuals today cover a range of things. Maybe you require a mid year financial statement (typically prepared w/T2 taxes) for funding or need an electronic bill payment system to streamline your accounts payable."
+msgstr "当今小型企业和个人的会计要求和需求涵盖了一系列内容。 也许您需要一份年中财务报表（通常准备好包含 T2 税）来获得资金，或者需要一个电子账单支付系统来简化您的应付账款。"
+
+#: src/pages/Home.js:116
+msgid "Accounting requirements and needs of small businesses and individuals today cover a range of things.<0>Learn more...</0>"
+msgstr "当今小型企业和个人的会计要求和需求涉及很多方面。<0>了解详情...</0>"
+
+#: src/pages/ContactUs.js:55
+#: src/pages/Home.js:145
 msgid "Address:"
 msgstr "地址："
 
+#: src/pages/Pricing.js:518
+msgid "After completing the appointment, please SignUp/Login to our website to use the Tax online function, please fill in the form according to your own needs, and upload the required documents."
+msgstr "完成预约后，请注册/登录我们的网站使用网上报税功能，请根据自己的需要填写表格，并上传所需文件。"
+
+#: src/pages/Pricing.js:260
+msgid "All services below may be added onto GOLD level or higher"
+msgstr "以下所有服务都可以添加到 金牌级别或更高级别"
+
+#: src/pages/AboutUs.js:77
+msgid "Another option is to send all documents to us using the secure messaging app like Whatsapp or Telegram. Contact us for details if you are new to using these apps."
+msgstr "另一种选择是使用 Whatsapp 或 Telegram 等安全消息传递应用程序将所有文件发送给我们。 如果您不熟悉使用这些应用程序，请联系我们了解详细信息。"
+
+#: src/pages/Pricing.js:402
+msgid "Applies if annual realized gain / loss statements are not provided and separate sale statements are required to calculate the income. Maximum time of 1 hour after which the rate is $70/hr"
+msgstr "适用于未提供年度已实现损益表且需要单独销售报表来计算收入的情况。 最长时间为 1 小时，之后费用为 70 加元/小时"
+
+#: src/pages/Pricing.js:386
+msgid "Applies if medical is partially paid by third party insurance and there is a substantial number of receipts. Third party statements are required. Maximum time of 1 hour which covers most situations, after which the rate is $70/hr."
+msgstr "适用于医疗部分由第三方保险支付且有大量收据的情况。 需要第三方声明。 大多数情况下的最长时间为 1 小时，之后费用为 70 加元/小时。"
+
+#: src/pages/Pricing.js:37
+#: src/pages/Pricing.js:169
+msgid "BASIC return – max 5 info slips (T3, T4, T5), OR"
+msgstr "基本返回 - 最多 5 个信息单（T3、T4、T5），或"
+
 #: src/pages/Business.js:82
-msgid "Business Registration"
-msgstr "公司注册"
+#~ msgid "Business Registration"
+#~ msgstr "公司注册"
 
 #: src/components/Navbar.js:107
 #: src/pages/Business.js:11
 #: src/pages/Home.js:113
 #: src/pages/Home.js:192
-msgid "Business Tax"
-msgstr "公司报税"
+#~ msgid "Business Tax"
+#~ msgstr "公司报税"
+
+#: src/pages/AboutUs.js:40
+msgid "COVID-19 NOTICE"
+msgstr "COVID-19 提示"
 
 #: src/components/Navbar.js:167
 #: src/pages/AboutUs.js:38
-msgid "COVID-19 Related Tax Assistance"
-msgstr "COVID-19 相关税务扶持"
+#~ msgid "COVID-19 Related Tax Assistance"
+#~ msgstr "COVID-19 相关税务扶持"
+
+#: src/pages/Pricing.js:446
+msgid "CRA contact or Notice of Assessment Copy $35 per access"
+msgstr "CRA 联系人或评估通知副本 每次访问 $35"
+
+#: src/pages/Pricing.js:342
+msgid "Calculation of GST Remittance or Refund, based upon completion of Business Income Return (above)"
+msgstr "根据完成营业收入申报表（以上）计算 GST 汇款或退款"
 
 #: src/components/UploadFile.js:100
-msgid "Click to agree terms and conditions above."
-msgstr "单击以同意上述条款和条件。"
+#~ msgid "Click to agree terms and conditions above."
+#~ msgstr "单击以同意上述条款和条件。"
 
-#: src/components/Navbar.js:183
-#: src/pages/Home.js:392
+#: src/pages/Pricing.js:398
+msgid "Complex Investments $95"
+msgstr "复杂投资 $95"
+
+#: src/pages/Pricing.js:382
+msgid "Complex Medical $59"
+msgstr "复杂医疗 $59"
+
+#: src/components/Navbar.js:131
 msgid "Contact Us"
 msgstr "联系我们"
+
+#: src/pages/Home.js:153
+msgid "Contact us"
+msgstr "联系我们"
+
+#: src/pages/Pricing.js:109
+msgid "DIAMOND SERVICE"
+msgstr "钻石服务"
+
+#: src/pages/Pricing.js:220
+msgid "DIAMOND SERVICE $150"
+msgstr "钻石服务  $150"
 
 #: src/components/UploadFile.js:23
 msgid "Default file input example"
 msgstr "默认文件输入示例"
 
-#: src/components/DependentList.js:44
+#: src/components/DependentList.js:45
 msgid "Dependants List/(18 or less)"
 msgstr "家长信息/（18 或以下）"
 
 #: src/pages/Housing.js:41
 #: src/pages/Housing.js:86
-msgid "Disposition of Taxable Property for Non-Resident"
-msgstr "非居民应税财产的处置"
+#~ msgid "Disposition of Taxable Property for Non-Resident"
+#~ msgstr "非居民应税财产的处置"
 
 #: src/components/Navbar.js:191
-msgid "Download Centre"
-msgstr "下载中心"
+#~ msgid "Download Centre"
+#~ msgstr "下载中心"
 
 #: src/components/Taxform.js:35
 msgid "Due to the high volume of customers, our current process time will be:"
 msgstr "由于客户数量众多，我们目前的处理时间为："
 
-#: src/pages/Home.js:399
+#: src/pages/Home.js:142
 msgid "E-mail:"
 msgstr "邮箱："
 
-#: src/components/LoginForm.js:61
-#: src/pages/ContactUs.js:60
+#: src/components/LoginForm.js:69
+#: src/pages/ContactUs.js:93
 msgid "Email:"
 msgstr "邮箱："
 
+#: src/pages/Pricing.js:120
+#: src/pages/Pricing.js:235
+msgid "Employment Expenses (with totals provided)"
+msgstr "雇佣费用（提供总额）"
+
+#: src/pages/Pricing.js:366
+msgid "Estimated based on the information you can provide at the time"
+msgstr "根据您当时可以提供的信息估算"
+
+#: src/pages/Pricing.js:411
+msgid "Excludes options trading."
+msgstr "不包括期权交易。"
+
 #: src/pages/Business.js:151
-msgid "Financial Statement"
-msgstr "财务报表"
+#~ msgid "Financial Statement"
+#~ msgstr "财务报表"
 
 #: src/components/Navbar.js:130
-msgid "Financial Statements"
-msgstr "财务报表"
+#~ msgid "Financial Statements"
+#~ msgstr "财务报表"
+
+#: src/pages/Pricing.js:503
+msgid "Follow up, as required, to close review"
+msgstr "根据需要跟进以结束审查"
+
+#: src/pages/Pricing.js:123
+#: src/pages/Pricing.js:238
+msgid "Foreign pension"
+msgstr "外国养老金"
 
 #: src/components/Terms.js:9
-#: src/pages/AboutUs.js:74
-#: src/pages/Business.js:197
-#: src/pages/ContactUs.js:162
-#: src/pages/Home.js:243
-#: src/pages/Housing.js:153
-#: src/pages/Personal.js:174
+#: src/pages/AboutUs.js:90
+#: src/pages/ContactUs.js:203
+#: src/pages/Home.js:279
+#: src/pages/Pricing.js:543
 msgid "Frequently Asked Questions"
 msgstr "常见问题"
 
+#: src/pages/Pricing.js:72
+msgid "GOLD SERVICE"
+msgstr "金牌服务"
+
+#: src/pages/Pricing.js:191
+msgid "GOLD SERVICE $97"
+msgstr "金牌服务 $97"
+
 #: src/pages/Housing.js:33
 #: src/pages/Housing.js:66
-msgid "GST New Residential Rental Property Rebate"
-msgstr "GST 新住宅出租物业回扣"
+#~ msgid "GST New Residential Rental Property Rebate"
+#~ msgstr "GST 新住宅出租物业回扣"
 
-#: src/components/Navbar.js:57
+#: src/pages/Pricing.js:338
+msgid "GST Return $65"
+msgstr "GST 退税 $65"
+
+#: src/pages/Home.js:61
+#: src/pages/Home.js:83
+#: src/pages/Home.js:105
+#: src/pages/Home.js:127
+msgid "Get Start"
+msgstr "开始"
+
+#: src/components/Navbar.js:72
 msgid "Home"
 msgstr "首页"
 
@@ -126,193 +237,427 @@ msgstr "首页"
 #: src/pages/Home.js:133
 #: src/pages/Home.js:215
 #: src/pages/Housing.js:10
-msgid "Housing Related Tax"
-msgstr "房产相关税"
+#~ msgid "Housing Related Tax"
+#~ msgstr "房产相关税"
+
+#: src/pages/Pricing.js:224
+msgid "INCLUDES everything above in GOLD Service, plus:"
+msgstr "包括 金牌服务中的上述所有内容，以及："
+
+#: src/pages/Pricing.js:204
+msgid "INCLUDES: <0/>Charitable Donations | Medical Receipts | Union Dues | Transit Passes (prior to 2017 tax year) | RRSP Income/contributions | UCCB (Child Benefit) (prior to 2017 tax year) | Student Loan Interest | Tuition & Education Amounts | Child Care Expenses | Support Payments | Pension Income Splitting | Amount for Eligible Dependent"
+msgstr "包括：<0/>慈善捐赠 | 医疗收据 | 工会会费 | 过境通行证（2017 纳税年度之前）| RRSP 收入/供款 | UCCB（儿童福利金）（2017 纳税年度之前）| 学生贷款利息 | 学费和教育金额 | 托儿费用 | 支持付款 | 养老金收入分配 | 合格受抚养人的金额"
+
+#: src/pages/Pricing.js:84
+msgid "INCLUDES: Charitable Donations | Medical Receipts | Union Dues | Transit Passes (prior to 2017 tax year) | RRSP Income/contributions | UCCB (Child Benefit) (prior to 2017 tax year) | Student Loan Interest..."
+msgstr "包括：慈善捐款 | 医疗收据 | 工会会费 | 过境通行证（2017 纳税年度之前）| RRSP 收入/供款 | UCCB（儿童福利金）（2017 纳税年度之前）| 学生贷款利息..."
+
+#: src/pages/Home.js:46
+#: src/pages/Home.js:179
+msgid "INCOME TAXES"
+msgstr "收入税"
+
+#: src/pages/AboutUs.js:69
+msgid "If a computer screen share is not needed you can also choose to simply request access to your secure portal to send us your documents and we will contact you once your return is started to go through any questions and to complete your return."
+msgstr "如果不需要计算机屏幕共享，您也可以选择简单地请求访问您的安全门户以向我们发送您的文件，一旦您开始退货，我们将与您联系以解决任何问题并完成您的退货。"
+
+#: src/pages/Pricing.js:373
+msgid "In person meeting"
+msgstr "线下会议"
+
+#: src/pages/Pricing.js:348
+msgid "Includes online filing with CRA"
+msgstr "包括向 CRA 提交在线申请"
 
 #: src/pages/Business.js:32
 #: src/pages/Personal.js:30
-msgid "Income and expenses"
-msgstr "收入和支出"
+#~ msgid "Income and expenses"
+#~ msgstr "收入和支出"
+
+#: src/pages/Pricing.js:158
+msgid "Income only, no deductions included other than exceptions for Seniors / Students as listed (Excludes situations where additional services are required. See additional services.)"
+msgstr "仅限收入，除所列老年人/学生的例外情况外，不包括任何扣除项（不包括需要额外服务的情况。请参阅额外服务。）"
+
+#: src/pages/Home.js:183
+msgid "Income taxes are one of life’s largest expenses. If you are a small business owner in most cases tax prep should be handled by the pros. Here at GP Accounting we provide year round tax services for our small business and farmer customers that are on monthly accounting plans with us. We are also happy to work with your existing CPA or tax accountant. NOTE – We are not taking on new basic personal income tax work at this time but are rather focused on monthly accounting services."
+msgstr "所得税是人生最大的开支之一。 如果您是小企业主，在大多数情况下，税务准备应由专业人士处理。 在 GP 会计，我们为我们的小企业和农民客户提供全年税务服务，这些客户与我们有月度会计计划。 我们也很乐意与您现有的注册会计师或税务会计师合作。 注意——我们目前没有进行新的基本个人所得税工作，而是专注于月度会计服务。"
+
+#: src/pages/Home.js:50
+msgid "Income taxes are one of life’s largest expenses. If you are a small business owner in most cases tax prep should be handled by the pros.<0>Learn more...</0>"
+msgstr "所得税是人生最大的开支之一。 如果您是小企业主，在大多数情况下，税务准备应由专业人士处理。<0>了解详情...</0>"
 
 #: src/components/Navbar.js:115
-msgid "Incorporation & Business Registration"
-msgstr "公司注册登记"
+#~ msgid "Incorporation & Business Registration"
+#~ msgstr "公司注册登记"
 
 #: src/components/Navbar.js:232
-msgid "Lang"
-msgstr "语言"
+#~ msgid "Lang"
+#~ msgstr "语言"
 
-#: src/pages/Business.js:91
-#: src/pages/Business.js:116
-#: src/pages/Business.js:140
-#: src/pages/Business.js:160
-#: src/pages/Home.js:97
-#: src/pages/Home.js:122
-#: src/pages/Home.js:142
-#: src/pages/Home.js:167
-#: src/pages/Home.js:204
-#: src/pages/Home.js:227
-#: src/pages/Personal.js:91
-#: src/pages/Personal.js:112
-#: src/pages/Personal.js:135
+#: src/pages/Pricing.js:54
+#: src/pages/Pricing.js:91
 msgid "Learn more"
 msgstr "了解更多"
 
-#: src/components/LoginForm.js:98
+#: src/pages/Home.js:239
+msgid "Let us manage your books so your business can run at its peak with your financials updated monthly and your numbers available to you anywhere. We are not your typical bookkeeping or accounting firm. We believe meaningful, year round relationships are equally as important as accurate numbers."
+msgstr "让我们管理您的账簿，这样您的业务就可以在每月更新的财务状况和随时随地可用的数字的情况下运行在高峰期。 我们不是您典型的簿记或会计师事务所。 我们相信有意义的全年关系与准确的数字同样重要。"
+
+#: src/pages/Home.js:94
+msgid "Let us manage your books so your business can run at its peak with your financials updated monthly and your numbers available to you anywhere.<0>Learn more...</0>"
+msgstr "让我们管理您的账簿，以便您的业务能够在高峰期运营，每月更新您的财务状况，并随时随地为您提供数据。<0>了解详情...</0> "
+
+#: src/components/LoginForm.js:106
+#: src/components/Navbar.js:155
 msgid "Login"
 msgstr "登录"
 
 #: src/components/LoginForm.js:112
-msgid "Login with Google"
-msgstr "通过google登录"
+#~ msgid "Login with Google"
+#~ msgstr "通过google登录"
 
 #: src/pages/SignIn.js:16
 msgid "Login/Sign up"
 msgstr "登录/注册"
 
+#: src/pages/Pricing.js:300
+msgid "Long Haul Trucker $75"
+msgstr "长途卡车司机 $75"
+
+#: src/pages/Home.js:90
+#: src/pages/Home.js:235
+msgid "MONTHLY ONLINE ACCOUNTING"
+msgstr "每月在线会计"
+
+#: src/pages/Pricing.js:63
+#: src/pages/Pricing.js:100
+#: src/pages/Pricing.js:143
+msgid "Make an appointment"
+msgstr "预约"
+
 #: src/pages/Business.js:26
-msgid "Materials required for Business tax"
-msgstr "公司报税所需材料"
+#~ msgid "Materials required for Business tax"
+#~ msgstr "公司报税所需材料"
 
 #: src/pages/Personal.js:24
-msgid "Materials required for personal tax"
-msgstr "个人税所需材料"
+#~ msgid "Materials required for personal tax"
+#~ msgstr "个人税所需材料"
 
-#: src/pages/ContactUs.js:137
+#: src/pages/ContactUs.js:173
 msgid "Message"
 msgstr "信息"
 
-#: src/components/LoginForm.js:72
+#: src/pages/Home.js:112
+#: src/pages/Home.js:257
+msgid "OTHER BUSINESS SERVICES"
+msgstr "其他商业服务"
+
+#: src/pages/AboutUs.js:43
+msgid "Online Income Tax Options during COVID-19"
+msgstr "COVID-19 期间的在线所得税选项"
+
+#: src/pages/Home.js:68
+#: src/pages/Home.js:210
+msgid "PAYROLL"
+msgstr "工资单"
+
+#: src/components/LoginForm.js:80
 msgid "Password:"
 msgstr "密码"
 
 #: src/components/Navbar.js:120
 #: src/pages/Business.js:107
-msgid "Payroll & Remittance"
-msgstr "工资发放"
+#~ msgid "Payroll & Remittance"
+#~ msgstr "工资发放"
+
+#: src/pages/Home.js:214
+msgid "Payroll can be a headache for any company due to its time sensitiveness and recurring nature. Why not provide us with the details to ensure an accurate and timely payrun everytime – year end T4s included."
+msgstr "由于其时间敏感性和经常性，工资单对于任何公司来说都是一个令人头疼的问题。 为什么不向我们提供详细信息，以确保每次都能准确及时地进行支付——包括年终 T4。"
+
+#: src/pages/Home.js:72
+msgid "Payroll can be a headache for any company due to its time sensitiveness and recurring nature.<0>Learn more...</0>"
+msgstr "由于时间敏感性和重复性，工资单对于任何公司来说都是一个令人头疼的问题。<0>了解详情...</0>"
 
 #: src/components/Navbar.js:72
 #: src/pages/Home.js:88
 #: src/pages/Home.js:155
 #: src/pages/Personal.js:9
-msgid "Personal Tax"
-msgstr "个人报税"
+#~ msgid "Personal Tax"
+#~ msgstr "个人报税"
 
-#: src/pages/ContactUs.js:41
-#: src/pages/Home.js:396
+#: src/pages/ContactUs.js:74
+#: src/pages/Home.js:139
 msgid "Phone:"
 msgstr "电话："
 
 #: src/components/Reservation.js:70
-msgid "Please select a date and time to make an appointment."
-msgstr "请选择日期和时间进行预约。"
+#~ msgid "Please select a date and time to make an appointment."
+#~ msgstr "请选择日期和时间进行预约。"
+
+#: src/pages/Pricing.js:475
+msgid "Pre or Post Assessment Review $50-250 per review (at time of review)"
+msgstr "评估前或评估后审查 每次审查 50-250 加元（审查时）"
+
+#: src/pages/Pricing.js:360
+msgid "Pre-return preparation the purpose of RRSP planning before RRSP deadline"
+msgstr "预退回准备 RRSP 截止日期前 RRSP 计划的目的"
 
 #: src/pages/Business.js:35
 #: src/pages/Personal.js:33
-msgid "Prepared materials"
-msgstr "准备的材料"
+#~ msgid "Prepared materials"
+#~ msgstr "准备的材料"
 
-#: src/components/PropertDetails.js:43
+#: src/pages/Pricing.js:320
+msgid "Price is for preparation of T2125 or T2042 form and review of expenses (Agri Stability or Agri Invest not included)"
+msgstr "价格用于准备 T2125 或 T2042 表格和审查费用（不包括 Agri Stability 或 Agri Invest）"
+
+#: src/pages/Pricing.js:291
+msgid "Price is for preparation of T776 form and review of expenses"
+msgstr "价格用于准备 T776 表格和审查费用"
+
+#: src/pages/Pricing.js:304
+msgid "Price is for preparation of TL2 form and review of expenses"
+msgstr "价格用于准备 TL2 表格和审查费用"
+
+#: src/pages/Pricing.js:376
+msgid "Price is per return/person"
+msgstr "价格为每笔/人"
+
+#: src/components/Navbar.js:87
+msgid "Pricing"
+msgstr "价格"
+
+#: src/pages/Pricing.js:267
+msgid "Priority Service $45"
+msgstr "优先服务 $45"
+
+#: src/components/PropertDetails.js:44
 msgid "Property Details/(it only applies to Ontario address)"
 msgstr "住址详情/（仅适用于安大略省地址）"
 
 #: src/components/Navbar.js:85
 #: src/pages/Personal.js:102
-msgid "Rental Income"
-msgstr "房租收入"
+#~ msgid "Rental Income"
+#~ msgstr "房租收入"
 
-#: src/components/Reservation.js:64
+#: src/pages/Pricing.js:284
+msgid "Rental Property Income (for each property to be reported) $75"
+msgstr "出租物业收入（每项要报告的物业） $75"
+
+#: src/components/Navbar.js:102
+#: src/pages/Reservation.js:11
 msgid "Reservation"
 msgstr "预约"
 
 #: src/components/Navbar.js:196
-msgid "Resource Centre"
-msgstr "资源中心"
+#~ msgid "Resource Centre"
+#~ msgstr "资源中心"
+
+#: src/pages/Pricing.js:42
+#: src/pages/Pricing.js:172
+msgid "SENIORS with income splitting & investment slips, OR"
+msgstr "有收入分配和投资单的老年人，或"
+
+#: src/pages/Pricing.js:29
+msgid "SILVER SERVICE"
+msgstr "银牌服务"
+
+#: src/pages/Pricing.js:155
+msgid "SILVER SERVICE $69"
+msgstr "银牌服务 $69"
+
+#: src/pages/Pricing.js:177
+msgid "STUDENTS must be full time student in high school or post-secondary school during tax year (includes T2202A forms), under 21 yrs of age, includes T4’s from part-time/summer jobs, should file returns to create future RRSP contribution room & collect GST credits (if applicable)"
+msgstr "学生在纳税年度必须是高中或中学后的全日制学生（包括 T2202A 表格），未满 21 岁，包括来自兼职/暑期工作的 T4，应提交申报表以创建未来的 RRSP 供款空间并收取 消费税抵免额（如适用）"
+
+#: src/pages/Pricing.js:47
+msgid "STUDENTS must be full time student in high school or post-secondary school during tax year (includes T2202A forms), under 21 yrs of age, includes..."
+msgstr "学生在纳税年度必须是高中或专上学校的全日制学生（包括 T2202A 表格），21 岁以下，包括..."
 
 #: src/components/Reservation.js:89
-msgid "Select"
-msgstr "选择"
+#~ msgid "Select"
+#~ msgstr "选择"
 
 #: src/pages/Personal.js:124
-msgid "Self employed"
-msgstr "自雇人士"
+#~ msgid "Self employed"
+#~ msgstr "自雇人士"
+
+#: src/pages/Pricing.js:312
+msgid "Self-Employed / Business / Farm Income (T1 return-Non-Incorporated) $200"
+msgstr "自雇/商业/农场收入（T1 回报-非公司）$200"
 
 #: src/components/Navbar.js:90
-msgid "Self-employed Taxes"
-msgstr "自雇报税"
+#~ msgid "Self-employed Taxes"
+#~ msgstr "自雇报税"
 
-#: src/components/Navbar.js:280
+#: src/components/LoginForm.js:131
+msgid "Sign in with Google"
+msgstr "谷歌登录"
+
+#: src/components/Navbar.js:223
 msgid "Sign out"
 msgstr "登出"
 
-#: src/components/LoginForm.js:89
+#: src/components/LoginForm.js:97
 msgid "Sign up"
 msgstr "注册"
 
 #: src/components/Navbar.js:222
-msgid "SignIn"
-msgstr "登录"
+#~ msgid "SignIn"
+#~ msgstr "登录"
+
+#: src/pages/Pricing.js:126
+msgid "Simple investment reporting (buy/sell of shares, etc) which include T3’s, T5’s or T5008 accompanied with realized gain/loss report.) All other investing is considered complex and is priced separately –"
+msgstr "简单的投资报告（购买/出售股票等），包括 T3、T5 或 T5008 以及已实现的损益报告。）所有其他投资都被认为是复杂的，并且单独定价 -"
+
+#: src/pages/Pricing.js:241
+msgid "Simple investment reporting (buy/sell of shares, etc) which include T3’s, T5’s or T5008 accompanied with realized gain/loss report.) All other investing is considered complex and is priced separately – see additional services."
+msgstr "简单的投资报告（购买/出售股票等），包括 T3、T5 或 T5008 以及已实现的损益报告。）所有其他投资都被认为是复杂的，并且单独定价 - 请参阅附加服务。"
 
 #: src/components/UploadFile.js:61
 msgid "Size of each file should be less 5Mbytes. File name should be less than 60 characters. File name should NOT include special characters."
 msgstr "每个文件的大小应小于 5Mbytes。 文件名应少于 60 个字符。 文件名不应包含特殊字符。"
 
-#: src/pages/Personal.js:79
-msgid "Students Tax"
-msgstr "学生报税"
+#: src/pages/Pricing.js:271
+msgid "Skip the wait, prioritize your file with a 3 day turnaround. If you have multiple linked tax returns (Spouses, children) this will apply to each return separately. Note this may not be available during the last few days of April but we will inform you in that case."
+msgstr "跳过等待，在 3 天的周转时间内优先处理您的文件。 如果您有多个关联的纳税申报表（配偶、子女），这将分别适用于每个纳税申报表。 请注意，这可能在 4 月的最后几天不可用，但我们会在这种情况下通知您。 "
 
-#: src/pages/ContactUs.js:124
+#: src/pages/Pricing.js:354
+msgid "Standard RRSP Planning $75 ($25 rebate at time of tax filing)"
+msgstr "标准 RRSP 计划 75 加元（报税时返还 25 加元）"
+
+#: src/pages/Personal.js:79
+#~ msgid "Students Tax"
+#~ msgstr "学生报税"
+
+#: src/pages/ContactUs.js:159
 msgid "Subject"
 msgstr "主题:"
 
-#: src/pages/ContactUs.js:149
+#: src/pages/ContactUs.js:190
 msgid "Submit Form"
 msgstr "提交表格"
 
-#: src/components/DependentList.js:124
-#: src/components/PropertDetails.js:126
+#: src/components/DependentList.js:125
+#: src/components/PropertDetails.js:127
 #: src/components/Taxform.js:87
-#: src/components/UploadFile.js:116
+#: src/components/UploadFile.js:88
 msgid "Submit form"
 msgstr "提交表格"
 
+#: src/pages/Pricing.js:417
+msgid "T1 Adjustment $50 per year"
+msgstr "T1 调整每年 50 加元"
+
+#: src/pages/Pricing.js:431
+msgid "T1 Adjustment (more complex) $100 per year"
+msgstr "T1 调整（更复杂）每年 100 加元"
+
 #: src/components/Navbar.js:80
-msgid "Tax For Students"
-msgstr "学生报税"
+#~ msgid "Tax For Students"
+#~ msgstr "学生报税"
 
 #: src/components/Taxform.js:50
 msgid "Tax Form"
 msgstr "基本信息"
 
-#: src/pages/Business.js:180
-#: src/pages/Business.js:188
-#: src/pages/Housing.js:126
-#: src/pages/Housing.js:138
-#: src/pages/Personal.js:146
-#: src/pages/Personal.js:158
+#: src/pages/Pricing.js:515
+#: src/pages/Pricing.js:527
 msgid "Tax Online"
 msgstr "线上报税"
 
-#: src/components/Navbar.js:210
+#: src/components/Navbar.js:143
 msgid "Tax online"
 msgstr "线上报税"
 
 #: src/components/UploadFile.js:82
-msgid "Terms and conditions"
-msgstr "条款和条件"
+#~ msgid "Terms and conditions"
+#~ msgstr "条款和条件"
+
+#: src/pages/AboutUs.js:46
+msgid "To respect our clients health and do our part to not spread sickness in our community we ask that you wear a mask and following distancing guidelines as much as possible in our office. We are open for in person meetings but also offer personal income tax services with no need to visit our office. The following options are available."
+msgstr "为了尊重我们客户的健康并尽我们所能避免在我们的社区中传播疾病，我们要求您在我们的办公室尽可能地戴上口罩并遵守距离准则。 我们对面对面会议开放，但也提供个人所得税服务，无需访问我们的办公室。 以下选项可用。"
+
+#: src/pages/Pricing.js:326
+msgid "Totals must be provided for each expense category. If receipts or other forms are provided, or additional help is required to complete the form additional costs will apply. No additional cost for a verbal review of the form if you are new to using the form."
+msgstr "必须为每个费用类别提供总计。 如果提供收据或其他表格，或需要额外帮助来填写表格，则将收取额外费用。 如果您不熟悉使用该表格，则无需额外费用对表格进行口头审查。"
+
+#: src/pages/Pricing.js:117
+#: src/pages/Pricing.js:232
+msgid "UNLIMITED information slips & receipts"
+msgstr "无限的信息单和收据"
 
 #: src/components/UploadFile.js:55
 msgid "Upload files"
 msgstr "上传文件"
 
+#: src/pages/AboutUs.js:57
+msgid "We use an online software called Zoom for online meetings where we can share computer screens and share files as needed. You are given access to your own secure portal to upload your documents to us prior to our meeting. Start by choosing a meeting time"
+msgstr "我们使用名为 Zoom 的在线软件进行在线会议，我们可以在其中共享计算机屏幕并根据需要共享文件。 您可以访问自己的安全门户，以便在我们开会之前将您的文件上传给我们。 首先选择会议时间"
+
+#: src/pages/Pricing.js:492
+msgid "We will prepare a written reply and provide information requested from your tax return, on your behalf"
+msgstr "我们将代表您准备书面答复并提供您的纳税申报表中要求的信息"
+
 #: src/pages/ContactUs.js:81
-msgid "Website"
+#~ msgid "Website"
+#~ msgstr "网址:"
+
+#: src/pages/ContactUs.js:114
+#: src/pages/Home.js:149
+msgid "Website:"
 msgstr "网址:"
 
-#: src/pages/ContactUs.js:111
+#: src/pages/AboutUs.js:14
+msgid "Welcome to Sum Accounting! We are a small accounting firm operating year round in Markham Canada. We offer monthly accounting service packages for small business as well as yearly income tax preparation. Our mission is to provide a high level of service to our customers with accuracy, security and a smile! Reach out to us to find out more. I look forward to meeting you!"
+msgstr "欢迎来到全加会计！ 我们是一家在加拿大万锦市全年运营的小型会计师事务所。 我们为小型企业提供月度会计服务包以及年度所得税准备。 我们的使命是以准确、安全和微笑为客户提供高水平的服务！ 联系我们以了解更多信息。 我期待着与您见面！"
+
+#: src/pages/Pricing.js:483
+msgid "You receive a letter from CRA requesting further information to substantiate your tax credit request (happens most often when there is a large credit being claimed such as medical or donations or something isn’t clear to CRA)"
+msgstr "您收到 CRA 的一封信函，要求您提供更多信息以证实您的税收抵免请求（通常发生在申请大额信贷的情况下，例如医疗或捐赠或 CRA 不清楚的事情）"
+
+#: src/pages/ContactUs.js:145
 msgid "Your Email"
 msgstr "邮箱:"
 
-#: src/pages/ContactUs.js:98
+#: src/pages/ContactUs.js:131
 msgid "Your Name"
 msgstr "姓名:"
+
+#: src/pages/Pricing.js:459
+msgid "contact CRA via phone for information on your behalf"
+msgstr "代表您通过电话联系 CRA 以获取信息"
+
+#: src/pages/Pricing.js:464
+#: src/pages/Pricing.js:498
+msgid "contact CRA website for information on your behalf"
+msgstr "代表您联系 CRA 网站以获取信息"
+
+#: src/pages/Pricing.js:435
+msgid "for current or prior years, to include complex changes to tax situation. We can confirm in advance if simple or complex depending on individual situation"
+msgstr "对于当前或以前的年度，包括税收情况的复杂变化。 我们可以根据个人情况提前确认简单或复杂"
+
+#: src/pages/Pricing.js:421
+msgid "for current or prior years, to include missed slips, or basic changes to tax situation"
+msgstr "对于当前或以前的年度，包括遗漏的单据或税收情况的基本变化"
+
+#: src/pages/AboutUs.js:65
+msgid "here"
+msgstr "这里"
+
+#: src/pages/Pricing.js:452
+msgid "reprint of Notice of Assessment or Option C from CRA website for current or prior years"
+msgstr "从 CRA 网站重印本年度或以前年度的评估通知或选项 C"
+
+#: src/pages/Pricing.js:79
+#: src/pages/Pricing.js:199
+msgid "return – up to 10 information slips (T3, T4, T5, etc)"
+msgstr "返回 – 最多 10 个信息单（T3、T4、T5 等）"
+
+#: src/pages/Pricing.js:133
+msgid "see additional services"
+msgstr "查看附加服务"
+
+#: src/pages/Pricing.js:469
+msgid "this is covered under CRA Review Insurance"
+msgstr "这在 CRA 审查保险范围内"

@@ -1,124 +1,134 @@
 import React from "react";
 import { Trans } from "@lingui/macro";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Parallax, Pagination, Navigation } from "swiper";
 const Home = () => {
   return (
     <div>
-      <section className="text-light">
-        <div
-          id="carouselExampleCaptions"
-          className="carousel slide"
-          data-bs-ride="carousel"
+      <section style={{ height: "100vh" }}>
+        <Swiper
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
+          }}
+          speed={600}
+          parallax={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Parallax, Pagination, Navigation]}
+          className="mySwiper"
         >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active ">
-              <img src="img/1.png" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-center text-dark col-lg-6 col-md-8 mx-auto">
-                <h1>INCOME TAXES</h1>
-                <p className="lead d-none d-md-block">
-                  Income tax is one of life's biggest expenses. If you are a
-                  small business owner, in most cases tax preparation should be
-                  handled by a professional.
-                </p>
-                <a href="#More" className="btn btn-dark my-3  ">
-                  <Trans>Learn more</Trans>
-                </a>
+          <div
+            slot="container-start"
+            className="parallax-bg"
+            style={{
+              "background-image": "url(img/bg.jpg)",
+            }}
+            data-swiper-parallax="-23%"
+          ></div>
+          <SwiperSlide>
+            <div className="container">
+              <div className="title" data-swiper-parallax="-300">
+                <Trans> INCOME TAXES</Trans>
               </div>
-            </div>
-            <div className="carousel-item">
-              <img src="img/2.jpg" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-center col-lg-6 col-md-8 mx-auto">
-                <h1>PAYROLL</h1>
-                <p className="lead d-none d-md-block">
-                  Payroll can be a headache for any company due to its time
-                  sensitiveness and recurring nature.
+              <div className="text lead d-flex">
+                <p>
+                  <Trans>
+                    Income taxes are one of life’s largest expenses. If you are
+                    a small business owner in most cases tax prep should be
+                    handled by the pros.<a href="#More">Learn more...</a>
+                  </Trans>
                 </p>
-                <a href="#More" className="btn btn-dark my-3 ">
-                  <Trans>Learn more</Trans>
-                </a>
               </div>
+              <a
+                className="btn btn-lg btn-danger my-3 slide_btn"
+                href="https://calendly.com/sumaccounting/15-min-phone-meeting"
+              >
+                <Trans> Get Start</Trans>
+              </a>
             </div>
-            <div className="carousel-item">
-              <img src="img/3.jpg" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-center text-dark  col-lg-6 col-md-8 mx-auto">
-                <h2>MONTHLY ONLINE ACCOUNTING</h2>
-                <p className="lead d-none d-md-block">
-                  Let us manage your books so your business can run at its peak
-                  with your financials updated monthly and your numbers
-                  available to you anywhere.
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="container">
+              <div className="title" data-swiper-parallax="-300">
+                <Trans> PAYROLL</Trans>
+              </div>
+              <div className="text" data-swiper-parallax="-100">
+                <p>
+                  <Trans>
+                    Payroll can be a headache for any company due to its time
+                    sensitiveness and recurring nature.
+                    <a href="#More">Learn more...</a>
+                  </Trans>
                 </p>
-                <a href="#More" className="btn btn-dark my-3 ">
-                  <Trans>Learn more</Trans>
-                </a>
               </div>
+              <a
+                className="btn btn-lg btn-danger my-3 slide_btn"
+                href="https://calendly.com/sumaccounting/15-min-phone-meeting"
+              >
+                <Trans> Get Start</Trans>
+              </a>
             </div>
-            <div className="carousel-item">
-              <img src="img/4.jpg" className="d-block w-100" alt="..." />
-              <div className="carousel-caption text-center col-lg-6 col-md-8 mx-auto">
-                <h2>OTHER BUSINESS SERVICES</h2>
-                <p className="lead d-none d-md-block">
-                  Accounting requirements and needs of small businesses and
-                  individuals today cover a range of things.
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="container">
+              <div className="title" data-swiper-parallax="-300">
+                <Trans>MONTHLY ONLINE ACCOUNTING</Trans>
+              </div>
+              <div className="text" data-swiper-parallax="-100">
+                <p>
+                  <Trans>
+                    Let us manage your books so your business can run at its
+                    peak with your financials updated monthly and your numbers
+                    available to you anywhere.<a href="#More">Learn more...</a>
+                  </Trans>
                 </p>
-                <a href="#More" className="btn  btn-dark my-3">
-                  <Trans>Learn more</Trans>
-                </a>
               </div>
+              <a
+                className="btn btn-lg btn-danger my-3 slide_btn"
+                href="https://calendly.com/sumaccounting/15-min-phone-meeting"
+              >
+                <Trans> Get Start</Trans>
+              </a>
             </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="container">
+              <div className="title" data-swiper-parallax="-300">
+                <Trans>OTHER BUSINESS SERVICES</Trans>
+              </div>
+              <div className="text" data-swiper-parallax="-100">
+                <p>
+                  <Trans>
+                    Accounting requirements and needs of small businesses and
+                    individuals today cover a range of things.
+                    <a href="#More">Learn more...</a>
+                  </Trans>
+                </p>
+              </div>
+              <a
+                className="btn btn-lg btn-danger my-3 slide_btn"
+                href="https://calendly.com/sumaccounting/15-min-phone-meeting"
+              >
+                <Trans> Get Start</Trans>
+              </a>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
       <section className="p-5 bg-white">
         <div className="container">
@@ -140,7 +150,7 @@ const Home = () => {
                 </li>
               </ul>
               <a href="/contactus" className="btn btn-primary my-3">
-                Contact us
+                <Trans> Contact us</Trans>
               </a>
             </div>
             <div className="col-md">
@@ -170,15 +180,18 @@ const Home = () => {
                     </h4>
                   </div>
                   <div className="card-text">
-                    Income taxes are one of life’s largest expenses. If you are
-                    a small business owner in most cases tax prep should be
-                    handled by the pros. Here at GP Accounting we provide year
-                    round tax services for our small business and farmer
-                    customers that are on monthly accounting plans with us. We
-                    are also happy to work with your existing CPA or tax
-                    accountant. NOTE – We are not taking on new basic personal
-                    income tax work at this time but are rather focused on
-                    monthly accounting services.
+                    <Trans>
+                      {" "}
+                      Income taxes are one of life’s largest expenses. If you
+                      are a small business owner in most cases tax prep should
+                      be handled by the pros. Here at GP Accounting we provide
+                      year round tax services for our small business and farmer
+                      customers that are on monthly accounting plans with us. We
+                      are also happy to work with your existing CPA or tax
+                      accountant. NOTE – We are not taking on new basic personal
+                      income tax work at this time but are rather focused on
+                      monthly accounting services.
+                    </Trans>
                   </div>
                 </div>
               </div>
@@ -198,10 +211,13 @@ const Home = () => {
                     </h4>
                   </div>
                   <div className="card-text">
-                    Payroll can be a headache for any company due to its time
-                    sensitiveness and recurring nature. Why not provide us with
-                    the details to ensure an accurate and timely payrun
-                    everytime – year end T4s included.
+                    <Trans>
+                      {" "}
+                      Payroll can be a headache for any company due to its time
+                      sensitiveness and recurring nature. Why not provide us
+                      with the details to ensure an accurate and timely payrun
+                      everytime – year end T4s included.
+                    </Trans>
                   </div>
                 </div>
               </div>
@@ -220,12 +236,14 @@ const Home = () => {
                     </h4>
                   </div>
                   <div className="card-text">
-                    Let us manage your books so your business can run at its
-                    peak with your financials updated monthly and your numbers
-                    available to you anywhere. We are not your typical
-                    bookkeeping or accounting firm. We believe meaningful, year
-                    round relationships are equally as important as accurate
-                    numbers.
+                    <Trans>
+                      Let us manage your books so your business can run at its
+                      peak with your financials updated monthly and your numbers
+                      available to you anywhere. We are not your typical
+                      bookkeeping or accounting firm. We believe meaningful,
+                      year round relationships are equally as important as
+                      accurate numbers.
+                    </Trans>
                   </div>
                 </div>
               </div>
@@ -240,11 +258,14 @@ const Home = () => {
                     </h4>
                   </div>
                   <div className="card-text">
-                    Accounting requirements and needs of small businesses and
-                    individuals today cover a range of things. Maybe you require
-                    a mid year financial statement (typically prepared w/T2
-                    taxes) for funding or need an electronic bill payment system
-                    to streamline your accounts payable.
+                    <Trans>
+                      {" "}
+                      Accounting requirements and needs of small businesses and
+                      individuals today cover a range of things. Maybe you
+                      require a mid year financial statement (typically prepared
+                      w/T2 taxes) for funding or need an electronic bill payment
+                      system to streamline your accounts payable.
+                    </Trans>
                   </div>
                 </div>
               </div>

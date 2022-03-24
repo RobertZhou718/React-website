@@ -5,14 +5,8 @@ import objectToCSV from "./objectToCSV";
 import { Trans } from "@lingui/macro";
 
 const Taxform = ({ user }) => {
-  const {
-    taxFormHead,
-    invalid,
-    holder,
-    starValue,
-    options,
-    formHead,
-  } = getConfig();
+  const { taxFormHead, invalid, holder, starValue, options, formHead } =
+    getConfig();
   const [inputs, setInputs] = useState(formHead);
   const handleChange = (e) =>
     setInputs((prevState) => ({
@@ -30,7 +24,7 @@ const Taxform = ({ user }) => {
   };
   return (
     <section>
-      <div className="form-horizontal">
+      <div className="form-horizontal mt-5 p-5">
         <div className="container">
           <div className="row">
             <div className="col-md-8">

@@ -11,14 +11,16 @@ const AboutUs = () => {
                 <Trans>About Us</Trans>
               </h1>
               <p className="mt-5 lead">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-                assumenda reprehenderit debitis optio excepturi tenetur
-                provident non repellat quis culpa odit similique, nulla in, sunt
-                laborum accusantium unde corrupti. Quaerat? Voluptatem enim
-                veritatis ad perferendis expedita magni similique vero
-                consectetur veniam dolor dignissimos non quos mollitia, impedit
-                esse doloremque sequi a! Aliquid a veritatis adipisci corporis?
-                Pariatur atque architecto dicta!
+                <Trans>
+                  {" "}
+                  Welcome to Sum Accounting! We are a small accounting firm
+                  operating year round in Markham Canada. We offer monthly
+                  accounting service packages for small business as well as
+                  yearly income tax preparation. Our mission is to provide a
+                  high level of service to our customers with accuracy, security
+                  and a smile! Reach out to us to find out more. I look forward
+                  to meeting you!
+                </Trans>
               </p>
             </div>
             <div className="col-md">
@@ -37,33 +39,46 @@ const AboutUs = () => {
             <h1 className="text-center">
               <Trans>COVID-19 NOTICE</Trans>
             </h1>
-            <h3 className="mt-5">Online Income Tax Options during COVID-19</h3>
+            <h3 className="mt-5">
+              <Trans>Online Income Tax Options during COVID-19</Trans>
+            </h3>
             <p className="lead mt-3">
-              To respect our clients health and do our part to not spread
-              sickness in our community we ask that you wear a mask and
-              following distancing guidelines as much as possible in our office.
-              We are open for in person meetings but also offer personal income
-              tax services with no need to visit our office. The following
-              options are available.
+              <Trans>
+                To respect our clients health and do our part to not spread
+                sickness in our community we ask that you wear a mask and
+                following distancing guidelines as much as possible in our
+                office. We are open for in person meetings but also offer
+                personal income tax services with no need to visit our office.
+                The following options are available.
+              </Trans>
             </p>
             <ul style={{ "font-size": "20px" }}>
               <li>
-                We use an online software called Zoom for online meetings where
-                we can share computer screens and share files as needed. You are
-                given access to your own secure portal to upload your documents
-                to us prior to our meeting. Start by choosing a meeting time{" "}
-                <a href="/reservation">here</a>
+                <Trans>
+                  We use an online software called Zoom for online meetings
+                  where we can share computer screens and share files as needed.
+                  You are given access to your own secure portal to upload your
+                  documents to us prior to our meeting. Start by choosing a
+                  meeting time
+                </Trans>
+                <a href="/reservation">
+                  <Trans>here</Trans>
+                </a>
               </li>
               <li>
-                If a computer screen share is not needed you can also choose to
-                simply request access to your secure portal to send us your
-                documents and we will contact you once your return is started to
-                go through any questions and to complete your return.
+                <Trans>
+                  If a computer screen share is not needed you can also choose
+                  to simply request access to your secure portal to send us your
+                  documents and we will contact you once your return is started
+                  to go through any questions and to complete your return.
+                </Trans>
               </li>
               <li>
-                Another option is to send all documents to us using the secure
-                messaging app like Whatsapp or Telegram. Contact us for details
-                if you are new to using these apps.
+                <Trans>
+                  Another option is to send all documents to us using the secure
+                  messaging app like Whatsapp or Telegram. Contact us for
+                  details if you are new to using these apps.
+                </Trans>
               </li>
             </ul>
           </div>

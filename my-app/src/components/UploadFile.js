@@ -32,7 +32,7 @@ const FileInput = (props) => {
   );
 };
 const UploadFile = ({ user }) => {
-  const fileList = ["file0", "file1", "file2", "file3"];
+  const fileList = ["file0", "file1", "file2", "file3", "file4", "file5"];
   const [files, setFiles] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -72,34 +72,6 @@ const UploadFile = ({ user }) => {
               handleChange={handleChange}
             />
           ))}
-        </div>
-      </form>
-      <form action="#" className="form-horizontal">
-        <div className="container">
-          <h2 className="large">
-            <b>
-              <strong>
-                <Trans>Terms and conditions</Trans>
-              </strong>
-            </b>
-          </h2>
-          <div className="row">
-            <div className="col-md-12">
-              <textarea
-                className="container-fluid form-control"
-                id="disabledInput"
-                type="text"
-                placeholder="Here are conditions and terms below."
-                disabled
-              ></textarea>
-            </div>
-          </div>
-          <div className="form-check">
-            <input className="form-check-input" type="checkbox" required />
-            <label className="form-check-label" htmlFor="invalidCheck">
-              <Trans>Click to agree terms and conditions above.</Trans>
-            </label>
-          </div>
         </div>
         <div className="col-md-12" align="center">
           <button

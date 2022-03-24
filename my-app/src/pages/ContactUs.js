@@ -22,22 +22,22 @@ const ContactUs = () => {
           "&message=" +
           encodeURI(content.message)
       )
-      .then(function(response) {
+      .then(function (response) {
         // handle success
         console.log(response);
       })
-      .catch(function(error) {
+      .catch(function (error) {
         // handle error
         console.log(error);
       })
-      .then(function() {
+      .then(function () {
         // always executed
       });
   };
 
   return (
     <div>
-      <section className="bg-light p-5 mt-5">
+      <section className="bg-white p-5 mt-5">
         <div className="container">
           <div className="row justify-content-center mt-5">
             <div className="col-md mt-5">
@@ -92,7 +92,7 @@ const ContactUs = () => {
                         <span>
                           <Trans>Email:</Trans>
                         </span>
-                        <a href="jessieshan@sumaccounting.ca">
+                        <a href="mailto:jessieshan@sumaccounting.ca">
                           jessieshan@sumaccounting.ca
                         </a>
                       </p>
@@ -111,7 +111,7 @@ const ContactUs = () => {
                     <div className="text">
                       <p>
                         <span>
-                          <Trans>Website</Trans>
+                          <Trans>Website:</Trans>
                         </span>
                         <a href="sumaccounting.ca">sumaccounting.ca</a>
                       </p>
@@ -124,7 +124,7 @@ const ContactUs = () => {
 
             <div className="col-md">
               <div className=" align-items-center justify-content-center">
-                <div className="bg-light">
+                <div className="bg-white">
                   <div className="p-4 rounded shadow-md">
                     <div>
                       <label htmlFor="name" className="form-label">
