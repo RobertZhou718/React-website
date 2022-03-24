@@ -7,12 +7,14 @@ const Pricing = () => {
           <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
             <h1 className="display-4 fw-normal">Pricing</h1>
             <p className="fs-5 text-muted">
-              <b>At Sum Accounting you are important!</b>
-              <hr /> We are committed to creating value and peace of mind for
-              our customers. One of the ways we achieve this is to offer upfront
-              fixed pricing as much as possible. We all hate to get surprise
-              bills that are over our budget so at Sum Accounting we strive to
-              eliminate this.
+              <Trans>
+                <b>At Sum Accounting you are important!</b>
+                <hr /> We are committed to creating value and peace of mind for
+                our customers. One of the ways we achieve this is to offer
+                upfront fixed pricing as much as possible. We all hate to get
+                surprise bills that are over our budget so at Sum Accounting we
+                strive to eliminate this.
+              </Trans>
             </p>
           </div>
         </div>
@@ -23,86 +25,123 @@ const Pricing = () => {
             <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-header py-3">
-                  <h4 className="my-0 fw-normal">SILVER SERVICE</h4>
+                  <h4 className="my-0 fw-normal">
+                    <Trans>SILVER SERVICE</Trans>
+                  </h4>
                 </div>
                 <div className="card-body">
                   <h1 className="card-title pricing-card-title">$69</h1>
 
                   <ul className="mt-3 mb-4 text-start">
-                    <li>BASIC return – max 5 info slips (T3, T4, T5), OR</li>
                     <li>
-                      SENIORS with income splitting & investment slips, OR
+                      <Trans>
+                        BASIC return – max 5 info slips (T3, T4, T5), OR
+                      </Trans>
                     </li>
                     <li>
-                      STUDENTS must be full time student in high school or
-                      post-secondary school during tax year (includes T2202A
-                      forms), under 21 yrs of age, includes...
-                      <a href="#silver">Learn more</a>
+                      <Trans>
+                        SENIORS with income splitting & investment slips, OR
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        {" "}
+                        STUDENTS must be full time student in high school or
+                        post-secondary school during tax year (includes T2202A
+                        forms), under 21 yrs of age, includes...
+                      </Trans>
+                      <a href="#silver">
+                        <Trans>Learn more</Trans>
+                      </a>
                     </li>
                   </ul>
-                  <button
+                  <a
                     type="button"
                     className="w-100 btn btn-lg btn-outline-primary"
+                    href="/reservation"
                   >
-                    Make an appointment
-                  </button>
+                    <Trans> Make an appointment</Trans>
+                  </a>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-header py-3">
-                  <h4 className="my-0 fw-normal">GOLD SERVICE</h4>
+                  <h4 className="my-0 fw-normal">
+                    <Trans>GOLD SERVICE</Trans>
+                  </h4>
                 </div>
                 <div className="card-body">
                   <h1 className="card-title pricing-card-title">$97</h1>
                   <ul className=" mt-3 mb-4 text-start">
                     <li>
-                      return – up to 10 information slips (T3, T4, T5, etc)
+                      <Trans>
+                        return – up to 10 information slips (T3, T4, T5, etc)
+                      </Trans>
                     </li>
                     <li>
-                      INCLUDES: Charitable Donations | Medical Receipts | Union
-                      Dues | Transit Passes (prior to 2017 tax year) | RRSP
-                      Income/contributions | UCCB (Child Benefit) (prior to 2017
-                      tax year) | Student Loan Interest...
-                      <a href="#gold">Learn more</a>
+                      <Trans>
+                        INCLUDES: Charitable Donations | Medical Receipts |
+                        Union Dues | Transit Passes (prior to 2017 tax year) |
+                        RRSP Income/contributions | UCCB (Child Benefit) (prior
+                        to 2017 tax year) | Student Loan Interest...
+                      </Trans>
+                      <a href="#gold">
+                        <Trans>Learn more</Trans>
+                      </a>
                     </li>
                   </ul>
-                  <button
+                  <a
                     type="button"
                     className="w-100 btn btn-lg btn-outline-primary"
+                    href="/reservation"
                   >
-                    Make an appointment
-                  </button>
+                    <Trans>Make an appointment</Trans>
+                  </a>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="card mb-4 rounded-3 shadow-sm ">
                 <div className="card-header py-3">
-                  <h4 className="my-0 fw-normal">DIAMOND SERVICE</h4>
+                  <h4 className="my-0 fw-normal">
+                    <Trans>DIAMOND SERVICE</Trans>
+                  </h4>
                 </div>
                 <div className="card-body">
                   <h1 className="card-title pricing-card-title">$150</h1>
 
                   <ul className="mt-3 mb-4 text-start">
-                    <li>UNLIMITED information slips & receipts</li>
-                    <li>Employment Expenses (with totals provided)</li>
-                    <li>Foreign pension</li>
                     <li>
-                      Simple investment reporting (buy/sell of shares, etc)
-                      which include T3’s, T5’s or T5008 accompanied with
-                      realized gain/loss report.) All other investing is
-                      considered complex and is priced separately –
-                      <a href="#addServe">see additional services</a> .
+                      <Trans>UNLIMITED information slips & receipts</Trans>
+                    </li>
+                    <li>
+                      <Trans>Employment Expenses (with totals provided)</Trans>
+                    </li>
+                    <li>
+                      <Trans>Foreign pension</Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        Simple investment reporting (buy/sell of shares, etc)
+                        which include T3’s, T5’s or T5008 accompanied with
+                        realized gain/loss report.) All other investing is
+                        considered complex and is priced separately –
+                      </Trans>
+                      <a href="#addServe">
+                        <Trans>see additional services</Trans>
+                      </a>{" "}
+                      .
                     </li>
                   </ul>
-                  <button
+                  <a
                     type="button"
                     className="w-100 btn btn-lg btn-outline-primary"
+                    href="/reservation"
                   >
-                    Make an appointment
-                  </button>
+                    <Trans> Make an appointment</Trans>
+                  </a>
                 </div>
               </div>
             </div>
@@ -116,22 +155,32 @@ const Pricing = () => {
               <Trans>SILVER SERVICE $69</Trans>
             </h3>
             <p className="lead">
-              Income only, no deductions included other than exceptions for
-              Seniors / Students as listed (Excludes situations where additional
-              services are required. See additional services.)
+              <Trans>
+                Income only, no deductions included other than exceptions for
+                Seniors / Students as listed (Excludes situations where
+                additional services are required. See additional services.)
+              </Trans>
             </p>
             <ul
               className="mt-3 mb-4 text-start"
               style={{ "font-size": "20px" }}
             >
-              <li>BASIC return – max 5 info slips (T3, T4, T5), OR</li>
-              <li>SENIORS with income splitting & investment slips, OR</li>
               <li>
-                STUDENTS must be full time student in high school or
-                post-secondary school during tax year (includes T2202A forms),
-                under 21 yrs of age, includes T4’s from part-time/summer jobs,
-                should file returns to create future RRSP contribution room &
-                collect GST credits (if applicable)
+                <Trans>BASIC return – max 5 info slips (T3, T4, T5), OR</Trans>
+              </li>
+              <li>
+                <Trans>
+                  SENIORS with income splitting & investment slips, OR
+                </Trans>
+              </li>
+              <li>
+                <Trans>
+                  STUDENTS must be full time student in high school or
+                  post-secondary school during tax year (includes T2202A forms),
+                  under 21 yrs of age, includes T4’s from part-time/summer jobs,
+                  should file returns to create future RRSP contribution room &
+                  collect GST credits (if applicable)
+                </Trans>
               </li>
             </ul>
           </div>
@@ -146,15 +195,21 @@ const Pricing = () => {
               className="mt-3 mb-4 text-start"
               style={{ "font-size": "20px" }}
             >
-              <li>return – up to 10 information slips (T3, T4, T5, etc)</li>
               <li>
-                INCLUDES: <br />
-                Charitable Donations | Medical Receipts | Union Dues | Transit
-                Passes (prior to 2017 tax year) | RRSP Income/contributions |
-                UCCB (Child Benefit) (prior to 2017 tax year) | Student Loan
-                Interest | Tuition & Education Amounts | Child Care Expenses |
-                Support Payments | Pension Income Splitting | Amount for
-                Eligible Dependent
+                <Trans>
+                  return – up to 10 information slips (T3, T4, T5, etc)
+                </Trans>
+              </li>
+              <li>
+                <Trans>
+                  INCLUDES: <br />
+                  Charitable Donations | Medical Receipts | Union Dues | Transit
+                  Passes (prior to 2017 tax year) | RRSP Income/contributions |
+                  UCCB (Child Benefit) (prior to 2017 tax year) | Student Loan
+                  Interest | Tuition & Education Amounts | Child Care Expenses |
+                  Support Payments | Pension Income Splitting | Amount for
+                  Eligible Dependent
+                </Trans>
               </li>
             </ul>
           </div>
@@ -165,20 +220,31 @@ const Pricing = () => {
               <Trans>DIAMOND SERVICE $150</Trans>
             </h3>
             <p className="lead">
-              <b> INCLUDES everything above in GOLD Service, plus:</b>
+              <b>
+                <Trans> INCLUDES everything above in GOLD Service, plus:</Trans>
+              </b>
             </p>
             <ul
               className="mt-3 mb-4 text-start"
               style={{ "font-size": "20px" }}
             >
-              <li>UNLIMITED information slips & receipts</li>
-              <li>Employment Expenses (with totals provided)</li>
-              <li>Foreign pension</li>
               <li>
-                Simple investment reporting (buy/sell of shares, etc) which
-                include T3’s, T5’s or T5008 accompanied with realized gain/loss
-                report.) All other investing is considered complex and is priced
-                separately – see additional services.
+                <Trans>UNLIMITED information slips & receipts</Trans>
+              </li>
+              <li>
+                <Trans>Employment Expenses (with totals provided)</Trans>
+              </li>
+              <li>
+                <Trans>Foreign pension</Trans>
+              </li>
+              <li>
+                <Trans>
+                  {" "}
+                  Simple investment reporting (buy/sell of shares, etc) which
+                  include T3’s, T5’s or T5008 accompanied with realized
+                  gain/loss report.) All other investing is considered complex
+                  and is priced separately – see additional services.
+                </Trans>
               </li>
             </ul>
           </div>
@@ -191,155 +257,251 @@ const Pricing = () => {
               <Trans>ADDITIONAL SERVICES</Trans>
             </h3>
             <p className="lead">
-              All services below may be added onto GOLD level or higher
+              <Trans>
+                {" "}
+                All services below may be added onto GOLD level or higher
+              </Trans>
             </p>
             <div className="my-5">
-              <h4>Priority Service $45</h4>
+              <h4>
+                <Trans>Priority Service $45</Trans>
+              </h4>
               <ul style={{ "font-size": "20px" }}>
                 <li>
-                  Skip the wait, prioritize your file with a 3 day turnaround.
-                  If you have multiple linked tax returns (Spouses, children)
-                  this will apply to each return separately. Note this may not
-                  be available during the last few days of April but we will
-                  inform you in that case.
+                  <Trans>
+                    {" "}
+                    Skip the wait, prioritize your file with a 3 day turnaround.
+                    If you have multiple linked tax returns (Spouses, children)
+                    this will apply to each return separately. Note this may not
+                    be available during the last few days of April but we will
+                    inform you in that case.
+                  </Trans>
                 </li>
               </ul>
             </div>
             <div className="my-5">
               <h4>
-                Rental Property Income (for each property to be reported) $75
+                <Trans>
+                  {" "}
+                  Rental Property Income (for each property to be reported) $75
+                </Trans>
               </h4>
               <ul style={{ "font-size": "20px" }}>
                 <li>
-                  Price is for preparation of T776 form and review of expenses
-                </li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>Long Haul Trucker $75</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  Price is for preparation of TL2 form and review of expenses
+                  <Trans>
+                    {" "}
+                    Price is for preparation of T776 form and review of expenses
+                  </Trans>
                 </li>
               </ul>
             </div>
             <div className="my-5">
               <h4>
-                Self-Employed / Business / Farm Income (T1
-                return-Non-Incorporated) $200
+                <Trans>Long Haul Trucker $75</Trans>
               </h4>
               <ul style={{ "font-size": "20px" }}>
                 <li>
-                  Price is for preparation of T2125 or T2042 form and review of
-                  expenses (Agri Stability or Agri Invest not included)
+                  <Trans>
+                    Price is for preparation of TL2 form and review of expenses
+                  </Trans>
                 </li>
-                <li>
-                  Totals must be provided for each expense category. If receipts
-                  or other forms are provided, or additional help is required to
-                  complete the form additional costs will apply. No additional
-                  cost for a verbal review of the form if you are new to using
-                  the form.
-                </li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>GST Return $65</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  Calculation of GST Remittance or Refund, based upon completion
-                  of Business Income Return (above)
-                </li>
-                <li>Includes online filing with CRA</li>
               </ul>
             </div>
             <div className="my-5">
               <h4>
-                Standard RRSP Planning $75 ($25 rebate at time of tax filing)
+                <Trans>
+                  {" "}
+                  Self-Employed / Business / Farm Income (T1
+                  return-Non-Incorporated) $200
+                </Trans>
               </h4>
               <ul style={{ "font-size": "20px" }}>
                 <li>
-                  Pre-return preparation the purpose of RRSP planning before
-                  RRSP deadline
+                  <Trans>
+                    Price is for preparation of T2125 or T2042 form and review
+                    of expenses (Agri Stability or Agri Invest not included)
+                  </Trans>
                 </li>
                 <li>
-                  Estimated based on the information you can provide at the time
+                  <Trans>
+                    Totals must be provided for each expense category. If
+                    receipts or other forms are provided, or additional help is
+                    required to complete the form additional costs will apply.
+                    No additional cost for a verbal review of the form if you
+                    are new to using the form.
+                  </Trans>
                 </li>
-                <li>In person meeting</li>
-                <li>Price is per return/person</li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>Complex Medical $59</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  Applies if medical is partially paid by third party insurance
-                  and there is a substantial number of receipts. Third party
-                  statements are required. Maximum time of 1 hour which covers
-                  most situations, after which the rate is $70/hr.
-                </li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>Complex Investments $95</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  Applies if annual realized gain / loss statements are not
-                  provided and separate sale statements are required to
-                  calculate the income. Maximum time of 1 hour after which the
-                  rate is $70/hr
-                </li>
-                <li>Excludes options trading.</li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>T1 Adjustment $50 per year</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  for current or prior years, to include missed slips, or basic
-                  changes to tax situation
-                </li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>T1 Adjustment (more complex) $100 per year</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  for current or prior years, to include complex changes to tax
-                  situation. We can confirm in advance if simple or complex
-                  depending on individual situation
-                </li>
-              </ul>
-            </div>
-            <div className="my-5">
-              <h4>CRA contact or Notice of Assessment Copy $35 per access</h4>
-              <ul style={{ "font-size": "20px" }}>
-                <li>
-                  reprint of Notice of Assessment or Option C from CRA website
-                  for current or prior years
-                </li>
-                <li>contact CRA via phone for information on your behalf</li>
-                <li>contact CRA website for information on your behalf</li>
-                <li>this is covered under CRA Review Insurance</li>
               </ul>
             </div>
             <div className="my-5">
               <h4>
-                Pre or Post Assessment Review $50-250 per review (at time of
-                review)
+                <Trans>GST Return $65</Trans>
               </h4>
               <ul style={{ "font-size": "20px" }}>
                 <li>
-                  You receive a letter from CRA requesting further information
-                  to substantiate your tax credit request (happens most often
-                  when there is a large credit being claimed such as medical or
-                  donations or something isn’t clear to CRA)
+                  <Trans>
+                    Calculation of GST Remittance or Refund, based upon
+                    completion of Business Income Return (above)
+                  </Trans>
                 </li>
                 <li>
-                  We will prepare a written reply and provide information
-                  requested from your tax return, on your behalf
+                  <Trans>Includes online filing with CRA</Trans>
                 </li>
-                <li>contact CRA website for information on your behalf</li>
-                <li>Follow up, as required, to close review</li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>
+                  Standard RRSP Planning $75 ($25 rebate at time of tax filing)
+                </Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    Pre-return preparation the purpose of RRSP planning before
+                    RRSP deadline
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    {" "}
+                    Estimated based on the information you can provide at the
+                    time
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>In person meeting</Trans>
+                </li>
+                <li>
+                  <Trans>Price is per return/person</Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>Complex Medical $59</Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    Applies if medical is partially paid by third party
+                    insurance and there is a substantial number of receipts.
+                    Third party statements are required. Maximum time of 1 hour
+                    which covers most situations, after which the rate is
+                    $70/hr.
+                  </Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>Complex Investments $95</Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    {" "}
+                    Applies if annual realized gain / loss statements are not
+                    provided and separate sale statements are required to
+                    calculate the income. Maximum time of 1 hour after which the
+                    rate is $70/hr
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>Excludes options trading.</Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>T1 Adjustment $50 per year</Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    {" "}
+                    for current or prior years, to include missed slips, or
+                    basic changes to tax situation
+                  </Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>T1 Adjustment (more complex) $100 per year</Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    {" "}
+                    for current or prior years, to include complex changes to
+                    tax situation. We can confirm in advance if simple or
+                    complex depending on individual situation
+                  </Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>
+                  CRA contact or Notice of Assessment Copy $35 per access
+                </Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    {" "}
+                    reprint of Notice of Assessment or Option C from CRA website
+                    for current or prior years
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    contact CRA via phone for information on your behalf
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    contact CRA website for information on your behalf
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>this is covered under CRA Review Insurance</Trans>
+                </li>
+              </ul>
+            </div>
+            <div className="my-5">
+              <h4>
+                <Trans>
+                  {" "}
+                  Pre or Post Assessment Review $50-250 per review (at time of
+                  review)
+                </Trans>
+              </h4>
+              <ul style={{ "font-size": "20px" }}>
+                <li>
+                  <Trans>
+                    {" "}
+                    You receive a letter from CRA requesting further information
+                    to substantiate your tax credit request (happens most often
+                    when there is a large credit being claimed such as medical
+                    or donations or something isn’t clear to CRA)
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    We will prepare a written reply and provide information
+                    requested from your tax return, on your behalf
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    contact CRA website for information on your behalf
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>Follow up, as required, to close review</Trans>
+                </li>
               </ul>
             </div>
           </div>
@@ -353,9 +515,13 @@ const Pricing = () => {
                 <Trans>Tax Online</Trans>
               </h2>
               <p className="my-4 lead">
-                After completing the appointment, please SignUp/Login to our
-                website to use the Tax online function, please fill in the form
-                according to your own needs, and upload the required documents.
+                <Trans>
+                  {" "}
+                  After completing the appointment, please SignUp/Login to our
+                  website to use the Tax online function, please fill in the
+                  form according to your own needs, and upload the required
+                  documents.
+                </Trans>
               </p>
               <a href="/TaxOnline" className="btn btn-danger btn-lg">
                 <Trans>Tax Online</Trans>

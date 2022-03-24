@@ -1,11 +1,28 @@
 @import "~bootstrap/scss/bootstrap";
 
-@media  only screen and (max-width: 600px)
- {
-   nav {
-    background-color:white;
-   }
+@media only screen and (max-width: 600px) {
+  nav {
+    background-color: white;
+  }
+  footer li,
+  p {
+    font-size: small;
+  }
+  .swiper-slide .title {
+    text-align: center;
+    display: inline-flex;
+  }
 
+  .swiper-slide .text {
+    display: flex;
+    text-align: center;
+
+    max-width: 400px;
+  }
+  .swiper-slide .slide_btn {
+    display: flex;
+    justify-content: center;
+  }
 }
 .gradient-custom-3 {
   /* fallback for old browsers */
@@ -63,15 +80,6 @@
   opacity: 1;
 }
 /* add appropriate colors to fb, twitter and google buttons */
-.facebook {
-  background-color: #3b5998;
-  color: white;
-}
-
-.twitter {
-  background-color: #55acee;
-  color: white;
-}
 
 .google {
   background-color: #dd4b39;
@@ -178,4 +186,45 @@ h3 {
 }
 .pricing-header {
   max-width: 700px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 10px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-family: Arial Black, Gadget, sans-serif;
+  margin-top: 25%;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 800px;
+  line-height: 1.3;
 }
