@@ -36,7 +36,7 @@ const Home = () => {
             slot="container-start"
             className="parallax-bg"
             style={{
-              "background-image": "url(img/bg.jpg)",
+              backgroundImage: "url(img/bg.jpg)",
             }}
             data-swiper-parallax="-23%"
           ></div>
